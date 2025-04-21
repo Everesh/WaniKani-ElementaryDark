@@ -16,9 +16,13 @@
     --color-icon: var(--USER-text, #eeeeee);
     --color-text: var(--USER-text, #eeeeee);
     --color-radical: var(--USER-radical, #56638a);
+    --color-radical-gradient: none;
     --color-kanji: var(--USER-kanji, #9c4644);
+    --color-kanji-gradient: none;
     --color-vocabulary: var(--USER-vocab, #58896f);
+    --color-vocabulary-gradient: none;
     --color-burned: var(--USER-burned, #9c4644);
+    --color-burned-gradient: none;
     --color-alert-system-background: var(--USER-alert, #9c4644);
     --color-alert-system-text: var(--USER-text, #eeeeee);
     --color-button-default-border: var(--USER-text, #eeeeee);
@@ -48,8 +52,11 @@
     --color-srs-progress-guru: var(--USER-guru, #7c684b);
     --color-srs-progress-master: var(--USER-master, #a97e42);
     --color-srs-progress-subject-type-background: rgba(0, 0, 0, 0.1);
+    --color-subject-srs-progress-stage-background: var(--USER-text, #eeeeee);
+    --color-subject-srs-progress-stage-complete-background: var(--USER-progress, #a97e42);
     --color-wk-panel-background: var(--USER-surface-2, #282828);
     --color-wk-panel-content-background: var(--USER-surface-3, #303030);
+    --color-wk-panel-content-title-underline: var(--USER-text, #eeeeee);
     --color-review-forecast-divider: var(--USER-text, #eeeeee);
     --color-review-forecast-increase-sign: var(--USER-text, #eeeeee);
     --color-review-forecast-bar: var(--USER-brand, #9c4644);
@@ -217,6 +224,11 @@
   }
   
   .srs-progress__subject-type-count {
+    color: var(--USER-text, #eeeeee);
+  }
+  
+  .subject-character--small .subject-character__characters {
+    box-shadow: none;
     color: var(--USER-text, #eeeeee);
   }
   

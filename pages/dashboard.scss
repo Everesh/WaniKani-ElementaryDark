@@ -40,3 +40,8 @@
 .srs-progress__subject-type-count {
   color: $text;
 }
+
+.subject-character--small .subject-character__characters {
+  box-shadow: none;
+  color: $text;
+}
