@@ -45,3 +45,19 @@
   box-shadow: none;
   color: $text;
 }
+
+.dashboard-lists li:last-child a {
+  border-radius: 0 0 0.3em 0.3em;
+}
+
+.dashboard-lists li:first-child a {
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+.dashboard-lists li:nth-child(odd) a {
+  filter: brightness(0.9);
+}
+
+.subject-character--grid:after {
+  border: none;
+}

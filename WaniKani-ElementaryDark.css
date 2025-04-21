@@ -15,6 +15,7 @@
     --text-shadow-dark: none;
     --color-icon: var(--USER-text, #eeeeee);
     --color-text: var(--USER-text, #eeeeee);
+    --color-character-text: var(--USER-text, #eeeeee);
     --color-radical: var(--USER-radical, #56638a);
     --color-radical-gradient: none;
     --color-kanji: var(--USER-kanji, #9c4644);
@@ -230,6 +231,22 @@
   .subject-character--small .subject-character__characters {
     box-shadow: none;
     color: var(--USER-text, #eeeeee);
+  }
+  
+  .dashboard-lists li:last-child a {
+    border-radius: 0 0 0.3em 0.3em;
+  }
+  
+  .dashboard-lists li:first-child a {
+    border-radius: 0.3em 0.3em 0 0;
+  }
+  
+  .dashboard-lists li:nth-child(odd) a {
+    filter: brightness(0.9);
+  }
+  
+  .subject-character--grid:after {
+    border: none;
   }
   
 }
