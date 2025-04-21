@@ -1,0 +1,109 @@
+/* ==UserStyle==
+@name         WaniKani Elementary Dark
+@namespace    github.com/openstyles/stylus
+@version      3.0.0
+@license      MIT
+@description  Dark theme for the WaniKani domain
+@author       Everesh
+@homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
+@supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
+==/UserStyle== */
+
+@-moz-document domain(www.wanikani.com) {
+  :root {
+    --text-shadow-light: none;
+    --color-icon: var(--USER-text, #eeeeee);
+    --color-text: var(--USER-text, #eeeeee);
+    --color-radical: var(--USER-radical, #56638a);
+    --color-kanji: var(--USER-kanji, #9c4644);
+    --color-vocabulary: var(--USER-vocab, #58896f);
+    --color-burned: var(--USER-burned, #9c4644);
+    --color-button-modal-primary-background: var(--USER-text, #eeeeee);
+    --color-button-modal-primary-border: var(--USER-text, #eeeeee);
+    --color-button-modal-secondary-border: var(--USER-text, #eeeeee);
+    --color-button-modal-secondary-text: var(--USER-text, #eeeeee);
+    --color-lesson-and-review-count-background: var(--USER-kanji, #9c4644);
+    --color-lesson-and-review-count-zero-background: var(--USER-surface-3, #303030);
+    --color-lesson-and-review-count-text: var(--USER-text, #eeeeee);
+    --color-lesson-and-review-count-text-shadow: none;
+    --color-todays-lessons-completed-background: var(--USER-surface-2, #282828);
+    --color-todays-lessons-loading-background: var(--USER-surface-2, #282828);
+    --color-todays-lessons-text: var(--USER-text, #eeeeee);
+    --color-level-progress-bar-background: var(--USER-surface-3, #303030);
+    --color-level-progress-bar-text: var(--USER-text, #eeeeee);
+    --color-level-progress-bar-progress: var(--USER-progress, #a97e42);
+    --color-level-progress-bar-progress-text: var(--USER-text, #eeeeee);
+    --color-srs-progress-text: var(--USER-text, #eeeeee);
+    --color-srs-progress-header-divider: var(--USER-text, #eeeeee);
+    --color-srs-progress-apprentice: var(--USER-apprentice, #535353);
+    --color-srs-progress-burned: var(--USER-burned, #9c4644);
+    --color-srs-progress-enlightened: var(--USER-enlightened, #a26144);
+    --color-srs-progress-guru: var(--USER-guru, #7c684b);
+    --color-srs-progress-master: var(--USER-master, #a97e42);
+    --color-srs-progress-subject-type-background: rgba(0, 0, 0, 0.1);
+    --color-wk-panel-background: var(--USER-surface-2, #282828);
+    --color-wk-panel-content-background: var(--USER-surface-3, #303030);
+    --color-review-forecast-divider: var(--USER-text, #eeeeee);
+    --color-review-forecast-increase-sign: var(--USER-text, #eeeeee);
+    --color-review-forecast-bar: var(--USER-brand, #9c4644);
+    --color-count_bubble-background: var(--USER-text, #eeeeee);
+  }
+  
+  body {
+    background-color: var(--USER-surface-1, #151515);
+    background-image: none;
+  }
+  
+  .global-header {
+    background: var(--USER-surface-2, #282828);
+    border-bottom-color: var(--USER-surface-4, #535353);
+  }
+  .global-header .logo {
+    filter: var(--USER-logo-filter, invert(1) saturate(0) brightness(1.6));
+  }
+  .global-header .sitemap__section-header {
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  .global-header .lesson-and-review-count :first-child * {
+    --color-lesson-and-review-count-background: var(--USER-kanji, #9c4644);
+  }
+  .global-header .lesson-and-review-count :nth-child(2) * {
+    --color-lesson-and-review-count-background: var(--USER-radical, #56638a);
+  }
+  
+  .dashboard__lessons-and-reviews .todays-lessons {
+    --color-icon: var(--USER-kanji, #9c4644);
+  }
+  .dashboard__lessons-and-reviews .todays-lessons .wk-button--modal-primary:hover {
+    --color-icon: var(--USER-text, #eeeeee);
+    background-color: var(--USER-kanji, #9c4644);
+    color: var(--USER-text, #eeeeee);
+  }
+  .dashboard__lessons-and-reviews .todays-lessons .wk-button--modal-secondary {
+    --color-icon: var(--USER-text, #eeeeee);
+  }
+  .dashboard__lessons-and-reviews .todays-lessons .wk-button--modal-secondary:hover {
+    --color-icon: var(--USER-kanji, #9c4644);
+    background-color: var(--USER-text, #eeeeee);
+    color: var(--USER-kanji, #9c4644);
+  }
+  .dashboard__lessons-and-reviews .reviews-dashboard {
+    --color-icon: var(--USER-radical, #56638a);
+  }
+  .dashboard__lessons-and-reviews .reviews-dashboard .wk-button--modal-primary:hover {
+    --color-icon: var(--USER-text, #eeeeee);
+    background-color: var(--USER-radical, #56638a);
+    color: var(--USER-text, #eeeeee);
+  }
+  
+  .extra-study__image {
+    filter: var(--USER-extra-study-filter, invert(0.81));
+  }
+  
+  .srs-progress__subject-type-count {
+    color: var(--USER-text, #eeeeee);
+  }
+  
+  /*# sourceMappingURL=tmp.css.map */
+}
