@@ -78,6 +78,105 @@
   .global-header .lesson-and-review-count :nth-child(2) * {
     --color-lesson-and-review-count-background: var(--USER-radical, #56638a);
   }
+  .global-header .sitemap__expandable-chunk--levels::before {
+    background-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap__expandable-chunk--levels {
+    background-color: var(--USER-surface-3, #303030);
+  }
+  .global-header .sitemap__expandable-chunk--levels .sitemap__group-header {
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a {
+    color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap__expandable-chunk--levels .sitemap__page--current-level a {
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap__expandable-chunk--radicals,
+  .global-header .sitemap__expandable-chunk--kanji,
+  .global-header .sitemap__expandable-chunk--vocabulary,
+  .global-header .sitemap__expandable-chunk {
+    background-color: var(--USER-surface-3, #303030);
+    color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap__page--subject a,
+  .global-header .sitemap__page-subtitle {
+    color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap__page a {
+    color: var(--USER-text, #eeeeee);
+  }
+  .global-header #sitemap__account .sitemap__page a:hover,
+  .global-header #sitemap__account .sitemap__page a:focus {
+    background-color: var(--USER-text, #eeeeee);
+    color: var(--USER-surface-3, #303030);
+  }
+  .global-header .sitemap__section-header--subsection {
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .global-header .sitemap__expandable-chunk:before {
+    background-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap__section--open .sitemap__section-header--radicals,
+  .global-header .sitemap__section-header--radicals:hover,
+  .global-header .sitemap__section-header--radicals:focus {
+    border-color: var(--USER-radical, #56638a);
+  }
+  .global-header .sitemap__expandable-chunk--radicals:before {
+    background-color: var(--USER-radical, #56638a);
+  }
+  .global-header .sitemap__pages--radical .sitemap__page--subject {
+    border-color: var(--USER-radical, #56638a);
+  }
+  .global-header .sitemap__pages--radical .sitemap__page--subject a:hover {
+    background-color: var(--USER-radical, #56638a);
+  }
+  .global-header .sitemap__section--open .sitemap__section-header--kanji,
+  .global-header .sitemap__section-header--kanji:hover,
+  .global-header .sitemap__section-header--kanji:focus {
+    border-color: var(--USER-kanji, #9c4644);
+  }
+  .global-header .sitemap__expandable-chunk--kanji:before {
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  .global-header .sitemap__pages--kanji .sitemap__page--subject {
+    border-color: var(--USER-kanji, #9c4644);
+  }
+  .global-header .sitemap__pages--kanji .sitemap__page--subject a:hover {
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  .global-header .sitemap__section--open .sitemap__section-header--vocabulary,
+  .global-header .sitemap__section-header--vocabulary:hover,
+  .global-header .sitemap__section-header--vocabulary:focus {
+    border-color: var(--USER-vocab, #58896f);
+  }
+  .global-header .sitemap__expandable-chunk--vocabulary:before {
+    background-color: var(--USER-vocab, #58896f);
+  }
+  .global-header .sitemap__pages--vocabulary .sitemap__page--subject {
+    border-color: var(--USER-vocab, #58896f);
+  }
+  .global-header .sitemap__pages--vocabulary .sitemap__page--subject a:hover {
+    background-color: var(--USER-vocab, #58896f);
+  }
+  
+  .search--open .search__query {
+    background-color: var(--USER-surface-3, #303030);
+    color: var(--USER-text, #eeeeee);
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .search--open .search__query::placeholder {
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .search--open .search__button {
+    color: var(--USER-surface-1, #151515);
+    background: var(--USER-text, #eeeeee);
+  }
+  .search--open .search__button:hover,
+  .search--open .search__button:focus {
+    background: var(--USER-text-grayed, #aaaaaa);
+  }
   
   .wk-button--default:hover {
     --color-icon: var(--USER-text-grayed, #aaaaaa);

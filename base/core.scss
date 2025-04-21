@@ -28,6 +28,136 @@ body {
       --color-lesson-and-review-count-background: #{$radical};
     }
   }
+
+  .sitemap__expandable-chunk--levels::before {
+    background-color: $text;
+  }
+
+  .sitemap__expandable-chunk--levels {
+    background-color: $surface-3;
+    .sitemap__group-header {
+      color: $text-grayed;
+    }
+    .sitemap__pages--levels .sitemap__page a {
+      color: $text;
+    }
+    .sitemap__page--current-level a {
+      border-color: $text;
+    }
+  }
+
+  .sitemap__expandable-chunk--radicals,
+  .sitemap__expandable-chunk--kanji,
+  .sitemap__expandable-chunk--vocabulary,
+  .sitemap__expandable-chunk {
+    background-color: $surface-3;
+    color: $text;
+  }
+
+  .sitemap__page--subject a,
+  .sitemap__page-subtitle {
+    color: $text;
+  }
+
+  .sitemap__page a {
+    color: $text;
+  }
+
+  #sitemap__account .sitemap__page a:hover,
+  #sitemap__account .sitemap__page a:focus {
+    background-color: $text;
+    color: $surface-3;
+  }
+
+  .sitemap__section-header--subsection {
+    color: $text-grayed;
+  }
+
+  .sitemap__expandable-chunk:before {
+    background-color: $text;
+  }
+
+  .sitemap__section--open .sitemap__section-header--radicals,
+  .sitemap__section-header--radicals:hover,
+  .sitemap__section-header--radicals:focus {
+    border-color: $radical;
+  }
+
+  .sitemap__expandable-chunk--radicals:before {
+    background-color: $radical;
+  }
+
+  .sitemap__pages--radical {
+    .sitemap__page--subject {
+      border-color: $radical;
+    }
+
+    .sitemap__page--subject a:hover {
+      background-color: $radical;
+    }
+  }
+
+  .sitemap__section--open .sitemap__section-header--kanji,
+  .sitemap__section-header--kanji:hover,
+  .sitemap__section-header--kanji:focus {
+    border-color: $kanji;
+  }
+
+  .sitemap__expandable-chunk--kanji:before {
+    background-color: $kanji;
+  }
+
+  .sitemap__pages--kanji {
+    .sitemap__page--subject {
+      border-color: $kanji;
+    }
+
+    .sitemap__page--subject a:hover {
+      background-color: $kanji;
+    }
+  }
+
+  .sitemap__section--open .sitemap__section-header--vocabulary,
+  .sitemap__section-header--vocabulary:hover,
+  .sitemap__section-header--vocabulary:focus {
+    border-color: $vocab;
+  }
+
+  .sitemap__expandable-chunk--vocabulary:before {
+    background-color: $vocab;
+  }
+
+  .sitemap__pages--vocabulary {
+    .sitemap__page--subject {
+      border-color: $vocab;
+    }
+
+    .sitemap__page--subject a:hover {
+      background-color: $vocab;
+    }
+  }
+}
+
+.search--open {
+  .search__query {
+    background-color: $surface-3;
+    color: $text;
+    border-color: $text;
+  }
+
+  .search__query::placeholder {
+    color: $text-grayed;
+  }
+
+  .search__button {
+    color: $surface-1;
+    background: $text;
+  }
+
+  .search__button:hover,
+  .search__button:focus {
+    background: $text-grayed;
+  }
 }
 
 .wk-button--default:hover {
