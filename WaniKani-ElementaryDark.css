@@ -89,6 +89,11 @@
   }
   .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a {
     color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-surface-4, #535353);
+  }
+  .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a:hover {
+    color: var(--USER-surface-3, #303030);
+    background-color: var(--USER-text, #eeeeee);
   }
   .global-header .sitemap__expandable-chunk--levels .sitemap__page--current-level a {
     border-color: var(--USER-text, #eeeeee);
@@ -107,8 +112,8 @@
   .global-header .sitemap__page a {
     color: var(--USER-text, #eeeeee);
   }
-  .global-header #sitemap__account .sitemap__page a:hover,
-  .global-header #sitemap__account .sitemap__page a:focus {
+  .global-header .sitemap__page a:hover,
+  .global-header .sitemap__page a:focus {
     background-color: var(--USER-text, #eeeeee);
     color: var(--USER-surface-3, #303030);
   }

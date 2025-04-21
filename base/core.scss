@@ -40,6 +40,11 @@ body {
     }
     .sitemap__pages--levels .sitemap__page a {
       color: $text;
+      background-color: $surface-4;
+    }
+    .sitemap__pages--levels .sitemap__page a:hover {
+      color: $surface-3;
+      background-color: $text;
     }
     .sitemap__page--current-level a {
       border-color: $text;
@@ -63,8 +68,8 @@ body {
     color: $text;
   }
 
-  #sitemap__account .sitemap__page a:hover,
-  #sitemap__account .sitemap__page a:focus {
+  .sitemap__page a:hover,
+  .sitemap__page a:focus {
     background-color: $text;
     color: $surface-3;
   }
