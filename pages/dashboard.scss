@@ -2,6 +2,37 @@
 
 @use "../base/variables" as *;
 
+.dashboard__lessons-and-reviews {
+  .todays-lessons {
+    --color-icon: #{$kanji};
+
+    .wk-button--modal-primary:hover {
+      --color-icon: #{$text};
+      background-color: $kanji;
+      color: $text;
+    }
+
+    .wk-button--modal-secondary {
+      --color-icon: #{$text};
+    }
+
+    .wk-button--modal-secondary:hover {
+      --color-icon: #{$kanji};
+      background-color: $text;
+      color: $kanji;
+    }
+  }
+
+  .reviews-dashboard {
+    --color-icon: #{$radical};
+    .wk-button--modal-primary:hover {
+      --color-icon: #{$text};
+      background-color: $radical;
+      color: $text;
+    }
+  }
+}
+
 .extra-study__image {
   filter: $extra-study-filter;
 }

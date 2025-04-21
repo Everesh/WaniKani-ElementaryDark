@@ -125,10 +125,10 @@
   //--color-button-icon-only-text-shadow: var(--text-shadow-light);
   //--color-button-icon-only-hover-text-shadow: var(--color-button-icon-only-text-shadow);
   //--color-button-icon-only-active-text-shadow: var(--color-button-icon-only-hover-text-shadow);
-  //--color-button-modal-primary-background: #FFF;
+  --color-button-modal-primary-background: #{$text};
   //--color-button-modal-primary-hover-background: var(--color-button-modal-primary-background);
   //--color-button-modal-primary-active-background: var(--color-button-modal-primary-hover-background);
-  //--color-button-modal-primary-border: #FFF;
+  --color-button-modal-primary-border: #{$text};
   //--color-button-modal-primary-hover-border: var(--color-button-modal-primary-border);
   //--color-button-modal-primary-active-border: var(--color-button-modal-primary-hover-border);
   //--color-button-modal-primary-text: var(--color-black);
@@ -140,10 +140,10 @@
   //--color-button-modal-secondary-background: transparent;
   //--color-button-modal-secondary-hover-background: var(--color-button-modal-secondary-background);
   //--color-button-modal-secondary-active-background: rgba(255, 255, 255, 0.5019607843);
-  //--color-button-modal-secondary-border: #FFF;
+  --color-button-modal-secondary-border: #{$text};
   //--color-button-modal-secondary-hover-border: var(--color-button-modal-secondary-border);
   //--color-button-modal-secondary-active-border: var(--color-button-modal-secondary-hover-border);
-  //--color-button-modal-secondary-text: #FFF;
+  --color-button-modal-secondary-text: #{$text};
   //--color-button-modal-secondary-hover-text: var(--color-button-modal-secondary-text);
   //--color-button-modal-secondary-active-text: var(--color-button-modal-secondary-hover-text);
   //--color-button-modal-secondary-text-shadow: var(--text-shadow-dark);
@@ -242,9 +242,9 @@
   --color-lesson-and-review-count-text-shadow: none;
   //--color-reviews-dashboard-background: var(--color-radical);
   //--color-todays-lessons-background: var(--color-kanji);
-  //--color-todays-lessons-completed-background: #808080;
-  //--color-todays-lessons-loading-background: #FFF;
-  //--color-todays-lessons-text: #FFF;
+  --color-todays-lessons-completed-background: #{$surface-2};
+  --color-todays-lessons-loading-background: #{$surface-2};
+  --color-todays-lessons-text: #{$text};
   //--color-placeholder-background-stop-1: #ECECEC;
   //--color-placeholder-background-stop-2: #E5E5E5;
   --color-level-progress-bar-background: #{$surface-3};
@@ -320,7 +320,7 @@
   //--color-character-grid-header-background: #E1E1E1;
   //--color-character-grid-header-text: #999;
   //--color-count_bubble-text: var(--color-text);
-  //--color-count_bubble-background: #FFF;
+  --color-count_bubble-background: #{$text};
   //--color-authentication-footer-divider: #CBD5E1;
   //--color-widget-border: 2px solid #D7DEE9;
   //--color-widget-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
