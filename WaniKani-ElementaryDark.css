@@ -201,6 +201,10 @@
     --color-icon: var(--USER-text-grayed, #aaaaaa);
   }
   
+  turbo-frame[data-show-loading=true]:not([complete]):after {
+    filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
+  }
+  
   .dashboard__lessons-and-reviews .todays-lessons {
     --color-icon: var(--USER-kanji, #9c4644);
   }

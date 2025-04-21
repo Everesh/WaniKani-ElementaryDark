@@ -43,5 +43,5 @@ $extra-study-filter: var(--USER-extra-study-filter, invert(0.81));
 $locked-item-filter: var(--USER-locked-item-filter, brightness(70%));
 $kotoba-odd-row-filter: var(--USER-kotoba-odd-row-filter, brightness(1.1));
 $footer-filter: var(--USER-footer-filter, invert(1));
-$loading-filter: var(--USER-loading-filter, grayscale(90%) invert(1) hue-rotate(180deg));
+$loading-filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
 $overlay-box-highlights-filter: var(--USER-overlay-box-highlights-filter, hue-rotate(160deg));
