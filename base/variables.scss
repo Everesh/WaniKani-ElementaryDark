@@ -1,0 +1,47 @@
+// base/variables.scss
+
+// surfaces
+$surface-1: var(--USER-surface-1, #151515);
+$surface-2: var(--USER-surface-2, #282828);
+$surface-3: var(--USER-surface-3, #303030);
+$surface-4: var(--USER-surface-4, #535353);
+$surface-inv: var(--USER-surface-inv, #bababa);
+
+// text
+$text: var(--USER-text, #eeeeee);
+$text-inv: var(--USER-text-inv, #151515);
+$text-hl: var(--USER-text-hl, #a97e42);
+$text-grayed: var(--USER-text-grayed, #aaaaaa);
+
+// item_type
+$radical: var(--USER-radical, #56638a);
+$kanji: var(--USER-kanji, #9c4644);
+$vocab: var(--USER-vocab, #58896f);
+
+// srs_stage
+$apprentice: var(--USER-apprentice, #535353);
+$guru: var(--USER-guru, #7c684b);
+$master: var(--USER-master, #a97e42);
+$enlightened: var(--USER-enlightened, #a26144);
+$burned: var(--USER-burned, #9c4644);
+
+// assignment
+$lesson: var(--USER-lesson, #56638a);
+$review: var(--USER-review, #9c4644);
+$correct: var(--USER-correct, #58896f);
+$incorrect: var(--USER-incorrect, #9c4644);
+
+// misc
+$brand: var(--USER-brand, #9c4644);
+$progress: var(--USER-progress, #a97e42);
+$success: var(--USER-success, #58896f);
+$alert: var(--USER-alert, #9c4644);
+
+// filter
+$logo-filter: var(--USER-logo-filter, invert(1) saturate(0) brightness(1.6));
+$extra-study-filter: var(--USER-extra-study-filter, invert(0.81));
+$locked-item-filter: var(--USER-locked-item-filter, brightness(70%));
+$kotoba-odd-row-filter: var(--USER-kotoba-odd-row-filter, brightness(1.1));
+$footer-filter: var(--USER-footer-filter, invert(1));
+$loading-filter: var(--USER-loading-filter, grayscale(90%) invert(1) hue-rotate(180deg));
+$overlay-box-highlights-filter: var(--USER-overlay-box-highlights-filter, hue-rotate(160deg));

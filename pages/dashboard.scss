@@ -1,0 +1,7 @@
+// pages/dashboard.scss
+
+@use '../base/variables' as *;
+
+.extra-study__image {
+  filter: $extra-study-filter;
+}

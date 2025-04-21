@@ -1,0 +1,31 @@
+// base/core.scss
+
+@use "variables" as *;
+
+body {
+  background-color: $surface-1;
+  background-image: none;
+}
+
+.global-header {
+  background: $surface-2;
+  border-bottom-color: $surface-4;
+
+  .logo {
+    filter: $logo-filter;
+  }
+
+  .sitemap__section-header {
+    text-shadow: none;
+    color: $text;
+  }
+
+  .lesson-and-review-count {
+    :first-child * {
+      --color-lesson-and-review-count-background: #{$kanji};
+    }
+    :nth-child(2) * {
+      --color-lesson-and-review-count-background: #{$radical};
+    }
+  }
+}
