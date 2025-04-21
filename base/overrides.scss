@@ -375,8 +375,8 @@
   //--color-new-user-modal-background: #068ED0;
   //--color-new-user-modal-text: #FFF;
   //--color-new-user-modal-text-shadow: var(--text-shadow-dark);
-  //--color-community-banner-background: #F4F4F4;
-  //--color-community-banner-border: #DDD;
-  //--color-community-banner-text: #555;
+  --color-community-banner-background: #{$surface-2};
+  --color-community-banner-border: transparent;
+  --color-community-banner-text: #{$text};
   //--color-mnemonic-image-background: #FFF;
 }
