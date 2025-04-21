@@ -55,9 +55,13 @@
 }
 
 .dashboard-lists li:nth-child(odd) a {
-  filter: brightness(0.9);
+  filter: $kotoba-odd-row-filter;
 }
 
 .subject-character--grid:after {
   border: none;
+}
+
+.footer--illustrated {
+  filter: $footer-filter;
 }

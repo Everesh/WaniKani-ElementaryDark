@@ -245,11 +245,15 @@
   }
   
   .dashboard-lists li:nth-child(odd) a {
-    filter: brightness(0.9);
+    filter: var(--USER-kotoba-odd-row-filter, brightness(1.1));
   }
   
   .subject-character--grid:after {
     border: none;
+  }
+  
+  .footer--illustrated {
+    filter: var(--USER-footer-filter, invert(1));
   }
   
 }
