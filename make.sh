@@ -20,7 +20,7 @@ echo "/* ==UserStyle==
 
 @-moz-document domain("www.wanikani.com") {" > "$OUTPUT"
 
-sed 's/^/  /' "$TMP_STEP" >> "$OUTPUT"
+sed 's/^/  /' "$TMP_STEP" | head -n -1 >> "$OUTPUT"
 
 echo "}" >> "$OUTPUT"
 
