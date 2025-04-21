@@ -4,6 +4,7 @@
 
 :root {
   --text-shadow-light: none;
+  --text-shadow-dark: none;
   --color-icon: #{$text};
   //--color-black: #000;
   //--color-gray-light: #EEE;
@@ -62,8 +63,8 @@
   //--color-alert-info-text: #334155;
   //--color-alert-info-border: #94A3B8;
   //--color-alert-info-text-shadow: var(--text-shadow-light);
-  //--color-alert-system-background: #DD0093;
-  //--color-alert-system-text: #FFF;
+  --color-alert-system-background: #{$alert};
+  --color-alert-system-text: #{$text};
   //--color-alert-system-text-shadow: var(--text-shadow-dark);
   //--color-button-alert-background: #FFF;
   //--color-button-alert-hover-background: rgba(255, 255, 255, 0.7529411765);
@@ -92,11 +93,11 @@
   //--color-button-default-background: transparent;
   //--color-button-default-hover-background: var(--color-button-default-background);
   //--color-button-default-active-background: var(--color-button-default-hover-background);
-  //--color-button-default-border: #BBB;
-  //--color-button-default-hover-border: #888;
+  --color-button-default-border: #{$text};
+  --color-button-default-hover-border: #{$text-grayed};
   //--color-button-default-active-border: var(--color-button-default-hover-border);
-  //--color-button-default-text: #555;
-  //--color-button-default-hover-text: #333;
+  --color-button-default-text: #{$text};
+  --color-button-default-hover-text: #{$text-grayed};
   //--color-button-default-active-text: var(--color-button-default-hover-text);
   //--color-button-default-text-shadow: var(--text-shadow-light);
   //--color-button-default-hover-text-shadow: var(--color-button-default-text-shadow);

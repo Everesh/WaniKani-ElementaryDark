@@ -12,12 +12,19 @@
 @-moz-document domain(www.wanikani.com) {
   :root {
     --text-shadow-light: none;
+    --text-shadow-dark: none;
     --color-icon: var(--USER-text, #eeeeee);
     --color-text: var(--USER-text, #eeeeee);
     --color-radical: var(--USER-radical, #56638a);
     --color-kanji: var(--USER-kanji, #9c4644);
     --color-vocabulary: var(--USER-vocab, #58896f);
     --color-burned: var(--USER-burned, #9c4644);
+    --color-alert-system-background: var(--USER-alert, #9c4644);
+    --color-alert-system-text: var(--USER-text, #eeeeee);
+    --color-button-default-border: var(--USER-text, #eeeeee);
+    --color-button-default-hover-border: var(--USER-text-grayed, #aaaaaa);
+    --color-button-default-text: var(--USER-text, #eeeeee);
+    --color-button-default-hover-text: var(--USER-text-grayed, #aaaaaa);
     --color-button-modal-primary-background: var(--USER-text, #eeeeee);
     --color-button-modal-primary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-border: var(--USER-text, #eeeeee);
@@ -70,6 +77,10 @@
   }
   .global-header .lesson-and-review-count :nth-child(2) * {
     --color-lesson-and-review-count-background: var(--USER-radical, #56638a);
+  }
+  
+  .wk-button--default:hover {
+    --color-icon: var(--USER-text-grayed, #aaaaaa);
   }
   
   .dashboard__lessons-and-reviews .todays-lessons {
