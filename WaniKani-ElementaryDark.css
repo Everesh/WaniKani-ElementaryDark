@@ -112,8 +112,8 @@
   .global-header .sitemap__page a {
     color: var(--USER-text, #eeeeee);
   }
-  .global-header .sitemap__page a:hover,
-  .global-header .sitemap__page a:focus {
+  .global-header #sitemap__account .sitemap__page a:hover,
+  .global-header #sitemap__account .sitemap__page a:focus {
     background-color: var(--USER-text, #eeeeee);
     color: var(--USER-surface-3, #303030);
   }

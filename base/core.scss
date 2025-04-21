@@ -68,8 +68,8 @@ body {
     color: $text;
   }
 
-  .sitemap__page a:hover,
-  .sitemap__page a:focus {
+  #sitemap__account .sitemap__page a:hover,
+  #sitemap__account .sitemap__page a:focus {
     background-color: $text;
     color: $surface-3;
   }
