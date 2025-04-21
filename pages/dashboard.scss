@@ -1,7 +1,11 @@
 // pages/dashboard.scss
 
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
 .extra-study__image {
   filter: $extra-study-filter;
+}
+
+.srs-progress__subject-type-count {
+  color: $text;
 }
