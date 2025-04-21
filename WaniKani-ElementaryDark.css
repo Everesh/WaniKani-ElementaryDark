@@ -62,6 +62,7 @@
     --color-review-forecast-increase-sign: var(--USER-text, #eeeeee);
     --color-review-forecast-bar: var(--USER-brand, #9c4644);
     --color-count_bubble-background: var(--USER-text, #eeeeee);
+    --color-dashboard-list-empty-icon: var(--USER-text, #eeeeee);
     --color-community-banner-background: var(--USER-surface-2, #282828);
     --color-community-banner-border: transparent;
     --color-community-banner-text: var(--USER-text, #eeeeee);
