@@ -1,5 +1,5 @@
 #!/bin/bash
-SASS_INPUT="WaniKani-ElementaryDark.scss"
+SASS_INPUT="main.scss"
 TMP_STEP="tmp.css"
 OUTPUT="WaniKani-ElementaryDark.css"
 
