@@ -39,11 +39,11 @@
   //--color-burned-highlight: #555;
   //--color-burned-lowlight: #333;
   --color-burned-gradient: none;
-  //--color-locked: #CCC;
+  --color-locked: #{$surface-4};
   //--color-locked-dark: #BFBFBF;
   //--color-locked-highlight: #DDD;
   //--color-locked-lowlight: #999;
-  //--color-locked-gradient: var(--color-locked), var(--color-locked-dark);
+  --color-locked-gradient: none;
   //--color-new-badge-background: #F03;
   //--color-new-badge-text: #FFF;
   //--color-subject-slide-navigation-background: #252A3A;

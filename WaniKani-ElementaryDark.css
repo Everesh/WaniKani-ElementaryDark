@@ -24,6 +24,8 @@
     --color-vocabulary-gradient: none;
     --color-burned: var(--USER-burned, #9c4644);
     --color-burned-gradient: none;
+    --color-locked: var(--USER-surface-4, #535353);
+    --color-locked-gradient: none;
     --color-alert-system-background: var(--USER-alert, #9c4644);
     --color-alert-system-text: var(--USER-text, #eeeeee);
     --color-button-default-border: var(--USER-text, #eeeeee);
