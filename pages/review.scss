@@ -170,3 +170,12 @@
     border-color: rgba(0,0,0,0) rgba(0,0,0,0) $surface-3 rgba(0,0,0,0);
   }
 }
+
+.hotkeys-menu {
+  text-shadow: none;
+  background-color: $surface-3;
+}
+.hotkeys-menu__header,
+.chat-button {
+  background-color: $surface-2;
+}

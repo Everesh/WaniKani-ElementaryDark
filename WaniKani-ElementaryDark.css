@@ -459,4 +459,14 @@
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--USER-surface-3, #303030) rgba(0, 0, 0, 0);
   }
   
+  .hotkeys-menu {
+    text-shadow: none;
+    background-color: var(--USER-surface-3, #303030);
+  }
+  
+  .hotkeys-menu__header,
+  .chat-button {
+    background-color: var(--USER-surface-2, #282828);
+  }
+  
 }
