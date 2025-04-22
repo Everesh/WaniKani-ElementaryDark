@@ -401,10 +401,18 @@
     color: var(--USER-text, #eeeeee);
     font-size: 1rem;
   }
-  .additional-content__content .subject-section__meanings-items {
+  .additional-content__content .subject-section__meanings-items,
+  .additional-content__content .subject-readings {
     color: var(--USER-text-hl, #a97e42);
     font-weight: bold;
     font-size: 1.5rem;
+  }
+  .additional-content__content .subject-readings__reading-title,
+  .additional-content__content .subject-readings {
+    text-shadow: none;
+  }
+  .additional-content__content .subject-readings__reading-title {
+    color: var(--USER-text, #eeeeee);
   }
   .additional-content__content .subject-section__title,
   .additional-content__content .subject-section__subtitle,

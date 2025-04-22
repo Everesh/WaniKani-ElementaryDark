@@ -103,10 +103,20 @@
     color: $text;
     font-size: 1rem;
   }
-  .subject-section__meanings-items {
+  .subject-section__meanings-items,
+  .subject-readings {
     color: $text-hl;
     font-weight: bold;
     font-size: 1.5rem;
+  }
+
+  .subject-readings__reading-title,
+  .subject-readings {
+    text-shadow: none;
+  }
+
+  .subject-readings__reading-title {
+    color: $text;
   }
 
   .subject-section__title,
