@@ -132,6 +132,8 @@
     --color-lesson-picker-footer-border: 1px solid var(--USER-surface-3, #303030);
     --color-lesson-picker-footer-shadow-color: transparent;
     --color-lesson-picker-footer-shadow: none;
+    --color-character-grid-header-background: var(--USER-surface-2, #282828);
+    --color-character-grid-header-text: var(--USER-text, #eeeeee);
     --color-count_bubble-background: var(--USER-text, #eeeeee);
     --color-text-highlight-default-text: var(--USER-text, #eeeeee);
     --color-text-highlight-radical-background: var(--USER-radical, #56638a);
@@ -827,6 +829,51 @@
   }
   .wk-button--quiz:hover {
     filter: brightness(0.9);
+  }
+  
+  .page-header__title-subtext {
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  
+  .subject-legend {
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-surface-2, #282828);
+    text-shadow: none;
+  }
+  .subject-legend .subject-legend__title {
+    color: var(--USER-text, #eeeeee);
+  }
+  .subject-legend .subject-legend__item-badge--recently-unlocked {
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-progress, #a97e42);
+  }
+  .subject-legend .subject-legend__item-badge--all {
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-brand, #9c4644);
+  }
+  .subject-legend .subject-legend__item-badge--locked {
+    background-image: none;
+    filter: var(--USER-locked-item-filter, brightness(70%));
+  }
+  .subject-legend .subject-legend__item-badge--burned {
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-burned, #9c4644);
+  }
+  
+  .subject-character--grid.subject-character--burned {
+    box-shadow: none;
+  }
+  
+  .subject-character--grid.subject-character--locked {
+    background-image: none;
+    filter: brightness(0.7);
+  }
+  
+  .subject-character-grid__items .subject-character-grid__item:nth-child(odd) {
+    filter: var(--USER-kotoba-odd-row-filter, brightness(1.1));
   }
   
   .page-header__icon,
