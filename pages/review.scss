@@ -177,6 +177,23 @@
       color: $surface-3;
     }
   }
+
+  .subject-character-grid--single-column li {
+    &:nth-child(odd) {
+      filter: $kotoba-odd-row-filter;
+    }
+    &:first-child a {
+      border-radius: 0.3em 0.3em 0 0;
+    }
+    &:last-child a {
+      border-radius: 0 0 0.3em 0.3em;
+    }
+  }
+
+  .subject-character--grid.subject-character--locked {
+    background-image: none;
+    filter: brightness(0.8);
+  }
 }
 
 .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
@@ -198,14 +215,14 @@
   color: $text;
   text-shadow: none;
   background-color: $surface-3;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0.3em 0.3em 0 0;
   &.hotkeys-menu--open {
     border: 1px solid #{$surface-1};
     border-bottom: none;
   }
   .hotkeys-menu__header {
     color: $text;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.3em 0.3em 0 0;
     background-color: $surface-2;
   }
   .hotkeys-menu__key {

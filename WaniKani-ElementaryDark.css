@@ -462,6 +462,19 @@
     background-color: var(--USER-text-grayed, #aaaaaa);
     color: var(--USER-surface-3, #303030);
   }
+  .additional-content__content .subject-character-grid--single-column li:nth-child(odd) {
+    filter: var(--USER-kotoba-odd-row-filter, brightness(1.1));
+  }
+  .additional-content__content .subject-character-grid--single-column li:first-child a {
+    border-radius: 0.3em 0.3em 0 0;
+  }
+  .additional-content__content .subject-character-grid--single-column li:last-child a {
+    border-radius: 0 0 0.3em 0.3em;
+  }
+  .additional-content__content .subject-character--grid.subject-character--locked {
+    background-image: none;
+    filter: brightness(0.8);
+  }
   
   .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
   .user-synonyms__form_container .user-synonyms__synonym-button:active .wk-icon {
@@ -482,7 +495,7 @@
     color: var(--USER-text, #eeeeee);
     text-shadow: none;
     background-color: var(--USER-surface-3, #303030);
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.3em 0.3em 0 0;
   }
   .hotkeys-menu.hotkeys-menu--open {
     border: 1px solid var(--USER-surface-1, #151515);
@@ -490,7 +503,7 @@
   }
   .hotkeys-menu .hotkeys-menu__header {
     color: var(--USER-text, #eeeeee);
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.3em 0.3em 0 0;
     background-color: var(--USER-surface-2, #282828);
   }
   .hotkeys-menu .hotkeys-menu__key {
