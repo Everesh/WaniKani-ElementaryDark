@@ -47,6 +47,14 @@
     --color-level-progress-bar-text: var(--USER-text, #eeeeee);
     --color-level-progress-bar-progress: var(--USER-progress, #a97e42);
     --color-level-progress-bar-progress-text: var(--USER-text, #eeeeee);
+    --color-quiz-input-background: var(--USER-surface-2, #282828);
+    --color-quiz-input-focus: var(--USER-surface-3, #303030);
+    --color-quiz-incorrect-background: var(--USER-incorrect, #9c4644);
+    --color-quiz-incorrect-text-color: var(--USER-text, #eeeeee);
+    --color-quiz-incorrect-text-shadow: none;
+    --color-quiz-correct-background: var(--USER-correct, #58896f);
+    --color-quiz-correct-text-color: var(--USER-text, #eeeeee);
+    --color-quiz-correct-text-shadow: none;
     --color-srs-progress-text: var(--USER-text, #eeeeee);
     --color-srs-progress-header-divider: var(--USER-text, #eeeeee);
     --color-srs-progress-apprentice: var(--USER-apprentice, #535353);
@@ -307,6 +315,15 @@
     text-shadow: none;
     background-image: none;
     border: none;
+  }
+  
+  .quiz-input__input {
+    text-shadow: none;
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  .quiz-input__input:placeholder {
+    color: var(--USER-text-grayed, #aaaaaa);
   }
   
 }

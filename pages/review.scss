@@ -28,19 +28,28 @@
   background-color: $vocab;
 }
 
-  .quiz-input__question-type-container {
-    &[data-question-type="meaning"] {
-      color: $text-inv;
-      background: $surface-inv;
-      text-shadow: none;
-      background-image: none;
-      border: none;
-    }
-    &[data-question-type="reading"] {
-      color: $text;
-      background: $surface-2;
-      text-shadow: none;
-      background-image: none;
-      border: none;
-    }
+.quiz-input__question-type-container {
+  &[data-question-type="meaning"] {
+    color: $text-inv;
+    background: $surface-inv;
+    text-shadow: none;
+    background-image: none;
+    border: none;
   }
+  &[data-question-type="reading"] {
+    color: $text;
+    background: $surface-2;
+    text-shadow: none;
+    background-image: none;
+    border: none;
+  }
+}
+
+.quiz-input__input {
+  text-shadow: none;
+  box-shadow: none;
+  color: $text;
+  &:placeholder {
+    color: $text-grayed;
+  }
+}
