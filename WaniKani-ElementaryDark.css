@@ -509,7 +509,7 @@
   }
   .additional-content__content .subject-section__meanings-items,
   .additional-content__content .subject-readings {
-    color: var(--USER-text-hl, #a97e42);
+    color: var(--USER-text-hl, #c29354);
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -552,7 +552,7 @@
   .additional-content__content .subject-readings-with-audio .reading-with-audio__reading {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--USER-text-hl, #a97e42);
+    color: var(--USER-text-hl, #c29354);
   }
   .additional-content__content .subject-collocations__title,
   .additional-content__content .subject-collocations {
@@ -769,6 +769,16 @@
   .subject-slide .wk-hint .wk-hint__title {
     text-shadow: none;
     color: var(--USER-text-inv, #151515);
+  }
+  .subject-slide .reading-with-audio__reading,
+  .subject-slide .subject-slide__aside .subject-section:first-of-type p {
+    color: var(--USER-text-hl, #c29354);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .subject-slide .reading-with-audio__reading[lang=ja],
+  .subject-slide .subject-slide__aside .subject-section:first-of-type p[lang=ja] {
+    font-size: 2rem;
   }
   
   .subject-character--tiny .subject-character__characters {
