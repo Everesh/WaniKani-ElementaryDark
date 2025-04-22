@@ -27,6 +27,24 @@
     background-color: $brand;
   }
 
+  .subject-legend__item-badge--radicals {
+    box-shadow: none;
+    color: $text;
+    background-color: $radical;
+  }
+
+  .subject-legend__item-badge--kanji {
+    box-shadow: none;
+    color: $text;
+    background-color: $kanji;
+  }
+
+  .subject-legend__item-badge--vocabulary {
+    box-shadow: none;
+    color: $text;
+    background-color: $vocab;
+  }
+
   .subject-legend__item-badge--locked {
     background-image: none;
     filter: $locked-item-filter;

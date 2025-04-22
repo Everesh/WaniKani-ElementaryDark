@@ -853,6 +853,21 @@
     color: var(--USER-text, #eeeeee);
     background-color: var(--USER-brand, #9c4644);
   }
+  .subject-legend .subject-legend__item-badge--radicals {
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-radical, #56638a);
+  }
+  .subject-legend .subject-legend__item-badge--kanji {
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  .subject-legend .subject-legend__item-badge--vocabulary {
+    box-shadow: none;
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-vocab, #58896f);
+  }
   .subject-legend .subject-legend__item-badge--locked {
     background-image: none;
     filter: var(--USER-locked-item-filter, brightness(70%));
