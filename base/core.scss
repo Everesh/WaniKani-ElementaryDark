@@ -69,9 +69,18 @@ body {
   }
 
   #sitemap__account .sitemap__page a:hover,
-  #sitemap__account .sitemap__page a:focus {
+  #sitemap__account .sitemap__page a:focus,
+  #sitemap__help .sitemap__page--subject a:hover,
+  #sitemap__help .sitemap__page--subject a:focus {
     background-color: $text;
     color: $surface-3;
+  }
+
+  .sitemap__section-header:hover,
+  .sitemap__section-header:focus,
+  .search-button:hover,
+  .search-button:focus {
+    border-color: $text;
   }
 
   .sitemap__section-header--subsection {

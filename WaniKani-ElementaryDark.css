@@ -127,9 +127,17 @@
     color: var(--USER-text, #eeeeee);
   }
   .global-header #sitemap__account .sitemap__page a:hover,
-  .global-header #sitemap__account .sitemap__page a:focus {
+  .global-header #sitemap__account .sitemap__page a:focus,
+  .global-header #sitemap__help .sitemap__page--subject a:hover,
+  .global-header #sitemap__help .sitemap__page--subject a:focus {
     background-color: var(--USER-text, #eeeeee);
     color: var(--USER-surface-3, #303030);
+  }
+  .global-header .sitemap__section-header:hover,
+  .global-header .sitemap__section-header:focus,
+  .global-header .search-button:hover,
+  .global-header .search-button:focus {
+    border-color: var(--USER-text, #eeeeee);
   }
   .global-header .sitemap__section-header--subsection {
     color: var(--USER-text-grayed, #aaaaaa);
