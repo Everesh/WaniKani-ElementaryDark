@@ -30,6 +30,8 @@
     --color-burned-gradient: none;
     --color-locked: var(--USER-surface-4, #535353);
     --color-locked-gradient: none;
+    --color-new-badge-background: var(--USER-progress, #a97e42);
+    --color-new-badge-text: var(--USER-text, #eeeeee);
     --color-subject-slide-navigation-background: var(--USER-surface-2, #282828);
     --color-subject-slide-navigation-text: var(--USER-text, #eeeeee);
     --color-subject-slide-navigation-button-hover: var(--USER-surface-3, #303030);
@@ -40,6 +42,8 @@
     --color-button-default-hover-border: var(--USER-text-grayed, #aaaaaa);
     --color-button-default-text: var(--USER-text, #eeeeee);
     --color-button-default-hover-text: var(--USER-text-grayed, #aaaaaa);
+    --color-button-frameless-text: var(--USER-text-grayed, #aaaaaa);
+    --color-button-frameless-hover-text: var(--USER-text, #eeeeee);
     --color-button-modal-primary-background: var(--USER-text, #eeeeee);
     --color-button-modal-primary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-border: var(--USER-text, #eeeeee);
@@ -142,6 +146,23 @@
     --color-text-highlight-reading-gradient: none;
     --text-highlight-text-shadow: none;
     --text-highlight-box-shadow: none;
+    --color-nav-header-text: var(--USER-text, #eeeeee);
+    --color-nav-header-text-shadow: none;
+    --color-nav-item-background: var(--USER-surface-2, #282828);
+    --color-nav-item-text: var(--USER-text, #eeeeee);
+    --color-nav-item-text-shadow: none;
+    --color-nav-item-highlight-background: var(--USER-surface-3, #303030);
+    --color-nav-item-highlight-text: var(--USER-text, #eeeeee);
+    --color-nav-item-highlight-text-shadow: none;
+    --color-progress-chart-bar-background: var(--USER-surface-3, #303030);
+    --color-progress-chart-bar: var(--USER-progress, #a97e42);
+    --color-progress-chart-bar-gradient: none;
+    --color-progress-chart-label-text: var(--USER-text, #eeeeee);
+    --color-progress-chart-label-text-shadow: none;
+    --color-progress-chart-metric-text: var(--USER-text, #eeeeee);
+    --color-progress-chart-metric-count: var(--USER-surface-1, #151515);
+    --color-progress-chart-metric-count-background: var(--USER-text, #eeeeee);
+    --color-progress-chart-metric-count-shadow: none;
     --color-dashboard-list-empty-icon: var(--USER-text, #eeeeee);
     --color-community-banner-background: var(--USER-surface-2, #282828);
     --color-community-banner-border: transparent;
@@ -805,8 +826,220 @@
     box-shadow: none;
   }
   .wk-button--quiz:hover {
-    :
-      filter: brightness(0.9);
+    filter: brightness(0.9);
+  }
+  
+  .page-header__icon,
+  .page-header__icon--radical,
+  .page-header__icon--kanji,
+  .page-header__icon--vocabulary {
+    color: var(--USER-text, #eeeeee);
+    background-image: none;
+    box-shadow: none;
+  }
+  .page-header__icon:hover,
+  .page-header__icon--radical:hover,
+  .page-header__icon--kanji:hover,
+  .page-header__icon--vocabulary:hover {
+    box-shadow: none;
+  }
+  
+  .page-header__title,
+  .subject-section__title {
+    text-shadow: none;
+  }
+  
+  .subject-section__title {
+    border-color: var(--USER-text, #eeeeee);
+  }
+  
+  #section-components .subject-character--burned:not(.subject-character--grid) .subject-character__characters,
+  #section-components .subject-character--grid.subject-character--burned {
+    box-shadow: none;
+  }
+  
+  #section-meaning .subject-section__subtitle,
+  #section-meaning .subject-section__text,
+  #section-reading .subject-section__subtitle,
+  #section-reading .subject-section__text,
+  #section-context .subject-section__subtitle,
+  #section-context .subject-section__text {
+    text-shadow: none;
+  }
+  #section-meaning .subject-section__meanings-title,
+  #section-reading .subject-section__meanings-title,
+  #section-context .subject-section__meanings-title {
+    color: var(--USER-text, #eeeeee);
+  }
+  #section-meaning .subject-section__meanings,
+  #section-reading .subject-section__meanings,
+  #section-context .subject-section__meanings {
+    align-items: center;
+  }
+  #section-meaning .subject-section__meanings:first-child p.subject-section__meanings-items,
+  #section-meaning .subject-section__meanings:nth-child(2) p.subject-section__meanings-items,
+  #section-reading .subject-section__meanings:first-child p.subject-section__meanings-items,
+  #section-reading .subject-section__meanings:nth-child(2) p.subject-section__meanings-items,
+  #section-context .subject-section__meanings:first-child p.subject-section__meanings-items,
+  #section-context .subject-section__meanings:nth-child(2) p.subject-section__meanings-items {
+    color: var(--USER-text-hl, #c29354);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  #section-meaning .user-note__link,
+  #section-reading .user-note__link,
+  #section-context .user-note__link {
+    text-shadow: none;
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  #section-meaning .user-note__fields,
+  #section-reading .user-note__fields,
+  #section-context .user-note__fields {
+    background-color: var(--USER-surface-3, #303030);
+    text-shadow: none;
+  }
+  #section-meaning .user-note__fields .user-note__input,
+  #section-reading .user-note__fields .user-note__input,
+  #section-context .user-note__fields .user-note__input {
+    background-color: var(--USER-surface-3, #303030);
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  #section-meaning .user-note__fields .user-note__character-count,
+  #section-reading .user-note__fields .user-note__character-count,
+  #section-context .user-note__fields .user-note__character-count {
+    color: var(--USER-text, #eeeeee);
+  }
+  #section-meaning .user-note__fields .user-note__button,
+  #section-reading .user-note__fields .user-note__button,
+  #section-context .user-note__fields .user-note__button {
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  #section-meaning .subject-hint,
+  #section-reading .subject-hint,
+  #section-context .subject-hint {
+    --color-icon: var(--USER-text-inv, #151515);
+    color: var(--USER-text-inv, #151515);
+    background-color: var(--USER-surface-inv, #bababa);
+    text-shadow: none;
+    border-radius: 5px;
+  }
+  #section-meaning .subject-hint .subject-hint__title,
+  #section-reading .subject-hint .subject-hint__title,
+  #section-context .subject-hint .subject-hint__title {
+    text-shadow: none;
+    color: var(--USER-text-inv, #151515);
+  }
+  #section-meaning .subject-readings__reading-title,
+  #section-reading .subject-readings__reading-title,
+  #section-context .subject-readings__reading-title {
+    text-shadow: none;
+  }
+  #section-meaning .subject-readings__reading-items,
+  #section-reading .subject-readings__reading-items,
+  #section-context .subject-readings__reading-items {
+    text-shadow: none;
+    color: var(--USER-text-hl, #c29354);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  #section-meaning .subject-readings-with-audio,
+  #section-reading .subject-readings-with-audio,
+  #section-context .subject-readings-with-audio {
+    text-shadow: none;
+  }
+  #section-meaning .subject-readings-with-audio .reading-with-audio__reading,
+  #section-reading .subject-readings-with-audio .reading-with-audio__reading,
+  #section-context .subject-readings-with-audio .reading-with-audio__reading {
+    color: var(--USER-text-hl, #c29354);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  #section-meaning .subject-collocations__title,
+  #section-meaning .subject-collocations,
+  #section-reading .subject-collocations__title,
+  #section-reading .subject-collocations,
+  #section-context .subject-collocations__title,
+  #section-context .subject-collocations {
+    text-shadow: none;
+  }
+  #section-meaning .subject-collocations__patterns::after,
+  #section-reading .subject-collocations__patterns::after,
+  #section-context .subject-collocations__patterns::after {
+    box-shadow: 0 0 1px var(--USER-text-grayed, #aaaaaa);
+  }
+  #section-meaning .subject-collocations__pattern-name,
+  #section-reading .subject-collocations__pattern-name,
+  #section-context .subject-collocations__pattern-name {
+    background-color: var(--USER-text-grayed, #aaaaaa);
+    color: var(--USER-surface-3, #303030);
+  }
+  #section-meaning .subject-collocations__pattern-name[aria-selected=true],
+  #section-reading .subject-collocations__pattern-name[aria-selected=true],
+  #section-context .subject-collocations__pattern-name[aria-selected=true] {
+    background-color: var(--USER-text, #eeeeee);
+    color: var(--USER-surface-2, #282828);
+  }
+  #section-meaning .subject-collocations__pattern-name[aria-selected=true]::after,
+  #section-reading .subject-collocations__pattern-name[aria-selected=true]::after,
+  #section-context .subject-collocations__pattern-name[aria-selected=true]::after {
+    background-color: var(--USER-surface-1, #151515);
+    background-image: none;
+  }
+  #section-meaning .subject-collocations__pattern-name[aria-selected=false],
+  #section-reading .subject-collocations__pattern-name[aria-selected=false],
+  #section-context .subject-collocations__pattern-name[aria-selected=false] {
+    background-color: var(--USER-text-grayed, #aaaaaa);
+    color: var(--USER-surface-3, #303030);
+  }
+  
+  .page-header__icon--level {
+    background-color: var(--USER-surface-2, #282828);
+  }
+  
+  .page-header__icon--radical {
+    background-color: var(--USER-radical, #56638a);
+  }
+  
+  .page-header__icon--kanji {
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  
+  .page-header__icon--vocabulary {
+    background-color: var(--USER-vocab, #58896f);
+  }
+  
+  #section-amalgamations .subject-character--grid.subject-character--locked {
+    background-image: none;
+    filter: var(--USER-locked-item-filter, brightness(70%));
+  }
+  #section-amalgamations .subject-character-grid__item:nth-child(odd) {
+    filter: var(--USER-kotoba-odd-row-filter, brightness(1.1));
+  }
+  #section-amalgamations .subject-character--grid.subject-character--burned {
+    box-shadow: none;
+  }
+  
+  .subject-character__badge {
+    box-shadow: none;
+  }
+  
+  .subject-progress {
+    text-shadow: none;
+  }
+  .subject-progress .subject-progress__meta-value {
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .subject-progress .subject-progress__button {
+    box-shadow: none;
+    background-image: none;
+    border-color: var(--USER-surface-3, #303030);
+    background-color: var(--USER-surface-3, #303030);
+    color: var(--USER-text, #eeeeee);
+  }
+  .subject-progress .subject-progress__button:hover {
+    background-color: var(--USER-surface-2, #282828);
   }
   
 }
