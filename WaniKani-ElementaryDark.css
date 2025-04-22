@@ -294,4 +294,19 @@
     background-color: var(--USER-vocab, #58896f);
   }
   
+  .quiz-input__question-type-container[data-question-type=meaning] {
+    color: var(--USER-text-inv, #151515);
+    background: var(--USER-surface-inv, #bababa);
+    text-shadow: none;
+    background-image: none;
+    border: none;
+  }
+  .quiz-input__question-type-container[data-question-type=reading] {
+    color: var(--USER-text, #eeeeee);
+    background: var(--USER-surface-2, #282828);
+    text-shadow: none;
+    background-image: none;
+    border: none;
+  }
+  
 }
