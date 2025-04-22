@@ -271,4 +271,24 @@
     filter: var(--USER-footer-filter, invert(1));
   }
   
+  .character-header {
+    background-image: none;
+  }
+  .character-header .character-header__characters {
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  
+  .character-header--radical {
+    background-color: var(--USER-radical, #56638a);
+  }
+  
+  .character-header--kanji {
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  
+  .character-header--vocabulary {
+    background-color: var(--USER-vocab, #58896f);
+  }
+  
 }

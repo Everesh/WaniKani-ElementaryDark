@@ -1,0 +1,24 @@
+// pages/review.scss
+
+@use "../base/variables.scss" as *;
+
+.character-header {
+  background-image: none;
+
+  .character-header__characters {
+    text-shadow: none;
+    color: $text;
+  }
+}
+
+.character-header--radical {
+  background-color: $radical;
+}
+
+.character-header--kanji {
+  background-color: $kanji;
+}
+
+.character-header--vocabulary {
+  background-color: $vocab;
+}
