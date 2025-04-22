@@ -172,10 +172,23 @@
 }
 
 .hotkeys-menu {
+  color: $text;
   text-shadow: none;
   background-color: $surface-3;
+  border-radius: 5px 5px 0 0;
+  &.hotkeys-menu--open {
+    border: 1px solid #{$surface-1};
+    border-bottom: none;
+  }
+  .hotkeys-menu__header {
+    color: $text;
+    border-radius: 5px 5px 0 0;
+    background-color: $surface-2;
+  }
+  .hotkeys-menu__key {
+    background-color: $surface-4;
+  }
 }
-.hotkeys-menu__header,
 .chat-button {
   background-color: $surface-2;
 }

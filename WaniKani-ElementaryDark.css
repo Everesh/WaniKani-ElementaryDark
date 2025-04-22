@@ -460,11 +460,24 @@
   }
   
   .hotkeys-menu {
+    color: var(--USER-text, #eeeeee);
     text-shadow: none;
     background-color: var(--USER-surface-3, #303030);
+    border-radius: 5px 5px 0 0;
+  }
+  .hotkeys-menu.hotkeys-menu--open {
+    border: 1px solid var(--USER-surface-1, #151515);
+    border-bottom: none;
+  }
+  .hotkeys-menu .hotkeys-menu__header {
+    color: var(--USER-text, #eeeeee);
+    border-radius: 5px 5px 0 0;
+    background-color: var(--USER-surface-2, #282828);
+  }
+  .hotkeys-menu .hotkeys-menu__key {
+    background-color: var(--USER-surface-4, #535353);
   }
   
-  .hotkeys-menu__header,
   .chat-button {
     background-color: var(--USER-surface-2, #282828);
   }
