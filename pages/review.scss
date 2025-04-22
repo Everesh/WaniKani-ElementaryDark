@@ -70,6 +70,29 @@
   box-shadow: none;
   border-color: $surface-3;
 
+  .subject-character--burned:not(.subject-character--grid) .subject-character__characters,
+  .subject-character--grid.subject-character--burned {
+    box-shadow: none;
+  }
+
+  .subject-character--grid.subject-character--burned .subject-character__characters,
+  .subject-character--grid.subject-character--burned .subject-character__info {
+    opacity: 1;
+  }
+
+  .subject-hint {
+    --color-icon: #{$text-inv};
+    color: $text-inv;
+    background-color: $surface-inv;
+    text-shadow: none;
+    border-radius: 5px;
+
+    .subject-hint__title {
+      text-shadow: none;
+      color: $text-inv;
+    }
+  }
+
   .subject-section__meanings {
     align-items: center;
     margin-bottom: 8px;
