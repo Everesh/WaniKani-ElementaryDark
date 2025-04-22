@@ -2,9 +2,10 @@
 
 @use "base/overrides";
 @use "base/core";
+@use "base/legacy";
 
 @use "pages/dashboard";
 @use "pages/lesson-picker";
 @use "pages/review";
-@use "pages/lesson"
+@use "pages/lesson";
 

@@ -331,6 +331,22 @@
     background-color: var(--USER-kanji, #9c4644);
   }
   
+  /*  Invert highlight fg, bg
+   *    WaniKani uses same --color for text of all highlights
+   *    This stylesheets require inverted text color for meaning/reading hl
+   */
+  .highlight-reading,
+  .highlight-reading > span,
+  .reading-highlight,
+  .reading-highlight > span,
+  .bg-\[\#f1d6ff\],
+  .bg-\[\#f8d8ef\],
+  .bg-\[\#d6f1ff\] {
+    background-color: var(--USER-text, #eeeeee);
+    color: var(--USER-surface-2, #282828);
+    font-weight: bold;
+  }
+  
   .dashboard__lessons-and-reviews .todays-lessons {
     --color-icon: var(--USER-kanji, #9c4644);
   }

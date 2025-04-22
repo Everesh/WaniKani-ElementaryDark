@@ -1,0 +1,19 @@
+// base/legacy.scss
+
+@use "variables" as *;
+
+/*  Invert highlight fg, bg
+ *    WaniKani uses same --color for text of all highlights
+ *    This stylesheets require inverted text color for meaning/reading hl
+ */ 
+.highlight-reading,
+.highlight-reading > span,
+.reading-highlight,
+.reading-highlight > span,
+.bg-\[\#f1d6ff\],
+.bg-\[\#f8d8ef\],
+.bg-\[\#d6f1ff\] {
+  background-color: $text;
+  color: $surface-2;
+  font-weight: bold;
+}
