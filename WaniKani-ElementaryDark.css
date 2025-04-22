@@ -359,7 +359,7 @@
     box-shadow: none;
     color: var(--USER-text, #eeeeee);
   }
-  .quiz-input__input:placeholder {
+  .quiz-input__input::placeholder {
     color: var(--USER-text-grayed, #aaaaaa);
   }
   
