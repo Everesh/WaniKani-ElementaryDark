@@ -755,6 +755,21 @@
     background-color: var(--USER-text-grayed, #aaaaaa);
     color: var(--USER-surface-3, #303030);
   }
+  .subject-slide .character--small-with-meaning .subject-character__characters,
+  .subject-slide .subject-character--small-with-meaning .subject-character__characters {
+    box-shadow: none;
+  }
+  .subject-slide .wk-hint {
+    --color-icon: var(--USER-text-inv, #151515);
+    color: var(--USER-text-inv, #151515);
+    background-color: var(--USER-surface-inv, #bababa);
+    text-shadow: none;
+    border-radius: 5px;
+  }
+  .subject-slide .wk-hint .wk-hint__title {
+    text-shadow: none;
+    color: var(--USER-text-inv, #151515);
+  }
   
   .subject-character--tiny .subject-character__characters {
     box-shadow: none;
@@ -764,7 +779,8 @@
     box-shadow: none;
   }
   .wk-button--quiz:hover {
-    filter: brightness(0.9);
+    :
+      filter: brightness(0.9);
   }
   
 }

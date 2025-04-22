@@ -82,6 +82,25 @@
       color: $surface-3;
     }
   }
+
+  .character--small-with-meaning .subject-character__characters,
+  .subject-character--small-with-meaning .subject-character__characters{
+    box-shadow: none;
+  }
+
+  .wk-hint {
+    --color-icon: #{$text-inv};
+    color: $text-inv;
+    background-color: $surface-inv;
+    text-shadow: none;
+    border-radius: 5px;
+
+    .wk-hint__title {
+      text-shadow: none;
+      color: $text-inv;
+    }
+
+  }
 }
 
 .subject-character--tiny .subject-character__characters {
@@ -91,7 +110,7 @@
 .wk-button--quiz {
   box-shadow: none;
 
-  &:hover {
+  &:hover {:
     filter: brightness(0.9);
   }
 }
