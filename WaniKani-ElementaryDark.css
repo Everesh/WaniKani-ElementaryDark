@@ -115,7 +115,9 @@
     --color-community-banner-text: var(--USER-text, #eeeeee);
   }
   
-  #turbo-body {
+  #turbo-body,
+  .site-content-container,
+  .site-footer-container {
     background-color: var(--USER-surface-1, #151515);
     background-image: none;
   }

@@ -2,7 +2,9 @@
 
 @use "variables" as *;
 
-#turbo-body {
+#turbo-body,
+.site-content-container,
+.site-footer-container {
   background-color: $surface-1;
   background-image: none;
 }
