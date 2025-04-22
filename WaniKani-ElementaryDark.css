@@ -16,6 +16,7 @@
     --color-icon: var(--USER-text, #eeeeee);
     --color-text: var(--USER-text, #eeeeee);
     --color-character-text: var(--USER-text, #eeeeee);
+    --color-title-underline: var(--USER-text, #eeeeee);
     --color-radical: var(--USER-radical, #56638a);
     --color-radical-gradient: none;
     --color-kanji: var(--USER-kanji, #9c4644);
@@ -26,6 +27,7 @@
     --color-burned-gradient: none;
     --color-locked: var(--USER-surface-4, #535353);
     --color-locked-gradient: none;
+    --color-modal-background: var(--USER-surface-1, #151515);
     --color-alert-system-background: var(--USER-alert, #9c4644);
     --color-alert-system-text: var(--USER-text, #eeeeee);
     --color-button-default-border: var(--USER-text, #eeeeee);
@@ -36,6 +38,22 @@
     --color-button-modal-primary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-text: var(--USER-text, #eeeeee);
+    --color-button-synonym-background: var(--USER-surface-3, #303030);
+    --color-button-synonym-border: transparent;
+    --color-button-synonym-text: var(--USER-text, #eeeeee);
+    --color-button-synonym-text-shadow: none;
+    --color-button-synonym-hover-background: var(--USER-surface-inv, #bababa);
+    --color-button-synonym-hover-border: transparent;
+    --color-button-synonym-hover-text: var(--USER-text-inv, #151515);
+    --color-button-synonym-hover-text-shadow: none;
+    --color-button-synonym-active-background: var(--USER-surface-inv, #bababa);
+    --color-button-synonym-active-border: transparent;
+    --color-button-synonym-active-text: var(--USER-text-inv, #151515);
+    --color-button-synonym-active-text-shadow: none;
+    --color-input-text: var(--USER-text, #eeeeee);
+    --color-input-background: var(--USER-surface-2, #282828);
+    --color-input-border: var(--USER-surface-2, #282828);
+    --color-input-focus-border: var(--USER-surface-3, #303030);
     --color-lesson-and-review-count-background: var(--USER-kanji, #9c4644);
     --color-lesson-and-review-count-zero-background: var(--USER-surface-3, #303030);
     --color-lesson-and-review-count-text: var(--USER-text, #eeeeee);
@@ -72,6 +90,19 @@
     --color-review-forecast-increase-sign: var(--USER-text, #eeeeee);
     --color-review-forecast-bar: var(--USER-brand, #9c4644);
     --color-count_bubble-background: var(--USER-text, #eeeeee);
+    --color-text-highlight-default-text: var(--USER-text, #eeeeee);
+    --color-text-highlight-radical-background: var(--USER-radical, #56638a);
+    --color-text-highlight-kanji-background: var(--USER-kanji, #9c4644);
+    --color-text-highlight-vocabulary-background: var(--USER-vocab, #58896f);
+    --color-text-highlight-meaning-background: var(--USER-text-inv, #151515);
+    --color-text-highlight-reading-background: var(--USER-text-inv, #151515);
+    --color-text-highlight-radical-gradient: none;
+    --color-text-highlight-kanji-gradient: none;
+    --color-text-highlight-vocabulary-gradient: none;
+    --color-text-highlight-meaning-gradient: none;
+    --color-text-highlight-reading-gradient: none;
+    --text-highlight-text-shadow: none;
+    --text-highlight-box-shadow: none;
     --color-dashboard-list-empty-icon: var(--USER-text, #eeeeee);
     --color-community-banner-background: var(--USER-surface-2, #282828);
     --color-community-banner-border: transparent;
@@ -331,6 +362,41 @@
     background-color: var(--USER-surface-2, #282828);
     color: var(--USER-text, #eeeeee);
     border-color: var(--USER-surface-2, #282828);
+  }
+  
+  .additional-content__item--open::after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--USER-surface-3, #303030) rgba(0, 0, 0, 0);
+  }
+  
+  .additional-content__content {
+    background-color: var(--USER-surface-2, #282828);
+    box-shadow: none;
+    border-color: var(--USER-surface-3, #303030);
+  }
+  .additional-content__content .subject-section__meanings {
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .additional-content__content .subject-section__meanings-title {
+    color: var(--USER-text, #eeeeee);
+    font-size: 1rem;
+  }
+  .additional-content__content .subject-section__meanings-items {
+    color: var(--USER-text-hl, #a97e42);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .additional-content__content .subject-section__title,
+  .additional-content__content .subject-section__subtitle,
+  .additional-content__content .subject-section__text {
+    text-shadow: none;
+    border-color: var(--USER-text, #eeeeee);
+  }
+  
+  .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
+  .user-synonyms__form_container .user-synonyms__synonym-button:active .wk-icon {
+    --color-icon: var(--USER-text-inv, #151515);
   }
   
   .answer-exception {

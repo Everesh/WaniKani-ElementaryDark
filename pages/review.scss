@@ -61,6 +61,44 @@
   border-color: $surface-2;
 }
 
+.additional-content__item--open::after {
+  border-color: rgba(0,0,0,0) rgba(0,0,0,0) $surface-3 rgba(0,0,0,0);
+}
+
+.additional-content__content {
+  background-color: $surface-2;
+  box-shadow: none;
+  border-color: $surface-3;
+
+  .subject-section__meanings {
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .subject-section__meanings-title {
+    color: $text;
+    font-size: 1rem;
+  }
+  .subject-section__meanings-items {
+    color: $text-hl;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .subject-section__title,
+  .subject-section__subtitle,
+  .subject-section__text {
+    text-shadow: none;
+    border-color: $text;
+  }
+}
+
+.user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
+.user-synonyms__form_container .user-synonyms__synonym-button:active .wk-icon {
+  --color-icon: #{$text-inv};
+}
+
 .answer-exception {
   text-shadow: none;
   box-shadow: none;
