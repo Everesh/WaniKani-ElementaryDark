@@ -209,6 +209,36 @@
     background-image: none;
     filter: brightness(0.8);
   }
+
+  .last-item {
+    box-shadow: none;
+    background-color: $surface-3;
+    color: $text;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+
+    .last-item__characters--radical {
+      color: $text;
+      background-color: $radical;
+    }
+
+    .last-item__characters--kanji {
+      color: $text;
+      background-color: $kanji;
+    }
+
+    .last-item__characters--vocabulary {
+      color: $text;
+      background-color: $vocab;
+    }
+
+    .last-item__label {
+      color: $text-grayed;
+    }
+
+    .last-item__value {
+      color: $text;
+    }
+  }
 }
 
 .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,

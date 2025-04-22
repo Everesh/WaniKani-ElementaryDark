@@ -493,6 +493,30 @@
     background-image: none;
     filter: brightness(0.8);
   }
+  .additional-content__content .last-item {
+    box-shadow: none;
+    background-color: var(--USER-surface-3, #303030);
+    color: var(--USER-text, #eeeeee);
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+  }
+  .additional-content__content .last-item .last-item__characters--radical {
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-radical, #56638a);
+  }
+  .additional-content__content .last-item .last-item__characters--kanji {
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  .additional-content__content .last-item .last-item__characters--vocabulary {
+    color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-vocab, #58896f);
+  }
+  .additional-content__content .last-item .last-item__label {
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .additional-content__content .last-item .last-item__value {
+    color: var(--USER-text, #eeeeee);
+  }
   
   .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
   .user-synonyms__form_container .user-synonyms__synonym-button:active .wk-icon {
