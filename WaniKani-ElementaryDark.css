@@ -17,6 +17,9 @@
     --color-text: var(--USER-text, #eeeeee);
     --color-character-text: var(--USER-text, #eeeeee);
     --color-title-underline: var(--USER-text, #eeeeee);
+    --color-link: var(--USER-text-grayed, #aaaaaa);
+    --color-link-active: var(--USER-text, #eeeeee);
+    --color-link-hover: var(--USER-text, #eeeeee);
     --color-radical: var(--USER-radical, #56638a);
     --color-radical-gradient: none;
     --color-kanji: var(--USER-kanji, #9c4644);
@@ -38,6 +41,27 @@
     --color-button-modal-primary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-text: var(--USER-text, #eeeeee);
+    --color-button-lesson-picker-background: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-border: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-text: var(--USER-text, #eeeeee);
+    --color-button-lesson-picker-box-shadow: none;
+    --color-button-lesson-picker-text-shadow: none;
+    --color-button-lesson-picker-hover-background: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-hover-border: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-hover-text: var(--USER-text, #eeeeee);
+    --color-button-lesson-picker-hover-text-shadow: none;
+    --color-button-lesson-picker-active-background: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-active-border: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-active-text: var(--USER-text, #eeeeee);
+    --color-button-lesson-picker-active-text-shadow: none;
+    --color-button-lesson-picker-disabled-background: var(--USER-text-grayed, #aaaaaa);
+    --color-button-lesson-picker-disabled-hover-background: var(--USER-text-grayed, #aaaaaa);
+    --color-button-lesson-picker-disabled-border: var(--USER-text-grayed, #aaaaaa);
+    --color-button-lesson-picker-disabled-box-shadow: none;
+    --color-button-lesson-picker-disabled-text: var(--USER-surface-2, #282828);
+    --color-button-lesson-picker-disabled-text-shadow: none;
+    --color-button-lesson-picker-count-background: var(--USER-text, #eeeeee);
+    --color-button-lesson-picker-count-text: var(--USER-kanji, #9c4644);
     --color-button-synonym-background: var(--USER-surface-3, #303030);
     --color-button-synonym-border: transparent;
     --color-button-synonym-text: var(--USER-text, #eeeeee);
@@ -95,6 +119,10 @@
     --color-review-forecast-divider: var(--USER-text, #eeeeee);
     --color-review-forecast-increase-sign: var(--USER-text, #eeeeee);
     --color-review-forecast-bar: var(--USER-brand, #9c4644);
+    --color-lesson-picker-footer-background: var(--USER-surface-2, #282828);
+    --color-lesson-picker-footer-border: 1px solid var(--USER-surface-3, #303030);
+    --color-lesson-picker-footer-shadow-color: transparent;
+    --color-lesson-picker-footer-shadow: none;
     --color-count_bubble-background: var(--USER-text, #eeeeee);
     --color-text-highlight-default-text: var(--USER-text, #eeeeee);
     --color-text-highlight-radical-background: var(--USER-radical, #56638a);
@@ -348,6 +376,29 @@
   
   .footer--illustrated {
     filter: var(--USER-footer-filter, invert(1));
+  }
+  
+  .lesson-picker .lesson-picker__link {
+    color: var(--color-link);
+  }
+  .lesson-picker .lesson-picker__link:hover {
+    color: var(--color-link-hover);
+  }
+  .lesson-picker .lesson-picker__link:active {
+    color: var(--color-link-actiove);
+  }
+  .lesson-picker .lesson-picker__section-toggle:hover,
+  .lesson-picker .lesson-picker__section-toggle-all:hover,
+  .lesson-picker .wk-panel__header .lesson-picker__section-toggle:hover {
+    color: var(--color-link-hover);
+  }
+  .lesson-picker .lesson-picker__section-toggle:active,
+  .lesson-picker .lesson-picker__section-toggle-all:active,
+  .lesson-picker .wk-panel__header .lesson-picker__section-toggle:active {
+    color: var(--color-link-actiove);
+  }
+  .lesson-picker .lesson-picker__footer .lesson-picker__button:hover {
+    filter: brightness(0.9);
   }
   
   .character-header {

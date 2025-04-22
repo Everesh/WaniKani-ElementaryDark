@@ -1,0 +1,35 @@
+// pages/lesson-picker.scss
+
+@use '../base/variables' as *;
+
+.lesson-picker {
+  .lesson-picker__link {
+    color: var(--color-link);
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+    &:active {
+      color: var(--color-link-actiove);
+    }
+  }
+
+  .lesson-picker__section-toggle,
+  .lesson-picker__section-toggle-all,
+  .wk-panel__header .lesson-picker__section-toggle {
+    &:hover {
+      color: var(--color-link-hover);
+    }
+    &:active {
+      color: var(--color-link-actiove);
+    }
+  }
+
+  .lesson-picker__footer {
+    .lesson-picker__button {
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
