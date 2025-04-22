@@ -127,6 +127,33 @@
       color: $text-hl;
     }
   }
+
+  .subject-collocations__title,
+  .subject-collocations {
+    text-shadow: none;
+  }
+
+  .subject-collocations__patterns::after {
+    box-shadow: 0 0 1px #{$text-grayed};
+  }
+
+  .subject-collocations__pattern-name {
+    background-color: $text-grayed;
+    color: $surface-3;
+
+    &[aria-selected="true"] {
+      background-color: $text;
+      color: $surface-2;
+
+      &::after {
+        background-color: $surface-2;
+      }
+    }
+    &[aria-selected="false"] {
+      background-color: $text-grayed;
+      color: $surface-3;
+    }
+  }
 }
 
 .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,

@@ -421,6 +421,28 @@
     font-weight: bold;
     color: var(--USER-text-hl, #a97e42);
   }
+  .additional-content__content .subject-collocations__title,
+  .additional-content__content .subject-collocations {
+    text-shadow: none;
+  }
+  .additional-content__content .subject-collocations__patterns::after {
+    box-shadow: 0 0 1px var(--USER-text-grayed, #aaaaaa);
+  }
+  .additional-content__content .subject-collocations__pattern-name {
+    background-color: var(--USER-text-grayed, #aaaaaa);
+    color: var(--USER-surface-3, #303030);
+  }
+  .additional-content__content .subject-collocations__pattern-name[aria-selected=true] {
+    background-color: var(--USER-text, #eeeeee);
+    color: var(--USER-surface-2, #282828);
+  }
+  .additional-content__content .subject-collocations__pattern-name[aria-selected=true]::after {
+    background-color: var(--USER-surface-2, #282828);
+  }
+  .additional-content__content .subject-collocations__pattern-name[aria-selected=false] {
+    background-color: var(--USER-text-grayed, #aaaaaa);
+    color: var(--USER-surface-3, #303030);
+  }
   
   .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
   .user-synonyms__form_container .user-synonyms__synonym-button:active .wk-icon {
