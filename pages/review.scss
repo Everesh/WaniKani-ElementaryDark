@@ -239,6 +239,45 @@
       color: $text;
     }
   }
+
+  .kana-chart__tab {
+    text-shadow: none;
+    color: $text;
+    border-bottom: 1px solid #{$text};
+    border-radius: 6px 6px 0 0;
+    &.kana-chart__tab--selected {
+      border: 1px solid #{$text};
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: $surface-inv;
+      color: $text-inv;
+    }
+  }
+
+  .kana-chart__backspace {
+    background-color: $surface-inv;
+    color: $text-inv;
+    .kana-chart__backspace-text {
+      text-shadow: none;
+    }
+    &:hover {
+      background-color: $text-grayed;
+    }
+  }
+
+  .kana-chart__character {
+    background-color: $surface-3;
+    text-shadow: none;
+
+    &:hover {
+      background-color: $surface-4;
+    }
+
+    .kana-chart__character-romaji {
+      color: $text-grayed;
+    }
+  }
 }
 
 .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
