@@ -342,7 +342,7 @@
   .bg-\[\#f1d6ff\],
   .bg-\[\#f8d8ef\],
   .bg-\[\#d6f1ff\] {
-    background-color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-surface-inv, #bababa);
     color: var(--USER-surface-2, #282828);
     font-weight: bold;
   }
