@@ -263,12 +263,12 @@
   --color-quiz-correct-background: #{$correct};
   --color-quiz-correct-text-color: #{$text};
   --color-quiz-correct-text-shadow: none;
-  //--color-quiz-srs-correct-background: #39aa0b;
-  //--color-quiz-srs-correct-text-color: var(--color-white);
-  //--color-quiz-srs-correct-text-shadow: 1px 1px 0 var(--color-text-shadow-dark);
-  //--color-quiz-srs-incorrect-background: var(--color-red);
-  //--color-quiz-srs-incorrect-text-color: var(--color-white);
-  //--color-quiz-srs-incorrect-text-shadow: 1px 1px 0 var(--color-text-shadow-dark);
+  --color-quiz-srs-correct-background: #{$correct};
+  --color-quiz-srs-correct-text-color: #{$text};
+  --color-quiz-srs-correct-text-shadow: none;
+  --color-quiz-srs-incorrect-background: #{$incorrect};
+  --color-quiz-srs-incorrect-text-color: #{$text};
+  --color-quiz-srs-incorrect-text-shadow: none;
   --color-srs-progress-text: #{$text};
   --color-srs-progress-header-divider: #{$text};
   --color-srs-progress-apprentice: #{$apprentice};

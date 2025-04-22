@@ -73,6 +73,12 @@
     --color-quiz-correct-background: var(--USER-correct, #58896f);
     --color-quiz-correct-text-color: var(--USER-text, #eeeeee);
     --color-quiz-correct-text-shadow: none;
+    --color-quiz-srs-correct-background: var(--USER-correct, #58896f);
+    --color-quiz-srs-correct-text-color: var(--USER-text, #eeeeee);
+    --color-quiz-srs-correct-text-shadow: none;
+    --color-quiz-srs-incorrect-background: var(--USER-incorrect, #9c4644);
+    --color-quiz-srs-incorrect-text-color: var(--USER-text, #eeeeee);
+    --color-quiz-srs-incorrect-text-shadow: none;
     --color-srs-progress-text: var(--USER-text, #eeeeee);
     --color-srs-progress-header-divider: var(--USER-text, #eeeeee);
     --color-srs-progress-apprentice: var(--USER-apprentice, #535353);
