@@ -30,6 +30,9 @@
     --color-burned-gradient: none;
     --color-locked: var(--USER-surface-4, #535353);
     --color-locked-gradient: none;
+    --color-subject-slide-navigation-background: var(--USER-surface-2, #282828);
+    --color-subject-slide-navigation-text: var(--USER-text, #eeeeee);
+    --color-subject-slide-navigation-button-hover: var(--USER-surface-3, #303030);
     --color-modal-background: var(--USER-surface-1, #151515);
     --color-alert-system-background: var(--USER-alert, #9c4644);
     --color-alert-system-text: var(--USER-text, #eeeeee);
@@ -41,17 +44,19 @@
     --color-button-modal-primary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-border: var(--USER-text, #eeeeee);
     --color-button-modal-secondary-text: var(--USER-text, #eeeeee);
-    --color-button-lesson-picker-background: var(--USER-kanji, #9c4644);
-    --color-button-lesson-picker-border: var(--USER-kanji, #9c4644);
+    --color-button-quiz-background: var(--USER-brand, #9c4644);
+    --color-button-quiz-text: var(--USER-text, #eeeeee);
+    --color-button-lesson-picker-background: var(--USER-brand, #9c4644);
+    --color-button-lesson-picker-border: var(--USER-brand, #9c4644);
     --color-button-lesson-picker-text: var(--USER-text, #eeeeee);
     --color-button-lesson-picker-box-shadow: none;
     --color-button-lesson-picker-text-shadow: none;
-    --color-button-lesson-picker-hover-background: var(--USER-kanji, #9c4644);
-    --color-button-lesson-picker-hover-border: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-hover-background: var(--USER-brand, #9c4644);
+    --color-button-lesson-picker-hover-border: var(--USER-brand, #9c4644);
     --color-button-lesson-picker-hover-text: var(--USER-text, #eeeeee);
     --color-button-lesson-picker-hover-text-shadow: none;
-    --color-button-lesson-picker-active-background: var(--USER-kanji, #9c4644);
-    --color-button-lesson-picker-active-border: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-active-background: var(--USER-brand, #9c4644);
+    --color-button-lesson-picker-active-border: var(--USER-brand, #9c4644);
     --color-button-lesson-picker-active-text: var(--USER-text, #eeeeee);
     --color-button-lesson-picker-active-text-shadow: none;
     --color-button-lesson-picker-disabled-background: var(--USER-text-grayed, #aaaaaa);
@@ -61,7 +66,7 @@
     --color-button-lesson-picker-disabled-text: var(--USER-surface-2, #282828);
     --color-button-lesson-picker-disabled-text-shadow: none;
     --color-button-lesson-picker-count-background: var(--USER-text, #eeeeee);
-    --color-button-lesson-picker-count-text: var(--USER-kanji, #9c4644);
+    --color-button-lesson-picker-count-text: var(--USER-brand, #9c4644);
     --color-button-synonym-background: var(--USER-surface-3, #303030);
     --color-button-synonym-border: transparent;
     --color-button-synonym-text: var(--USER-text, #eeeeee);
@@ -145,7 +150,8 @@
   
   #turbo-body,
   .site-content-container,
-  .site-footer-container {
+  .site-footer-container,
+  .lesson-container {
     background-color: var(--USER-surface-1, #151515);
     background-image: none;
   }
@@ -680,6 +686,85 @@
   
   .chat-button {
     background-color: var(--USER-surface-2, #282828);
+  }
+  
+  .character-header--radical .character-header__meaning,
+  .character-header--kanji .character-header__meaning,
+  .character-header--vocabulary .character-header__meaning {
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  
+  .subject-slides__navigation-link[aria-selected=true]::after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--USER-surface-3, #303030) rgba(0, 0, 0, 0);
+  }
+  
+  .subject-slide {
+    background-color: var(--USER-surface-2, #282828);
+    border-color: var(--USER-surface-3, #303030);
+    box-shadow: none;
+  }
+  .subject-slide .user-note__link {
+    text-shadow: none;
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .subject-slide .user-note__fields {
+    background-color: var(--USER-surface-3, #303030);
+    text-shadow: none;
+  }
+  .subject-slide .user-note__fields .user-note__input {
+    background-color: var(--USER-surface-3, #303030);
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  .subject-slide .user-note__fields .user-note__character-count {
+    color: var(--USER-text, #eeeeee);
+  }
+  .subject-slide .user-note__fields .user-note__button {
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  .subject-slide .subject-section__title {
+    text-shadow: none;
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .subject-slide .subject-readings-with-audio {
+    text-shadow: none;
+  }
+  .subject-slide .subject-collocations__title,
+  .subject-slide .subject-collocations {
+    text-shadow: none;
+  }
+  .subject-slide .subject-collocations__patterns::after {
+    box-shadow: 0 0 1px var(--USER-text-grayed, #aaaaaa);
+  }
+  .subject-slide .subject-collocations__pattern-name {
+    background-color: var(--USER-text-grayed, #aaaaaa);
+    color: var(--USER-surface-3, #303030);
+  }
+  .subject-slide .subject-collocations__pattern-name[aria-selected=true] {
+    background-color: var(--USER-text, #eeeeee);
+    color: var(--USER-surface-2, #282828);
+  }
+  .subject-slide .subject-collocations__pattern-name[aria-selected=true]::after {
+    background-color: var(--USER-surface-2, #282828);
+    box-shadow: none;
+    background-image: none;
+  }
+  .subject-slide .subject-collocations__pattern-name[aria-selected=false] {
+    background-color: var(--USER-text-grayed, #aaaaaa);
+    color: var(--USER-surface-3, #303030);
+  }
+  
+  .subject-character--tiny .subject-character__characters {
+    box-shadow: none;
+  }
+  
+  .wk-button--quiz {
+    box-shadow: none;
+  }
+  .wk-button--quiz:hover {
+    filter: brightness(0.9);
   }
   
 }
