@@ -379,6 +379,9 @@
     box-shadow: none;
     border-color: var(--USER-surface-3, #303030);
   }
+  .additional-content__content .subject-info:not([complete])::after {
+    filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
+  }
   .additional-content__content .subject-character--burned:not(.subject-character--grid) .subject-character__characters,
   .additional-content__content .subject-character--grid.subject-character--burned,
   .additional-content__content .subject-character--small-with-meaning .subject-character__characters {

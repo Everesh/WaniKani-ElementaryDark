@@ -70,6 +70,10 @@
   box-shadow: none;
   border-color: $surface-3;
 
+  .subject-info:not([complete])::after {
+    filter: $loading-filter;
+  }
+
   .subject-character--burned:not(.subject-character--grid) .subject-character__characters,
   .subject-character--grid.subject-character--burned,
   .subject-character--small-with-meaning .subject-character__characters {
