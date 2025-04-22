@@ -320,6 +320,11 @@
     filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
   }
   
+  .footer__item--copyright {
+    filter: invert(1);
+    background-color: var(--USER-kanji, #9c4644);
+  }
+  
   .dashboard__lessons-and-reviews .todays-lessons {
     --color-icon: var(--USER-kanji, #9c4644);
   }
