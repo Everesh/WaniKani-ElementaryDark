@@ -278,6 +278,9 @@
     text-shadow: none;
     color: var(--USER-text, #eeeeee);
   }
+  .character-header .character-header__menu {
+    color: var(--USER-text, #eeeeee);
+  }
   
   .character-header--radical {
     background-color: var(--USER-radical, #56638a);
