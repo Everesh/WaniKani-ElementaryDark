@@ -71,7 +71,8 @@
   border-color: $surface-3;
 
   .subject-character--burned:not(.subject-character--grid) .subject-character__characters,
-  .subject-character--grid.subject-character--burned {
+  .subject-character--grid.subject-character--burned,
+  .subject-character--small-with-meaning .subject-character__characters {
     box-shadow: none;
   }
 
