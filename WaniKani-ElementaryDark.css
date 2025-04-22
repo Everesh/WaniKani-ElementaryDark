@@ -258,6 +258,10 @@
     filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
   }
   
+  #front-chat-iframe {
+    filter: grayscale(1) brightness(0.7);
+  }
+  
   .dashboard__lessons-and-reviews .todays-lessons {
     --color-icon: var(--USER-kanji, #9c4644);
   }

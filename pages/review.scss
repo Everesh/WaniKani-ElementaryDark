@@ -207,7 +207,7 @@
 
   .subject-character--grid.subject-character--locked {
     background-image: none;
-    filter: brightness(0.8);
+    filter: $locked-item-filter;
   }
 
   .last-item {
