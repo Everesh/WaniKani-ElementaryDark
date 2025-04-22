@@ -393,6 +393,26 @@
     text-shadow: none;
     border-color: var(--USER-text, #eeeeee);
   }
+  .additional-content__content .user-note__link {
+    text-shadow: none;
+    color: var(--USER-text-grayed, #aaaaaa);
+  }
+  .additional-content__content .user-note__fields {
+    background-color: var(--USER-surface-3, #303030);
+    text-shadow: none;
+  }
+  .additional-content__content .user-note__fields .user-note__input {
+    background-color: var(--USER-surface-3, #303030);
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
+  .additional-content__content .user-note__fields .user-note__character-count {
+    color: var(--USER-text, #eeeeee);
+  }
+  .additional-content__content .user-note__fields .user-note__button {
+    text-shadow: none;
+    color: var(--USER-text, #eeeeee);
+  }
   
   .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
   .user-synonyms__form_container .user-synonyms__synonym-button:active .wk-icon {

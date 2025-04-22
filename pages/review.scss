@@ -92,6 +92,31 @@
     text-shadow: none;
     border-color: $text;
   }
+
+  .user-note__link {
+    text-shadow: none;
+    color: $text-grayed;
+  }
+
+  .user-note__fields {
+    background-color: $surface-3;
+    text-shadow: none;
+
+    .user-note__input {
+      background-color: $surface-3;
+      text-shadow: none;
+      color: $text;
+    }
+
+    .user-note__character-count {
+      color: $text
+    }
+
+    .user-note__button {
+      text-shadow: none;
+      color: $text;
+    }
+  }
 }
 
 .user-synonyms__form_container .user-synonyms__synonym-button:hover .wk-icon,
