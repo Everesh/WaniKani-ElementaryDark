@@ -285,7 +285,8 @@
   --color-icon: #{$text-inv};
 }
 
-.answer-exception {
+.answer-exception,
+.quiz-input__exception {
   text-shadow: none;
   box-shadow: none;
   background-color: $surface-3;

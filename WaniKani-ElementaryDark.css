@@ -258,10 +258,6 @@
     filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
   }
   
-  #front-chat-iframe {
-    filter: grayscale(1) brightness(0.7);
-  }
-  
   .dashboard__lessons-and-reviews .todays-lessons {
     --color-icon: var(--USER-kanji, #9c4644);
   }
@@ -495,7 +491,7 @@
   }
   .additional-content__content .subject-character--grid.subject-character--locked {
     background-image: none;
-    filter: brightness(0.8);
+    filter: var(--USER-locked-item-filter, brightness(70%));
   }
   .additional-content__content .last-item {
     box-shadow: none;
@@ -561,13 +557,15 @@
     --color-icon: var(--USER-text-inv, #151515);
   }
   
-  .answer-exception {
+  .answer-exception,
+  .quiz-input__exception {
     text-shadow: none;
     box-shadow: none;
     background-color: var(--USER-surface-3, #303030);
     color: var(--USER-text, #eeeeee);
   }
-  .answer-exception:before {
+  .answer-exception:before,
+  .quiz-input__exception:before {
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--USER-surface-3, #303030) rgba(0, 0, 0, 0);
   }
   
