@@ -326,6 +326,13 @@
     color: var(--USER-text-grayed, #aaaaaa);
   }
   
+  .additional-content__item {
+    box-shadow: none;
+    background-color: var(--USER-surface-2, #282828);
+    color: var(--USER-text, #eeeeee);
+    border-color: var(--USER-surface-2, #282828);
+  }
+  
   .answer-exception {
     text-shadow: none;
     box-shadow: none;

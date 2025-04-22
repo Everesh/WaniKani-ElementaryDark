@@ -54,6 +54,13 @@
   }
 }
 
+.additional-content__item {
+  box-shadow: none;
+  background-color: $surface-2;
+  color: $text;
+  border-color: $surface-2;
+}
+
 .answer-exception {
   text-shadow: none;
   box-shadow: none;
