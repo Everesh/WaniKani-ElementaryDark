@@ -150,6 +150,48 @@
       background-color: $vocab;
     }
   }
+
+  .navigation__toggle {
+    .navigation__toggle-icon,
+    .navigation__toggle-icon::before,
+    .navigation__toggle-icon::after {
+      background: $text;
+      border-color: $text;
+    }
+  }
+
+  .navigation--open {
+    .navigation__toggle {
+      background-color: $surface-3;
+      .navigation__toggle-icon {
+        background: transparent;
+        border-color: transparent;
+      }
+      .navigation__toggle-icon::before,
+      .navigation__toggle-icon::after {
+        background: $text;
+        border-color: $text;
+      }
+    }
+
+    .sitemap {
+      box-shadow: none;
+      background-color: $surface-2;
+
+      .sitemap__section-header::before {
+        border-color: $text;
+      }
+
+      .sitemap--divider {
+        border-color: $text;
+      }
+    }
+  }
+
+  .sitemap {
+    box-shadow: none;
+    background-color: $surface-2;
+  }
 }
 
 .search--open {

@@ -232,6 +232,38 @@
   .global-header .sitemap__pages--vocabulary .sitemap__page--subject a:hover {
     background-color: var(--USER-vocab, #58896f);
   }
+  .global-header .navigation__toggle .navigation__toggle-icon,
+  .global-header .navigation__toggle .navigation__toggle-icon::before,
+  .global-header .navigation__toggle .navigation__toggle-icon::after {
+    background: var(--USER-text, #eeeeee);
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .navigation--open .navigation__toggle {
+    background-color: var(--USER-surface-3, #303030);
+  }
+  .global-header .navigation--open .navigation__toggle .navigation__toggle-icon {
+    background: transparent;
+    border-color: transparent;
+  }
+  .global-header .navigation--open .navigation__toggle .navigation__toggle-icon::before,
+  .global-header .navigation--open .navigation__toggle .navigation__toggle-icon::after {
+    background: var(--USER-text, #eeeeee);
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .navigation--open .sitemap {
+    box-shadow: none;
+    background-color: var(--USER-surface-2, #282828);
+  }
+  .global-header .navigation--open .sitemap .sitemap__section-header::before {
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .navigation--open .sitemap .sitemap--divider {
+    border-color: var(--USER-text, #eeeeee);
+  }
+  .global-header .sitemap {
+    box-shadow: none;
+    background-color: var(--USER-surface-2, #282828);
+  }
   
   .search--open .search__query {
     background-color: var(--USER-surface-3, #303030);
