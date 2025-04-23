@@ -317,3 +317,14 @@
 .chat-button {
   background-color: $surface-2;
 }
+
+#user_synonyms {
+  flex-direction: row;
+  align-items: center;
+
+  ul {
+    color: $text-hl;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
