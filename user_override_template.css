@@ -38,7 +38,6 @@
     /*  misc */
     /* --USER-brand: #9c4644; */
     /* --USER-progress: #a97e42; */
-    /* --USER-success: #58896f; */
     /* --USER-alert: #9c4644; */
 
     /*  filter */
@@ -48,6 +47,5 @@
     /* --USER-kotoba-odd-row-filter: brightness(1.1); */
     /* --USER-footer-filter: invert(1); */
     /* --USER-loading-filter: grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68); */
-    /* --USER-overlay-box-highlights-filter: hue-rotate(160deg); */
   }
 }
