@@ -70,7 +70,9 @@
   box-shadow: none;
   border-color: $surface-3;
 
-  .subject-info:not([complete])::after {
+  .subject-info:not([complete])::after,
+  .last-items:not([complete])::after,
+  .kana-chart:not([complete])::after {
     filter: $loading-filter;
   }
 
