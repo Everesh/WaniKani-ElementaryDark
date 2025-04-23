@@ -24,6 +24,4 @@ sed 's/^/  /' "$TMP_STEP" | head -n -1 >> "$OUTPUT"
 
 echo "}" >> "$OUTPUT"
 
-rm "$TMP_STEP"
-
 cat WaniKani-ElementaryDark.css | xclip -sel clip
