@@ -59,10 +59,10 @@
   //--color-alert-error-text: #BE123C;
   //--color-alert-error-border: #FB7185;
   //--color-alert-error-text-shadow: var(--text-shadow-light);
-  //--color-alert-info-background: #E2E8F0;
-  //--color-alert-info-text: #334155;
-  //--color-alert-info-border: #94A3B8;
-  //--color-alert-info-text-shadow: var(--text-shadow-light);
+  --color-alert-info-background: #{$alert};
+  --color-alert-info-text: #{$text};
+  --color-alert-info-border: #{$alert};
+  --color-alert-info-text-shadow: none;
   --color-alert-system-background: #{$alert};
   --color-alert-system-text: #{$text};
   //--color-alert-system-text-shadow: var(--text-shadow-dark);
