@@ -246,8 +246,8 @@
   --color-todays-lessons-completed-background: #{$surface-2};
   --color-todays-lessons-loading-background: #{$surface-2};
   --color-todays-lessons-text: #{$text};
-  //--color-placeholder-background-stop-1: #ECECEC;
-  //--color-placeholder-background-stop-2: #E5E5E5;
+  --color-placeholder-background-stop-1: #{$lesson};
+  --color-placeholder-background-stop-2: #{$review};
   --color-level-progress-bar-background: #{$surface-3};
   --color-level-progress-bar-text: #{$text};
   --color-level-progress-bar-progress: #{$progress};
