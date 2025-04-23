@@ -29,6 +29,12 @@
   .subject-character--grid.subject-character--burned {
     box-shadow: none;
   }
+
+  .subject-character--radical:not(.subject-character--grid) .subject-character__characters{
+    box-shadow: none;
+    background-image: none;
+  }
+
 }
 
 #section-meaning,
