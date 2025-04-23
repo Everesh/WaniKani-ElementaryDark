@@ -369,10 +369,10 @@
   --color-progress-chart-metric-count: #{$surface-1};
   --color-progress-chart-metric-count-background: #{$text};
   --color-progress-chart-metric-count-shadow: none;
-  //--color-public-profile-avatar-border: #FFF;
-  //--color-public-profile-info-background: #2C2C2C;
-  //--color-public-profile-info-text: #FFFFFF66;
-  //--color-public-profile-info-text-emphasis: #FFFFFF;
+  --color-public-profile-avatar-border: #{$surface-2};
+  --color-public-profile-info-background: #{$surface-2};
+  --color-public-profile-info-text: #{$text};
+  --color-public-profile-info-text-emphasis: #{$text-hl};
   --color-dashboard-list-empty-icon: #{$text};
   //--color-new-user-modal-background: #068ED0;
   //--color-new-user-modal-text: #FFF;
