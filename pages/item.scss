@@ -169,11 +169,11 @@
       filter: $kotoba-odd-row-filter;
     }
 
-    &:first-child a {
+    &:first-child a.subject-character--vocabulary {
       border-radius: 5px 5px 0 0;
     }
 
-    &:last-child a {
+    &:last-child a.subject-character--vocabulary {
       border-radius: 0 0 5px 5px;
     }
   }
@@ -184,7 +184,7 @@
 }
 
 .subject-character__badge {
-  box-shadow: none;
+  box-shadow: 0 0 1px #{$text};
 }
 
 .subject-progress {

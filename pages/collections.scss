@@ -8,39 +8,40 @@
 
 .subject-legend {
   color: $text;
-  background-color: $surface-2;
+  background-color: $surface-3;
   text-shadow: none;
+  border-radius: 5px;
 
   .subject-legend__title {
     color: $text;
   }
 
   .subject-legend__item-badge--recently-unlocked {
-    box-shadow: none;
+    box-shadow: 0 0 1px #{$text};
     color: $text;
     background-color: $progress;
   }
 
   .subject-legend__item-badge--all {
-    box-shadow: none;
+    box-shadow: 0 0 1px #{$text};
     color: $text;
     background-color: $brand;
   }
 
   .subject-legend__item-badge--radicals {
-    box-shadow: none;
+    box-shadow: 0 0 1px #{$text};
     color: $text;
     background-color: $radical;
   }
 
   .subject-legend__item-badge--kanji {
-    box-shadow: none;
+    box-shadow: 0 0 1px #{$text};
     color: $text;
     background-color: $kanji;
   }
 
   .subject-legend__item-badge--vocabulary {
-    box-shadow: none;
+    box-shadow: 0 0 1px #{$text};
     color: $text;
     background-color: $vocab;
   }
@@ -51,10 +52,14 @@
   }
 
   .subject-legend__item-badge--burned {
-    box-shadow: none;
+    box-shadow: 0 0 1px #{$text};
     color: $text;
     background-color: $burned;
   }
+}
+
+.character-grid__header {
+  border-radius: 5px 5px 0 0;
 }
 
 .subject-character--grid.subject-character--burned {
@@ -70,3 +75,21 @@
     filter: $kotoba-odd-row-filter;
 }
 
+.site-content-container .container:has(.character-grid) {
+  background-color: $surface-2;
+  border-radius: 5px;
+  padding: 0 1.5em;
+
+  >:first-child,
+  >.page-header{
+    padding-top: 1.5em;
+  }
+
+  >:last-child {
+    padding-bottom: 1.5em;
+  }
+
+  .subject-character-grid--single-column li:last-child a {
+    border-radius: 0 0 5px 5px;
+  }
+}
