@@ -17,3 +17,51 @@
   color: $surface-2;
   font-weight: bold;
 }
+
+//Expose legacy stylesheet vars for use by 3rd party addons
+
+:root {
+  // surfaces
+  --ED-surface-1: #{$surface-1};
+  --ED-surface-2: #{$surface-2};
+  --ED-surface-3: #{$surface-3};
+  --ED-surface-4: #{$surface-4};
+  --ED-surface-inv: #{$surface-inv};
+
+  // text
+  --ED-text: #{$text};
+  --ED-text-inv: #{$text-inv};
+  --ED-text-hl: #{$text-hl};
+  --ED-text-grayed: #{$text-grayed};
+
+  // item_type
+  --ED-radical: #{$radical};
+  --ED-kanji: #{$kanji};
+  --ED-vocab: #{$vocab};
+
+  // srs_stage
+  --ED-apprentice: #{$apprentice};
+  --ED-guru: #{$guru};
+  --ED-master: #{$master};
+  --ED-enlightened: #{$enlightened};
+  --ED-burned: #{$burned};
+
+  // assignment
+  --ED-lesson: #{$lesson};
+  --ED-review: #{$review};
+  --ED-correct: #{$correct};
+  --ED-incorrect: #{$incorrect};
+
+  // misc
+  --ED-brand: #{$brand};
+  --ED-progress: #{$progress};
+  --ED-alert: #{$alert};
+
+  // filter
+  --ED-logo-filter: #{$logo-filter};
+  --ED-extra-study-filter: #{$extra-study-filter};
+  --ED-locked-item-filter: #{$locked-item-filter};
+  --ED-kotoba-odd-row-filter: #{$kotoba-odd-row-filter};
+  --ED-footer-filter: #{$footer-filter};
+  --ED-loading-filter: #{$loading-filter};
+}
