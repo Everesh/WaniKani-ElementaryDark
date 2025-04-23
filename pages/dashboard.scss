@@ -4,11 +4,11 @@
 
 .dashboard__lessons-and-reviews {
   .todays-lessons {
-    --color-icon: #{$kanji};
+    --color-icon: #{$lesson};
 
     .wk-button--modal-primary:hover {
       --color-icon: #{$text};
-      background-color: $kanji;
+      background-color: $lesson;
       color: $text;
     }
 
@@ -17,17 +17,17 @@
     }
 
     .wk-button--modal-secondary:hover {
-      --color-icon: #{$kanji};
+      --color-icon: #{$lesson};
       background-color: $text;
-      color: $kanji;
+      color: $lesson;
     }
   }
 
   .reviews-dashboard {
-    --color-icon: #{$radical};
+    --color-icon: #{$review};
     .wk-button--modal-primary:hover {
       --color-icon: #{$text};
-      background-color: $radical;
+      background-color: $review;
       color: $text;
     }
   }

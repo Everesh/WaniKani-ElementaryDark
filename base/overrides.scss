@@ -237,12 +237,12 @@
   --color-input-focus-border: #{$surface-3};
   //--color-lesson-and-review-border: rgba(0, 0, 0, 0.1);
   //--color-lesson-and-review-border-hover: rgba(0, 0, 0, 0.2);
-  --color-lesson-and-review-count-background: #{$kanji};
+  --color-lesson-and-review-count-background: #{$lesson};
   --color-lesson-and-review-count-zero-background: #{$surface-3};
   --color-lesson-and-review-count-text: #{$text};
   --color-lesson-and-review-count-text-shadow: none;
-  //--color-reviews-dashboard-background: var(--color-radical);
-  //--color-todays-lessons-background: var(--color-kanji);
+  --color-reviews-dashboard-background: #{$review};
+  --color-todays-lessons-background: #{$lesson};
   --color-todays-lessons-completed-background: #{$surface-2};
   --color-todays-lessons-loading-background: #{$surface-2};
   --color-todays-lessons-text: #{$text};

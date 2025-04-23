@@ -25,10 +25,10 @@
 
   .lesson-and-review-count {
     :first-child * {
-      --color-lesson-and-review-count-background: #{$kanji};
+      --color-lesson-and-review-count-background: #{$lesson};
     }
     :nth-child(2) * {
-      --color-lesson-and-review-count-background: #{$radical};
+      --color-lesson-and-review-count-background: #{$review};
     }
   }
 
