@@ -1,0 +1,15 @@
+// pages/billing.scss
+
+@use "../base/variables" as *;
+
+.billing-receipts__receipt-link,
+.billing-receipts__receipt-link:visited,
+.billing-receipts__receipt-link:active,
+.billing-receipts__receipt-link:focus,
+.billing-receipts__receipt-link:hover {
+  color: $text-hl;
+}
+
+.billing-receipts li:nth-child(odd) a {
+  filter: $kotoba-odd-row-filter;
+}

@@ -305,12 +305,12 @@
   //--color-subscription-plan-upsell-background: var(--color-alert-cta-background);
   //--color-subscription-plan-upsell-text: #FFF;
   //--color-subscription-plan-upsell-text-shadow: 1px 1px 0 var(--color-text-shadow-dark);
-  //--color-billing-plan-background: #FFF;
-  //--color-billing-plan-border: #E0E0E0;
-  //--color-billing-plan-title-background: #616161;
-  //--color-billing-plan-title-text: #FFF;
-  //--color-billing-receipt-background-hover: hsla(0, 0%, 100%, 0.5);
-  //--color-billing-activation-error: #B94A48;
+  --color-billing-plan-background: #{$surface-3};
+  --color-billing-plan-border: #{$text-hl};
+  --color-billing-plan-title-background: #{$text-hl};
+  --color-billing-plan-title-text: #{$surface-3};
+  --color-billing-receipt-background-hover: #{$surface-3};
+  --color-billing-activation-error: #{$alert};
   --color-lesson-picker-footer-background: #{$surface-2};
   --color-lesson-picker-footer-border: 1px solid #{$surface-3};
   --color-lesson-picker-footer-shadow-color: transparent;
