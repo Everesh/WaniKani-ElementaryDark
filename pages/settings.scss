@@ -20,7 +20,8 @@
 }
 
 .settings-link,
-#gravatar_profile_pic a {
+#gravatar_profile_pic a:not(.wk-button--default),
+#personal_access_token_frame a:not(.wk-button--default){
   color: $text-hl;
 
   &:hover {
@@ -28,3 +29,8 @@
   }
 }
 
+#personal_access_token_frame .wk-code {
+  border-radius: 5px;
+  padding: 0.3em;
+  font-weight: bold;
+}
