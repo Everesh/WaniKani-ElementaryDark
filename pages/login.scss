@@ -1,0 +1,17 @@
+// pages/login.scss
+
+@use "../base/variables" as *;
+
+html:has(.wk-authentication) {
+  background-color: $surface-1;
+
+  .wk-authentication a,
+  .wk-authentication a:visited {
+    color: $text-hl;
+
+    &:hover {
+      color: $text-grayed;
+    }
+  }
+}
+
