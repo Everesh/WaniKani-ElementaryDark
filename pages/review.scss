@@ -45,6 +45,10 @@
   }
 }
 
+.quiz-progress__bar {
+  background-color: $progress;
+}
+
 .quiz-input__input {
   text-shadow: none;
   box-shadow: none;
