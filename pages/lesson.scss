@@ -124,3 +124,16 @@
     filter: brightness(0.9);
   }
 }
+
+.lesson-modal .wk-button--modal-primary {
+  --color-icon: #{$surface-1};
+
+  &:hover,
+  &:focus,
+  &:active {
+    --color-icon: #{$text};
+
+    color: $text;
+    background-color: $surface-1;
+  }
+}

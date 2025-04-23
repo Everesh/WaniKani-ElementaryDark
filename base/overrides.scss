@@ -51,7 +51,7 @@
   --color-subject-slide-navigation-button-hover: #{$surface-3};
   //--color-modal-mask: rgba(0,0,0,0.8);
   --color-modal-background: #{$surface-1};
-  //--color-lesson-modal-text: #FFF;
+  --color-lesson-modal-text: #{$text};
   //--color-alert-cta-background: #0077B3;
   //--color-alert-cta-text: #FFF;
   //--color-alert-cta-text-shadow: var(--text-shadow-dark);
@@ -132,10 +132,10 @@
   --color-button-modal-primary-border: #{$text};
   //--color-button-modal-primary-hover-border: var(--color-button-modal-primary-border);
   //--color-button-modal-primary-active-border: var(--color-button-modal-primary-hover-border);
-  //--color-button-modal-primary-text: var(--color-black);
+  --color-button-modal-primary-text: #{$surface-1};
   //--color-button-modal-primary-hover-text: var(--color-button-modal-primary-text);
   //--color-button-modal-primary-active-text: var(--color-button-modal-primary-hover-text);
-  //--color-button-modal-primary-text-shadow: var(--text-shadow-light);
+  --color-button-modal-primary-text-shadow: none;
   //--color-button-modal-primary-hover-text-shadow: var(--color-button-modal-primary-text-shadow);
   //--color-button-modal-primary-active-text-shadow: var(--color-button-modal-primary-hover-text-shadow);
   //--color-button-modal-secondary-background: transparent;
