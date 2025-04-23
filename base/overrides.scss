@@ -359,7 +359,7 @@
   --color-nav-item-highlight-background: #{$surface-4};
   --color-nav-item-highlight-text: #{$text};
   --color-nav-item-highlight-text-shadow: none;
-  //--color-setting-divider: #DADADA;
+  --color-setting-divider: #{$text};
   --color-progress-chart-bar-background: #{$surface-3};
   --color-progress-chart-bar: #{$progress};
   --color-progress-chart-bar-gradient: none;

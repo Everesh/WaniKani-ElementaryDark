@@ -1,0 +1,23 @@
+// pages/settings.scss
+
+@use "../base/variables.scss" as *;
+
+#preference_lessons_batch_size,
+#preference_reviews_display_srs_indicator,
+#preference_reviews_presentation_order,
+#preference_lessons_interleave_subjects,
+#preference_preferred_voice_actor_type,
+#preference_lessons_autoplay_audio,
+#preference_reviews_autoplay_audio,
+#preference_extra_study_autoplay_audio,
+#maximum_recommended_daily_lesson_count {
+  background-color: $surface-3;
+}
+
+.settings-link {
+  color: $text-hl;
+
+  &:hover {
+    color: $text-grayed;
+  }
+}
