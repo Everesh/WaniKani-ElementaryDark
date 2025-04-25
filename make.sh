@@ -1,16 +1,17 @@
 #!/bin/bash
-SASS_INPUT="main.scss"
-TMP_STEP="tmp.css"
+INPUT="main.scss"
 OUTPUT="WaniKani-ElementaryDark.css"
+VERSION="version"
+TMP="tmp.css"
 
-trap 'rm -f "$TMP_STEP"*' EXIT
+trap 'rm -f "$TMP"*' EXIT
 
-sass "$SASS_INPUT" "$TMP_STEP"
+sass "$INPUT" "$TMP"
 
 echo "/* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.0.0
+@version      $(cat "$VERSION")
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -18,10 +19,8 @@ echo "/* ==UserStyle==
 @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
 ==/UserStyle== */
 
-@-moz-document domain("www.wanikani.com") {" > "$OUTPUT"
+@-moz-document domain("www.wanikani.com") {
+	$(sed 's/^/  /' "$TMP" | head -n -1)
+}" > "$OUTPUT"
 
-sed 's/^/  /' "$TMP_STEP" | head -n -1 >> "$OUTPUT"
-
-echo "}" >> "$OUTPUT"
-
-cat WaniKani-ElementaryDark.css | xclip -sel clip
+xclip -sel clip < "$OUTPUT"
