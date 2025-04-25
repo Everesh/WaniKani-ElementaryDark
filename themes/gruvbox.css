@@ -1,0 +1,46 @@
+@-moz-document domain("www.wanikani.com") {
+:root {
+/*
+ * Surfaces
+ */
+--USER-surface-1: #3c3836;
+--USER-surface-2: #504945;
+--USER-surface-3: #665c54;
+--USER-surface-4: #7c6f64;
+
+--USER-surface-inv: #f2e5bc;
+
+ /*
+ * Text
+ */
+--USER-text: #ebdbb2;
+--USER-text-inv: #928374;
+--USER-text-hl: #f9a547;
+--USER-text-grayed: #bdae93;
+
+ /*
+ * Brand, etc.
+ */
+--USER-brand: #9c4644;
+--USER-progress: #b57614;
+--USER-alert: #d65d0e;
+
+/*
+ * Item types
+ */
+--USER-radical: #a97e42;
+--USER-kanji: #a26144;
+--USER-vocab: #9c4644;
+
+--USER-lesson: var(--USER-kanji);
+--USER-review: var(--USER-radical);
+    
+ /*
+ * Filters
+ */
+--USER-logo-filter: invert(1) saturate(0) sepia(1);
+--USER-extra-study-filter: invert(72%) sepia(7%) saturate(647%) hue-rotate(338deg) brightness(93%) contrast(89%);
+--USER-loading-filter: invert(72%) sepia(7%) saturate(647%) hue-rotate(338deg) brightness(93%) contrast(89%);
+--USER-footer-filter: invert(1) sepia(0.4) brightness(0.8);
+}
+}

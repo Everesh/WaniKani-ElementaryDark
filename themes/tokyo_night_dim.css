@@ -1,0 +1,53 @@
+@-moz-document domain("www.wanikani.com") {
+:root {
+  /* surface */
+  --USER-surface-1: #1a1b26;
+  --USER-surface-2: #1f2335;
+  --USER-surface-3: #2a2f4a;
+  --USER-surface-4: #3b4261;
+  --USER-surface-inv: #c0caf5;
+
+  /* text */
+  --USER-text: #c0caf5;         /* main text on dark */
+  --USER-text-inv: #1a1b26;     /* on surface-inv */
+  --USER-text-hl: #e0af68;
+  --USER-text-grayed: #565f89;
+
+  /* item_type (darker for background use, text adjusted) */
+  --USER-radical: #394b70; /* darkened #7aa2f7 */
+  --USER-kanji: #703848;   /* darkened #f7768e */
+  --USER-vocab: #3e5b3c;   /* darkened #9ece6a */
+
+  /* foreground text for these backgrounds */
+  --USER-text-on-radical: #dce6ff;
+  --USER-text-on-kanji: #ffe8eb;
+  --USER-text-on-vocab: #e7fbdc;
+
+  /* srs_stage (keep these readable or use them only as accents) */
+  --USER-apprentice: #395e6b;     /* muted cyan */
+  --USER-guru: #5a4f72;           /* muted purple */
+  --USER-master: #7a653e;         /* muted gold */
+  --USER-enlightened: #805343;    /* muted orange-red */
+  --USER-burned: #2e3440;         /* soft black/gray-blue */
+
+  /* assignment */
+  --USER-lesson: var(--USER-kanji);
+  --USER-review: var(--USER-radical);
+  --USER-correct: var(--USER-vocab);
+  --USER-incorrect: var(--USER-kanji);
+
+  /* misc */
+  --USER-brand: var(--USER-kanji);
+  --USER-progress: #8c6b34; /* muted gold-brown */
+  --USER-alert: var(--USER-kanji);
+
+  /* filters */
+  --USER-logo-filter: invert(1) saturate(0) brightness(1.6);
+  --USER-extra-study-filter: invert(1) saturate(100%) invert(15%) sepia(8%) saturate(3316%) hue-rotate(174deg) brightness(99%) contrast(89%);
+  --USER-locked-item-filter: saturate(0.4);
+  --USER-kotoba-odd-row-filter: brightness(0.9);
+  --USER-footer-filter: invert(1);
+  --USER-loading-filter: invert(1) saturate(100%) invert(15%) sepia(8%) saturate(3316%) hue-rotate(174deg) brightness(99%) contrast(89%);
+}
+
+}
