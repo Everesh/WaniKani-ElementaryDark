@@ -39,8 +39,8 @@
  * Filters
  */
 --USER-logo-filter: invert(1) saturate(0) sepia(1);
---USER-extra-study-filter: invert(72%) sepia(7%) saturate(647%) hue-rotate(338deg) brightness(93%) contrast(89%);
---USER-loading-filter: invert(72%) sepia(7%) saturate(647%) hue-rotate(338deg) brightness(93%) contrast(89%);
+--USER-extra-study-filter: invert(75%) sepia(7%) saturate(850%) hue-rotate(340deg) brightness(125%) contrast(74%);
+--USER-loading-filter: invert(75%) sepia(7%) saturate(850%) hue-rotate(340deg) brightness(125%) contrast(74%);
 --USER-footer-filter: invert(1) sepia(0.4) brightness(0.8);
 }
 }
