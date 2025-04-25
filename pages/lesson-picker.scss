@@ -3,6 +3,9 @@
 @use '../base/variables' as *;
 
 .lesson-picker {
+  .page-header__title {
+    text-shadow: none;
+  }
   .lesson-picker__link {
     color: var(--color-link);
 
