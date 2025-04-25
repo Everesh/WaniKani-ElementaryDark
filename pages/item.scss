@@ -135,14 +135,13 @@
       filter: brightness(0.6);
 
       &[aria-selected="true"] {
-        background-color: $surface-inv;
-        color: $surface-2;
         filter: none;
 
-      }
-      &[aria-selected="false"] {
-        background-color: $surface-inv;
-        color: $surface-2;
+        &::after {
+          background-image: none;
+          background-color: $surface-2;
+          box-shadow: 0 0 1px #{$text};
+        }
       }
     }
   }
@@ -223,12 +222,6 @@
 
   >:last-child {
     padding-bottom: 1.5em;
-  }
-
-  .subject-collocations__pattern-name[aria-selected="true"]::after {
-    background-image: none;
-    background-color: $surface-2;
-    box-shadow: 0 0 1px #{$text};
   }
 }
 
