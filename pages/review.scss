@@ -182,22 +182,18 @@
   }
 
   .subject-collocations__pattern-name {
-    background-color: $text-grayed;
-    color: $surface-3;
+    background-color: $surface-inv;
+    color: $surface-2;
+    filter: brightness(0.6);
 
     &[aria-selected="true"] {
-      background-color: $text;
-      color: $surface-2;
+      filter: none;
 
       &::after {
         background-color: $surface-2;
         background-image: none;
         box-shadow: 0 0 1px #{$text};
       }
-    }
-    &[aria-selected="false"] {
-      background-color: $text-grayed;
-      color: $surface-3;
     }
   }
 
