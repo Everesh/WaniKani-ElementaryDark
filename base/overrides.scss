@@ -291,7 +291,7 @@
   //--color-extra-study-button-hover: #1D4ED8;
   //--color-extra-study-button-active: #000;
   //--color-extra-study-button-disabled: #616161;
-  //--color-recent-mistakes-intro-divider: #E8E8E8;
+  --color-recent-mistakes-intro-divider: #{$text};
   --color-review-forecast-divider: #{$text};
   --color-review-forecast-increase-sign: #{$text};
   --color-review-forecast-bar: #{$brand};
