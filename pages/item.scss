@@ -136,10 +136,6 @@
       background-color: $text;
       color: $surface-2;
 
-      &::after {
-        background-color: $surface-1;
-        background-image: none;
-      }
     }
     &[aria-selected="false"] {
       background-color: $text-grayed;
