@@ -231,3 +231,8 @@ turbo-frame[data-show-loading=true]:not([complete]):after {
   filter: invert(1);
   background-color: $kanji;
 }
+
+.reading-with-audio__audio-item[playing="true"] .wk-icon--sound_off {
+  display: inline-block;
+  --color-icon: #{$text-grayed};
+}
