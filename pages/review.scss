@@ -185,6 +185,7 @@
     background-color: $surface-inv;
     color: $surface-2;
     filter: brightness(0.6);
+    text-shadow: none;
 
     &[aria-selected="true"] {
       filter: none;
