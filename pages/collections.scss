@@ -2,6 +2,10 @@
 
 @use "../base/variables" as *;
 
+.page-header__title {
+  text-shadow: none;
+}
+
 .page-header__title-subtext {
   color: $text-grayed;
 }
