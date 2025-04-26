@@ -224,16 +224,19 @@
     .last-item__characters--radical {
       color: $text;
       background-color: $radical;
+      text-shadow: none;
     }
 
     .last-item__characters--kanji {
       color: $text;
       background-color: $kanji;
+      text-shadow: none;
     }
 
     .last-item__characters--vocabulary {
       color: $text;
       background-color: $vocab;
+      text-shadow: none;
     }
 
     .last-item__label {
