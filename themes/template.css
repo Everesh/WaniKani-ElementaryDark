@@ -2,7 +2,7 @@
 *  Static user stylesheet override
 */ 
 
-@moz-document domain("www.wanikani.com") {
+@-moz-document domain("www.wanikani.com") {
   :root {
     /* surface */
     /* --USER-surface-1: #151515; */
