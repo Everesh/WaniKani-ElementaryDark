@@ -163,9 +163,16 @@
   }
 
   #section-amalgamations {
-    .subject-character--grid.subject-character--locked {
-      background-image: none;
+    li:has(.subject-character--grid.subject-character--locked) {
       filter: $locked-item-filter;
+
+      .subject-character--grid.subject-character--locked {
+        background-image: none;
+      }
+
+      &:nth-child(odd) {
+        filter: #{$locked-item-filter} #{$kotoba-odd-row-filter};
+      }
     }
 
     .subject-character-grid__item {
