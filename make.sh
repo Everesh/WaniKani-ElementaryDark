@@ -2,11 +2,6 @@
 INPUT="main.scss"
 OUTPUT="WaniKani-ElementaryDark.css"
 VERSION="version"
-TMP="tmp.css"
-
-trap 'rm -f "$TMP"*' EXIT
-
-sass "$INPUT" "$TMP"
 
 echo "/* ==UserStyle==
 @name         WaniKani Elementary Dark
@@ -20,7 +15,7 @@ echo "/* ==UserStyle==
 ==/UserStyle== */
 
 @-moz-document domain("www.wanikani.com") {
-	$(sed 's/^/  /' "$TMP" | head -n -1)
+	$(sass "$INPUT" | sed 's/^/  /' | head -n -1)
 }" > "$OUTPUT"
 
 xclip -sel clip < "$OUTPUT"
