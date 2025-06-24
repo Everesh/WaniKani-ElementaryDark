@@ -54,6 +54,10 @@
   border-radius: 0.3em 0.3em 0 0;
 }
 
+.dashboard-lists li:only-child a {
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+}
+
 .dashboard-lists li:nth-child(odd) a {
   filter: $kotoba-odd-row-filter;
 }
