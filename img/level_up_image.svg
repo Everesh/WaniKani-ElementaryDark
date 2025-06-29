@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1610.09 600">
+  <defs>
+    <style>
+      [lang="ja"] {
+        font-family: "Hiragino Kaku Gothic Pro", "Meiryo", "Source Han Sans Japanese", "NotoSansCJK", "TakaoPGothic", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "メイリオ", "Osaka", "MS PGothic", "ＭＳ Ｐゴシック", "Noto Sans JP", "PingFang SC", "Noto Sans SC", sans-serif;
+      }
+      .ad { stroke-width: 6px; }
+      .ad, .ae, .af { stroke-linecap: round; }
+      .ad, .ae, .af, .ag, .ah, .ai { fill: none; stroke-miterlimit: 10; }
+      .ad, .af { stroke: #252525; }
+      .aj { fill: #675841; }
+      .ak { fill: #ffdeaa; }
+      .al { fill: #ffbf59; }
+      .am { fill: #e243a2; }
+      .an, .ao { fill: #252525; }
+      .ap { fill: #6242fb; }
+      .aq { fill: #4ca8f8; }
+      .ar { fill: #2746ee; }
+      .ae { stroke: #675841; }
+      .ae, .ag { stroke-width: 4px; }
+      .ae, .ao { opacity: .65; }
+      .af { stroke-width: 7px; }
+      .as { font-size: 48px; fill: #FFFFFF; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+      .ag, .ai { stroke: #ffbf59; }
+      .ah { stroke: #fff3e3; }
+      .ah, .ai { stroke-width: 8px; }
+      .at { clip-path: url(#l); }
+      .au { clip-path: url(#h); }
+      .av { clip-path: url(#j); }
+      .aw { clip-path: url(#e); }
+      .ax { clip-path: url(#z); }
+      .ay { clip-path: url(#c); }
+      #f1 { animation: bounce-animation 0.2s ease-in-out infinite alternate; }
+      #f2 { animation: bounce-animation 0.2s 0.3s ease-in-out infinite alternate; }
+      #f3 { animation: bounce-animation 0.2s 0.1s ease-in-out infinite alternate; }
+      #f4 { animation: bounce-animation 0.2s ease-in-out infinite alternate; }
+      .sparkle { stroke: #e243a2; stroke-width: 60; stroke-dasharray: 150 300; stroke-linecap: round; }
+      .lu-title { font-size: 54px; font-weight: 600; text-shadow: 0 1px 0 #FFF; }
+      #sparkle-1-fill { animation: sparkle-1 2s linear infinite; }
+      #sparkle-2-fill { animation: sparkle-2 2s linear infinite; }
+      #sparkle-3-fill { animation: sparkle-3 2s linear infinite; }
+      #sparkle-4-fill { animation: sparkle-4 2s linear infinite; }
+
+      @keyframes bounce-animation {
+        0% { transform: translateY(-3px); }
+        100% { transform: translateY(3px); }
+      }
+      @keyframes sparkle-1 {
+        0% { stroke-dashoffset: 130; }
+        50% { stroke-dashoffset: 130; }
+        85% { stroke-dashoffset: -230; opacity: 1; }
+        86% { stroke-dashoffset: -230; opacity: 0; }
+        100% { stroke-dashoffset: -230; opacity: 0; }
+      }
+      @keyframes sparkle-2 {
+        0% { stroke-dashoffset: -260; }
+        30% { stroke-dashoffset: -260; }
+        70% { stroke-dashoffset: 80; opacity: 1; }
+        71% { stroke-dashoffset: 80; opacity: 0; }
+        100% { stroke-dashoffset: 80; opacity: 0; }
+      }
+      @keyframes sparkle-3 {
+        0% { stroke-dashoffset: -240; }
+        40% { stroke-dashoffset: -240; }
+        60% { stroke-dashoffset: 90; opacity: 1; }
+        61% { stroke-dashoffset: 90; opacity: 0; }
+        100% { stroke-dashoffset: 90; opacity: 0; }
+      }
+      @keyframes sparkle-4 {
+        0% { stroke-dashoffset: 130; }
+        60% { stroke-dashoffset: 130; }
+        80% { stroke-dashoffset: -230; opacity: 1; }
+        81% { stroke-dashoffset: -230; opacity: 0; }
+        100% { stroke-dashoffset: -230; opacity: 0; }
+      }
+    </style>
+    <symbol id="a" data-name="Star" viewBox="0 0 53.19 53.19">
+      <path class="al" d="m23.54,50.37c-1.88-12.13-8.96-18.86-20.73-20.72-1.7-.27-2.99-1.81-2.79-3.52,0-.02,0-.04,0-.06.17-1.31,1.25-2.3,2.53-2.63,11.26-2.84,18.19-9.8,20.88-20.82C23.79,1.17,25.01.04,26.5,0c.04,0,.08,0,.12,0,1.48,0,2.76,1.13,3.09,2.58,2.32,10.28,9.06,17.42,21.02,20.84,1.23.35,2.23,1.33,2.42,2.59.06.38.06.77,0,1.15-.18,1.28-1.21,2.26-2.45,2.61-11.67,3.25-18.07,10.72-20.93,20.94-.35,1.24-1.33,2.26-2.61,2.44-.03,0-.06,0-.1.01-1.71.2-3.26-1.1-3.52-2.8Z"/>
+    </symbol>
+    <clipPath id="c">
+      <path class="aj" d="m280.88,78.68c11.18-17.23-104.5-64.56-104.5-64.56,0,0-12.9-6.73-33.38-8.07-25.03-1.64-39.94,3.69-39.94,3.69,0,0-113.26,25.17-102.32,41.04s63.47,0,63.47,0c0,0-26.81,27.45-9.85,35.06s62.92-25.21,62.92-25.21c0,0-.55,33.38,22.43,35.56s25.17-34.47,25.17-34.47c0,0,33.39,42.3,52.53,34.56,18.44-7.45-7.44-37.02-7.44-37.02,0,0,57.78,39.66,70.91,19.42Z"/>
+    </clipPath>
+    <symbol id="b" data-name="durtle" viewBox="0 0 281.64 196.32">
+      <g>
+        <path class="al" d="m225.07,53.97l-170.71-3.19S21.61,93.8,18.02,180.77c-.35,8.49,6.49,15.55,14.99,15.55h209.53c9.04,0,16.03-7.93,14.88-16.9-3.43-26.8-12.32-80.61-32.35-125.45Z"/>
+        <g>
+          <path class="aj" d="m280.88,78.68c11.18-17.23-104.5-64.56-104.5-64.56,0,0-12.9-6.73-33.38-8.07-25.03-1.64-39.94,3.69-39.94,3.69,0,0-113.26,25.17-102.32,41.04s63.47,0,63.47,0c0,0-26.81,27.45-9.85,35.06s62.92-25.21,62.92-25.21c0,0-.55,33.38,22.43,35.56s25.17-34.47,25.17-34.47c0,0,33.39,42.3,52.53,34.56,18.44-7.45-7.44-37.02-7.44-37.02,0,0,57.78,39.66,70.91,19.42Z"/>
+          <g class="ay">
+            <path class="an" d="m183.09,12.2s-11.08,12.99-43.09,10.81c-32.01-2.19-41.45-17.28-41.45-17.28,0,0,42.89-16.49,84.53,6.47Z"/>
+          </g>
+        </g>
+        <circle class="an" cx="172.07" cy="113.22" r="10.33"/>
+        <circle class="an" cx="94.17" cy="102.89" r="10.33"/>
+        <path class="aj" d="m128.1,143.3l19.35-15.47c1.29-1.03,1.5-2.92.47-4.22l-15.47-19.35c-1.03-1.29-2.92-1.5-4.22-.47l-19.35,15.47c-1.29,1.03-1.5,2.92-.47,4.22l15.47,19.35c1.03,1.29,2.92,1.5,4.22.47Z"/>
+        <path class="ag" d="m151.07,124.08s-8.62,4.1-22.91,2.87-22.09-9.44-22.09-9.44"/>
+      </g>
+    </symbol>
+    <clipPath id="e">
+      <path class="al" d="m53.66,18.37l-6.57,31.19s-27.9,17.87-36.39-.46C2.23,30.77,11.53,2.04,26.85.13c15.32-1.92,26.81,18.24,26.81,18.24Z"/>
+    </clipPath>
+    <symbol id="d" data-name="fin" viewBox="0 0 53.66 57.36">
+      <g>
+        <path class="al" d="m53.66,18.37l-6.57,31.19s-27.9,17.87-36.39-.46C2.23,30.77,11.53,2.04,26.85.13c15.32-1.92,26.81,18.24,26.81,18.24Z"/>
+        <g class="aw">
+          <line class="ae" x1="9.78" y1="3.75" x2="38.99" y2="21.04"/>
+          <line class="ae" x1="2" y1="45.62" x2="35.57" y2="40.56"/>
+          <line class="ae" x1="4.24" y1="23.7" x2="37.53" y2="30.33"/>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="f" data-name="flag" viewBox="0 0 55.86 118.9">
+      <g>
+        <path class="am" d="m15.08,3.74l38.65,23.6c3.55,2.17,2.44,7.6-1.68,8.19l-39.37,5.69L15.08,3.74Z"/>
+        <line class="ad" x1="3" y1="115.9" x2="12.68" y2="3"/>
+      </g>
+    </symbol>
+    <clipPath id="h">
+      <path class="al" d="m0,96.2l6.57,31.19s27.9,17.87,36.39-.46c8.48-18.33-.82-47.05-16.14-48.97-15.32-1.92-26.81,18.24-26.81,18.24Z"/>
+    </clipPath>
+    <symbol id="g" data-name="flag+fin" viewBox="0 0 78.53 135.2">
+      <g>
+        <g>
+          <path class="al" d="m0,96.2l6.57,31.19s27.9,17.87,36.39-.46c8.48-18.33-.82-47.05-16.14-48.97-15.32-1.92-26.81,18.24-26.81,18.24Z"/>
+          <g class="au">
+            <line class="ae" x1="43.88" y1="81.59" x2="14.67" y2="98.88"/>
+            <line class="ae" x1="51.66" y1="123.45" x2="18.09" y2="118.4"/>
+            <line class="ae" x1="49.42" y1="101.53" x2="16.13" y2="108.17"/>
+          </g>
+        </g>
+        <use width="55.86" height="118.9" transform="translate(22.67)" xlink:href="#f"/>
+      </g>
+    </symbol>
+    <clipPath id="j">
+      <path class="am" d="m38.2,4.84l7.15,14.87c1.99,4.58-.64,9.85-5.51,11.01l-29.94,3.68c-3.56.85-7.25-.82-8.97-4.05h0C-.86,26.96-.01,22.78,2.96,20.36L25.76,1.81c4.13-3.36,10.33-1.85,12.45,3.04Z"/>
+    </clipPath>
+    <symbol id="i" data-name="horn" viewBox="0 0 47.19 40.24">
+      <g>
+        <path class="am" d="m38.2,4.84l7.15,14.87c1.99,4.58-.64,9.85-5.51,11.01l-29.94,3.68c-3.56.85-7.25-.82-8.97-4.05h0C-.86,26.96-.01,22.78,2.96,20.36L25.76,1.81c4.13-3.36,10.33-1.85,12.45,3.04Z"/>
+        <g class="av">
+          <path class="ap" d="m47.19,30.07L19.6,4.44l-5.72,3.33,25.48,25.63-7.43,2.35L7.49,11.46l-5.15,4.13,24.49,24.65s17.8.2,20.35-10.17Z"/>
+        </g>
+      </g>
+    </symbol>
+    <clipPath id="l">
+      <path class="al" d="m0,33.46l6.57,31.19s27.9,17.87,36.39-.46c8.48-18.33-.82-47.05-16.14-48.97S0,33.46,0,33.46Z"/>
+    </clipPath>
+    <symbol id="k" data-name="horn+fin" viewBox="0 0 65.18 72.46">
+      <g>
+        <g>
+          <path class="al" d="m0,33.46l6.57,31.19s27.9,17.87,36.39-.46c8.48-18.33-.82-47.05-16.14-48.97S0,33.46,0,33.46Z"/>
+          <g class="at">
+            <line class="ae" x1="43.88" y1="18.84" x2="14.67" y2="36.14"/>
+            <line class="ae" x1="51.66" y1="60.71" x2="18.09" y2="55.66"/>
+            <line class="ae" x1="49.42" y1="38.79" x2="16.13" y2="45.42"/>
+          </g>
+        </g>
+        <use width="47.19" height="40.24" transform="translate(17.99)" xlink:href="#i"/>
+      </g>
+    </symbol>
+    <clipPath id="z">
+      <path class="ar" d="m893.27,287.08l-88.23,41.95-88.23-41.95-5.42,217.95c-.22,7.06,7.62,11.43,13.51,7.53l80.14-53.04,80.14,53.04c5.89,3.9,13.73-.47,13.51-7.53l-5.42-217.95Z"/>
+    </clipPath>
+  </defs>
+  <g id="x" data-name="STEP">
+  <path class="aq" d="m1585.65,378.73h-227.86v-44.02c0-11.05-8.95-20-20-20h-108.03v-58.97c0-11.05-8.95-20-20-20h-106.39v-80.13c0-11.05-8.95-20-20-20h-556.66c-11.05,0-20,8.95-20,20v80.13h-106.39c-11.05,0-20,8.95-20,20v58.97h-108.03c-11.05,0-20,8.95-20,20v44.02H24.43c-11.05,0-20,8.95-20,20v44.02h1601.22v-44.02c0-11.05-8.95-20-20-20Z"/>
+  </g>
+  <g id="y" data-name="RIBBON">
+  <g>
+  <path class="ar" d="m893.27,287.08l-88.23,41.95-88.23-41.95-5.42,217.95c-.22,7.06,7.62,11.43,13.51,7.53l80.14-53.04,80.14,53.04c5.89,3.9,13.73-.47,13.51-7.53l-5.42-217.95Z"/>
+  <g class="ax">
+  <path class="ao" d="m629.82,222.11c0,52.48,78.02,129.72,174.27,129.72s174.27-73.41,174.27-129.72h-348.53Z"/>
+  <path class="ao" d="m701.74,463.9s46.32-16.6,101.35-16.6,100.17,14.41,100.17,14.41l-1.57-30.45h-196.15l-3.79,32.64Z"/>
+  </g>
+  </g>
+  <line class="af" x1="894.44" y1="345.76" x2="898.66" y2="497.73"/>
+  </g>
+  <g id="aa" data-name="BADGE">
+  <circle class="al" cx="805.04" cy="171.41" r="170.16"/>
+  <circle class="ak" cx="805.04" cy="171.41" r="122.29"/>
+  <polygon class="ai" points="856.05 200.86 856.05 141.96 805.04 112.5 754.03 141.96 754.03 200.86 805.04 230.31 856.05 200.86"/>
+  <line class="ai" x1="805.04" y1="50.63" x2="805.04" y2="112.5"/>
+  <line class="ai" x1="856.05" y1="141.96" x2="910.51" y2="112.5"/>
+  <line class="ai" x1="805.04" y1="292.19" x2="805.04" y2="230.31"/>
+  <line class="ai" x1="856.05" y1="200.86" x2="910.51" y2="230.31"/>
+  <line class="ai" x1="754.03" y1="141.96" x2="699.58" y2="112.5"/>
+  <line class="ai" x1="754.03" y1="200.86" x2="699.58" y2="230.31"/>
+  <circle class="ah" cx="805.04" cy="171.41" r="122.29"/>
+  <path class="an" d="m839.74,165.03l-30.84-28.31c-2.1-1.93-5.61-1.93-7.71,0l-30.84,28.31c-3.24,2.97-.83,7.89,3.85,7.89h7.93c1.42,0,2.58,1.01,2.58,2.26v23.49c0,2.58,2.39,4.67,5.33,4.67h30.01c2.94,0,5.33-2.09,5.33-4.67v-23.49c0-1.25,1.16-2.26,2.58-2.26h7.93c4.69,0,7.09-4.92,3.85-7.89Z"/>
+  <line class="af" x1="941.88" y1="272.52" x2="937.9" y2="277.88"/>
+  <path class="af" d="m950.43,261.25s78.29-120.77-39.92-222.46"/>
+  </g>
+  <g id="ab" data-name="BANNER">
+  <path class="am" d="m630.61,437.39c9.41,2.59,35.8,8.78,62.45,5.31v38.32s-43.14,13.49-69.53-9.48c-1.1-.96-.63-2.73.82-3.07,15.56-3.68,22.75-7.82,22.75-7.82,0,0-12.96-8.66-18.68-20.75-.66-1.4.64-2.93,2.19-2.5Z"/>
+  <path class="am" d="m983.03,436.3c-9.41,2.59-35.8,8.78-62.45,5.31v38.32s43.14,13.49,69.53-9.48c1.1-.96.63-2.73-.82-3.07-15.56-3.68-22.75-7.82-22.75-7.82,0,0,12.96-8.66,18.68-20.75.66-1.4-.64-2.93-2.19-2.5Z"/>
+  <path class="an" d="m659.21,458.3s13.41,6.97,19.35,10.96c5.94,3.99,14.5,11.75,14.5,11.75v-41.93s-18.45,1.44-33.85,19.22Z"/>
+  <path class="an" d="m954.42,457.22s-13.41,6.97-19.35,10.96c-5.94,3.99-14.5,11.75-14.5,11.75v-41.93s18.45,1.44,33.85,19.22Z"/>
+  <path class="am" d="m955.64,454.11c0,4.6-4.66,7.72-8.92,6-18.01-7.29-63.51-21.92-138.4-21.92-79.39,0-126.68,14.82-145.04,22.06-4.25,1.68-8.85-1.45-8.85-6.02v-60.54c0-7.88,5.12-14.83,12.64-17.18,22.31-6.99,72.57-19.97,137.96-19.97s115.65,12.98,137.96,19.97c7.52,2.35,12.64,9.31,12.64,17.18v60.43Z"/>
+  <path id='level-text-path' fill='none' d="M662,439.1c22.3-7,72.6-20,138-20s115.7,13,138,20"/>
+  <text class="as" lang='ja' text-anchor='middle'><textPath href="#level-text-path" startOffset="50%">二</textPath></text>
+  </g>
+  <g id="ac" data-name="SPARKLES">
+  <clipPath id='sparkle-1'>
+    <path d="m1000.65,75.85l143.08-66.22c9.53-4.41,20.76.68,23.72,10.76l6.55,22.34c2.67,9.11-2.55,18.66-11.66,21.34l-149.63,43.88c-8.55,2.51-17.6-1.94-20.85-10.24h0c-3.31-8.46.54-18.04,8.79-21.86Z"/>
+  </clipPath>
+  <line class='sparkle' id='sparkle-1-fill' x1="941.88" y1="118.52" x2="1227.7" y2="6.69" clip-path="url(#sparkle-1)"/>
+  <clipPath id='sparkle-2'>
+    <path class="am" d="m626.53,97.7l1.31-2.47c4.46-8.38,1.64-18.78-6.44-23.77l-109.94-59.34c-9.18-5.67-21.26-2.04-25.79,7.76l-11.88,25.68c-4.63,10.01.75,21.79,11.34,24.85l120.52,36.13c8.18,2.36,16.89-1.33,20.88-8.84Z"/>
+  </clipPath>
+  <line class='sparkle' id='sparkle-2-fill' x1="417.4" y1="5.8" x2="666.7" y2="112.5" clip-path="url(#sparkle-2)"/>
+  <clipPath id='sparkle-3'>
+    <path class="am" d="m486.07,166.36l113.17-16.23c5.69-.82,11.03,2.94,12.2,8.57h0c1.1,5.32-1.89,10.63-7,12.45l-108.94,38.82c-6.3,2.25-13.12-1.67-14.35-8.25l-4.22-22.59c-1.14-6.08,3.02-11.89,9.15-12.77Z"/>
+  </clipPath>
+  <line class='sparkle' id='sparkle-3-fill' x1="416.5" y1="207.2" x2="665" y2="143.2" clip-path="url(#sparkle-3)"/>
+  <clipPath id='sparkle-4'>
+    <path class="am" d="m1001.43,164.07h0c0,6.09,4.32,11.32,10.29,12.48l112.03,21.71c6.86,1.33,13.51-3.13,14.88-9.98l3.85-19.2c1.56-7.76-4.28-15.04-12.19-15.21l-115.87-2.52c-7.13-.15-12.99,5.58-12.99,12.71Z"/>
+  </clipPath>
+  <line class='sparkle' id='sparkle-4-fill' x1="948.6" y1="154.1" x2="1202.1" y2="189.8" clip-path="url(#sparkle-4)"/>
+  <use width="53.19" height="53.19" transform="translate(385.79 100.64)" xlink:href="#a"/>
+  <use width="53.19" height="53.19" transform="translate(1160.31 115.36)" xlink:href="#a"/>
+  <use width="53.19" height="53.19" transform="translate(222 215.58)" xlink:href="#a"/>
+  <use width="53.19" height="53.19" transform="translate(1293.78 215.58)" xlink:href="#a"/>
+  <circle class="aq" cx="339.63" cy="190.69" r="9.95"/>
+  <circle class="aq" cx="1249.8" cy="196.52" r="9.95"/>
+  </g>
+  <g>
+  <use width="281.64" height="196.32" transform="translate(988.3 267.13)" xlink:href="#b"/>
+  <use width="53.66" height="57.36" transform="translate(970.33 345.76)" xlink:href="#d"/>
+  <g id="f1">
+    <use width="78.53" height="135.2" transform="translate(1226.72 280.9)" xlink:href="#g"/>
+  </g>
+  </g>
+  <g>
+  <use width="281.64" height="196.32" transform="translate(624.35 269.86) rotate(-180) scale(1 -1)" xlink:href="#b"/>
+  <use width="53.66" height="57.36" transform="translate(642.32 348.49) rotate(-180) scale(1 -1)" xlink:href="#d"/>
+  <g id="f2">
+    <use width="78.53" height="135.2" transform="translate(385.94 283.64) rotate(-180) scale(1 -1)" xlink:href="#g"/>
+  </g>
+  </g>
+  <g>
+  <use width="281.64" height="196.32" transform="translate(1574.77 266.2) rotate(-180) scale(1 -1)" xlink:href="#b"/>
+  <use width="53.66" height="57.36" transform="translate(1282.63 358.74)" xlink:href="#d"/>
+  <g id="f3">
+    <use width="65.18" height="72.46" transform="translate(1539.27 330.56)" xlink:href="#k"/>
+  </g>
+  </g>
+  <g>
+  <use width="281.64" height="196.32" transform="translate(37.53 268.52)" xlink:href="#b"/>
+  <use width="53.66" height="57.36" transform="translate(329.67 361.06) rotate(-180) scale(1 -1)" xlink:href="#d"/>
+  <g id="f4">
+    <use width="65.18" height="72.46" transform="translate(73.04 332.88) rotate(-180) scale(1 -1)" xlink:href="#k"/>
+  </g>
+  </g>
+  <text class="lu-title" lang="ja" y='590' x='805' text-anchor="middle">レベルアップおめでとう！</text>
+</svg>
