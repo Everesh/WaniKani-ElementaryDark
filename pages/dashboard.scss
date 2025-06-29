@@ -69,3 +69,7 @@
 .footer--illustrated {
   filter: $footer-filter;
 }
+
+img[src*="level_up_image.svg"] {
+  content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
+}
