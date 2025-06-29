@@ -36,7 +36,7 @@
       #f3 { animation: bounce-animation 0.2s 0.1s ease-in-out infinite alternate; }
       #f4 { animation: bounce-animation 0.2s ease-in-out infinite alternate; }
       .sparkle { stroke: #e243a2; stroke-width: 60; stroke-dasharray: 150 300; stroke-linecap: round; }
-      .lu-title { font-size: 54px; font-weight: 600; text-shadow: 0 1px 0 #FFF; }
+      .lu-title { font-size: 54px; font-weight: 600; text-shadow: none; fill: #EEE; }
       #sparkle-1-fill { animation: sparkle-1 2s linear infinite; }
       #sparkle-2-fill { animation: sparkle-2 2s linear infinite; }
       #sparkle-3-fill { animation: sparkle-3 2s linear infinite; }
