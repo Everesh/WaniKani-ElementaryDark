@@ -10,20 +10,20 @@
       .ad, .ae, .af, .ag, .ah, .ai { fill: none; stroke-miterlimit: 10; }
       .ad, .af { stroke: #252525; }
       .aj { fill: #675841; }
-      .ak { fill: #ffdeaa; }
-      .al { fill: #ffbf59; }
-      .am { fill: #e243a2; }
+      .ak { fill: #e9be82; }
+      .al { fill: #c99e62; }
+      .am { fill: #9c4644; }
       .an, .ao { fill: #252525; }
-      .ap { fill: #6242fb; }
-      .aq { fill: #4ca8f8; }
-      .ar { fill: #2746ee; }
+      .ap { fill: #605c74; }
+      .aq { fill: #56638a; }
+      .ar { fill: #605c74; }
       .ae { stroke: #675841; }
       .ae, .ag { stroke-width: 4px; }
       .ae, .ao { opacity: .65; }
       .af { stroke-width: 7px; }
-      .as { font-size: 48px; fill: #FFFFFF; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
-      .ag, .ai { stroke: #ffbf59; }
-      .ah { stroke: #fff3e3; }
+      .as { font-size: 48px; fill: #EEE; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+      .ag, .ai { stroke: #c99e62; }
+      .ah { stroke: #303030; }
       .ah, .ai { stroke-width: 8px; }
       .at { clip-path: url(#l); }
       .au { clip-path: url(#h); }
@@ -35,8 +35,8 @@
       #f2 { animation: bounce-animation 0.2s 0.3s ease-in-out infinite alternate; }
       #f3 { animation: bounce-animation 0.2s 0.1s ease-in-out infinite alternate; }
       #f4 { animation: bounce-animation 0.2s ease-in-out infinite alternate; }
-      .sparkle { stroke: #e243a2; stroke-width: 60; stroke-dasharray: 150 300; stroke-linecap: round; }
-      .lu-title { font-size: 54px; font-weight: 600; text-shadow: none; fill: #EEE; }
+      .sparkle { stroke: #9c4644; stroke-width: 60; stroke-dasharray: 150 300; stroke-linecap: round; }
+      .lu-title { font-size: 54px; font-weight: 600; text-shadow: none; fill: #dadada; }
       #sparkle-1-fill { animation: sparkle-1 2s linear infinite; }
       #sparkle-2-fill { animation: sparkle-2 2s linear infinite; }
       #sparkle-3-fill { animation: sparkle-3 2s linear infinite; }
@@ -197,7 +197,7 @@
   <path class="an" d="m954.42,457.22s-13.41,6.97-19.35,10.96c-5.94,3.99-14.5,11.75-14.5,11.75v-41.93s18.45,1.44,33.85,19.22Z"/>
   <path class="am" d="m955.64,454.11c0,4.6-4.66,7.72-8.92,6-18.01-7.29-63.51-21.92-138.4-21.92-79.39,0-126.68,14.82-145.04,22.06-4.25,1.68-8.85-1.45-8.85-6.02v-60.54c0-7.88,5.12-14.83,12.64-17.18,22.31-6.99,72.57-19.97,137.96-19.97s115.65,12.98,137.96,19.97c7.52,2.35,12.64,9.31,12.64,17.18v60.43Z"/>
   <path id='level-text-path' fill='none' d="M662,439.1c22.3-7,72.6-20,138-20s115.7,13,138,20"/>
-  <text class="as" lang='ja' text-anchor='middle'><textPath href="#level-text-path" startOffset="50%">二</textPath></text>
+  <text class="as" lang='ja' text-anchor='middle'><textPath href="#level-text-path" startOffset="50%">上達</textPath></text>
   </g>
   <g id="ac" data-name="SPARKLES">
   <clipPath id='sparkle-1'>
