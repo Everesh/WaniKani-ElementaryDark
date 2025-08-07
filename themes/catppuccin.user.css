@@ -1,3 +1,14 @@
+/* ==UserStyle==
+@name         WKED Catppuccin
+@namespace    github.com/openstyles/stylus
+@version      1.0.0
+@license      MIT
+@description  Theme for WaniKani Elementary dark stylesheet
+@author       Everesh
+@homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
+@supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
+==/UserStyle== */
+
 @-moz-document domain("www.wanikani.com") {
 :root {
   --USER-surface-1: #9399b2; 
