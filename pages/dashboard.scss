@@ -93,19 +93,76 @@
   outline: none;
 }
 
-.subject-character--vocabulary .subject-character__characters-text {
+.subject-character--vocabulary .subject-character__characters-text,
+.subject-legend-character--vocabulary {
   background: $vocab;
   border-color: $vocab;
+  color: $text;
 }
 
-.subject-character--kanji .subject-character__characters-text {
+.subject-character--kanji .subject-character__characters-text,
+.subject-legend-character--kanji {
   background: $kanji;
   border-color: $kanji;
+  color: $text;
 }
 
-.subject-character--radical .subject-character__characters-text {
+.subject-character--radical .subject-character__characters-text,
+.subject-legend-character--radical {
   background: $radical;
   border-color: $radical;
+  color: $text;
+}
+
+.level-progress-widget__item-type-stat:hover {
+  outline: 1px solid $surface-4;
+}
+
+.level-progress-widget__item-type-stat-indicator {
+  height: 2px;
+}
+
+.level-progress-widget__item-type-stat-indicator-bar--vocabulary {
+  background: $vocab;
+}
+
+.level-progress-widget__item-type-stat-indicator-bar--kanji {
+  background: $kanji;
+}
+
+.level-progress-widget__item-type-stat-indicator-bar--radical {
+  background: $radical;
+}
+
+.item-spread-table-row__count--vocabulary {
+  border-color: $vocab;
+  background-color: $vocab;
+}
+
+.item-spread-table-row__count--kanji {
+  border-color: $kanji;
+  background-color: $kanji;
+}
+
+.item-spread-table-row__count--radical {
+  border-color: $radical;
+  background-color: $radical;
+}
+
+.item-spread-table-row__total {
+  border-color: $text;
+  background-color: $text;
+  color: $text-inv;
+}
+
+.subject-character--locked.subject-character--vocabulary
+  .subject-character__characters-text,
+.subject-character--locked.subject-character--kanji
+  .subject-character__characters-text,
+.subject-character--locked.subject-character--radical
+  .subject-character__characters-text {
+  background-image: none;
+  filter: $locked-item-filter;
 }
 
 .footer--illustrated {
