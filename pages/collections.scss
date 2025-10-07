@@ -76,7 +76,7 @@
 }
 
 .subject-character-grid__items .subject-character-grid__item:nth-child(odd) {
-    filter: $kotoba-odd-row-filter;
+  filter: $kotoba-odd-row-filter;
 }
 
 .site-content-container .container:has(.character-grid) {
@@ -84,12 +84,12 @@
   border-radius: 5px;
   padding: 0 1.5em;
 
-  >:first-child,
-  >.page-header{
+  > :first-child,
+  > .page-header {
     padding-top: 1.5em;
   }
 
-  >:last-child {
+  > :last-child {
     padding-bottom: 1.5em;
   }
 

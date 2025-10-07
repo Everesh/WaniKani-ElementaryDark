@@ -21,7 +21,7 @@ $vocab: var(--USER-vocab, #58896f);
 // srs_stage
 $apprentice: var(--USER-apprentice, #47454e);
 $guru: var(--USER-guru, #605c74);
-$master: var(--USER-master, #9A815d);
+$master: var(--USER-master, #9a815d);
 $enlightened: var(--USER-enlightened, #934c3f);
 $burned: var(--USER-burned, #303030);
 
@@ -38,8 +38,10 @@ $alert: var(--USER-alert, #9c4644);
 
 // filter
 $logo-filter: var(--USER-logo-filter, invert(1) saturate(0) brightness(1.6));
-$extra-study-filter: var(--USER-extra-study-filter, invert(0.81));
 $locked-item-filter: var(--USER-locked-item-filter, brightness(70%));
 $kotoba-odd-row-filter: var(--USER-kotoba-odd-row-filter, brightness(0.95));
 $footer-filter: var(--USER-footer-filter, invert(1));
-$loading-filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
+$loading-filter: var(
+  --USER-loading-filter,
+  grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68)
+);

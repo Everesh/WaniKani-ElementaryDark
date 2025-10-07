@@ -13,7 +13,6 @@
   .character-header__menu {
     color: $text;
   }
-
 }
 
 .character-header--radical {
@@ -66,7 +65,7 @@
 }
 
 .additional-content__item--open::after {
-  border-color: rgba(0,0,0,0) rgba(0,0,0,0) $surface-3 rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $surface-3 rgba(0, 0, 0, 0);
 }
 
 .additional-content__content {
@@ -80,13 +79,15 @@
     filter: $loading-filter;
   }
 
-  .subject-character--burned:not(.subject-character--grid) .subject-character__characters,
+  .subject-character--burned:not(.subject-character--grid)
+    .subject-character__characters,
   .subject-character--grid.subject-character--burned,
   .subject-character--small-with-meaning .subject-character__characters {
     box-shadow: none;
   }
 
-  .subject-character--grid.subject-character--burned .subject-character__characters,
+  .subject-character--grid.subject-character--burned
+    .subject-character__characters,
   .subject-character--grid.subject-character--burned .subject-character__info {
     opacity: 1;
   }
@@ -153,7 +154,7 @@
     }
 
     .user-note__character-count {
-      color: $text
+      color: $text;
     }
 
     .user-note__button {
@@ -300,7 +301,7 @@
   background-color: $surface-3;
   color: $text;
   &:before {
-    border-color: rgba(0,0,0,0) rgba(0,0,0,0) $surface-3 rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $surface-3 rgba(0, 0, 0, 0);
   }
 }
 

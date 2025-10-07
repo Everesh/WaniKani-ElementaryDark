@@ -223,7 +223,7 @@
   --color-icon: #{$text-grayed};
 }
 
-turbo-frame[data-show-loading=true]:not([complete]):after {
+turbo-frame[data-show-loading="true"]:not([complete]):after {
   filter: $loading-filter;
 }
 

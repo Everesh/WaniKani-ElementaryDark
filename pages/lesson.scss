@@ -12,7 +12,7 @@
 }
 
 .subject-slides__navigation-link[aria-selected="true"]::after {
-  border-color: rgba(0,0,0,0) rgba(0,0,0,0) #{$surface-3} rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #{$surface-3} rgba(0, 0, 0, 0);
 }
 
 .subject-slide {
@@ -36,7 +36,7 @@
     }
 
     .user-note__character-count {
-      color: $text
+      color: $text;
     }
 
     .user-note__button {
@@ -80,7 +80,7 @@
   }
 
   .character--small-with-meaning .subject-character__characters,
-  .subject-character--small-with-meaning .subject-character__characters{
+  .subject-character--small-with-meaning .subject-character__characters {
     box-shadow: none;
   }
 
@@ -95,7 +95,6 @@
       text-shadow: none;
       color: $text-inv;
     }
-
   }
 
   .reading-with-audio__reading,

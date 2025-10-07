@@ -5,7 +5,7 @@
 /*  Invert highlight fg, bg
  *    WaniKani uses same --color for text of all highlights
  *    This stylesheets require inverted text color for meaning/reading hl
- */ 
+ */
 .highlight-reading,
 .highlight-reading > span,
 .reading-highlight,
@@ -59,7 +59,6 @@
 
   // filter
   --ED-logo-filter: #{$logo-filter};
-  --ED-extra-study-filter: #{$extra-study-filter};
   --ED-locked-item-filter: #{$locked-item-filter};
   --ED-kotoba-odd-row-filter: #{$kotoba-odd-row-filter};
   --ED-footer-filter: #{$footer-filter};
