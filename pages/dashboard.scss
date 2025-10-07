@@ -2,7 +2,8 @@
 
 @use "../base/variables" as *;
 
-.todays-lessons-widget--complete {
+.todays-lessons-widget--complete,
+.reviews-widget--complete {
   --color-widget-background: #{$surface-2};
   --color-count-bubble-background: #{$text};
   --color-count-bubble-text: #{$text-inv};
