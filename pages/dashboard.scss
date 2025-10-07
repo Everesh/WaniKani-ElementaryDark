@@ -2,6 +2,62 @@
 
 @use "../base/variables" as *;
 
+.todays-lessons-widget--complete {
+  --color-widget-background: #{$surface-2};
+  --color-count-bubble-background: #{$text};
+  --color-count-bubble-text: #{$text-inv};
+}
+
+.reviews-widget,
+.todays-lessons-widget {
+  --color-count-bubble-border: $text;
+}
+
+.reviews-widget.theme--neon:not(.reviews-widget--complete) {
+  --color-placeholder-pulse-stop-1: color-mix(in srgb, #{$review}, black 10%);
+  --color-placeholder-pulse-stop-2: color-mix(in srgb, #{$review}, white 10%);
+  --color-count-bubble-background: #{$text};
+  --color-count-bubble-border: #{$text};
+  --color-count-bubble-text: #{$review};
+  --color-button-secondary-background: #{$review} --color-button-edge: #{$text};
+  --color-button-hover-edge: #{$text};
+  --color-button-active-edge: #{$text};
+  --color-button-border: #{$text};
+  --color-button-hover-border: #{$text};
+  --color-button-active-border: #{$text};
+  --color-widget-background: #{$review};
+  --color-widget-border: #{$review};
+  --color-widget-primary-text: #{$text};
+  --color-widget-secondary-text: #{$text};
+  --color-button-secondary-hover-icon: #{$review};
+
+  .wk-button--secondary .wk-button__edge {
+    background-color: transparent;
+  }
+
+  .wk-button--secondary:hover .wk-button__content,
+  .wk-button--secondary:active .wk-button__content,
+  .wk-button--secondary:hover .wk-button__content {
+    transform: translateY(-4px);
+    background-color: $review;
+    border-color: $text;
+    outline: 1px solid $text;
+    color: $text;
+  }
+}
+
+.review-forecast-widget__day[href] .review-forecast-widget__increase-bar {
+  color: $surface-inv;
+}
+
+.extra-study-multi-button-widget__button:hover {
+  outline: 1px solid $text;
+}
+
+.extra-study-multi-button-widget__button--disabled:hover {
+  outline: none;
+}
+
 .footer--illustrated {
   filter: $footer-filter;
 }
