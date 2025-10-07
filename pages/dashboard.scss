@@ -13,13 +13,48 @@
   --color-count-bubble-border: $text;
 }
 
+.todays-lessons-widget.theme--neon:not(.todays-lessons-widget--complete) {
+  --color-placeholder-pulse-stop-1: color-mix(in srgb, #{$lesson}, black 10%);
+  --color-placeholder-pulse-stop-2: color-mix(in srgb, #{$lesson}, white 10%);
+  --color-count-bubble-background: #{$text};
+  --color-count-bubble-border: #{$text};
+  --color-count-bubble-text: #{$lesson};
+  --color-button-secondary-background: #{$lesson};
+  --color-button-edge: #{$text};
+  --color-button-hover-edge: #{$text};
+  --color-button-active-edge: #{$text};
+  --color-button-border: #{$text};
+  --color-button-hover-border: #{$text};
+  --color-button-active-border: #{$text};
+  --color-widget-background: #{$lesson};
+  --color-widget-border: #{$lesson};
+  --color-widget-primary-text: #{$text};
+  --color-widget-secondary-text: #{$text};
+  --color-button-secondary-hover-icon: #{$lesson};
+
+  .wk-button--secondary .wk-button__edge {
+    background-color: transparent;
+  }
+
+  .wk-button--secondary:hover .wk-button__content,
+  .wk-button--secondary:active .wk-button__content,
+  .wk-button--secondary:hover .wk-button__content {
+    transform: translateY(-4px);
+    background-color: $lesson;
+    border-color: $text;
+    outline: 1px solid $text;
+    color: $text;
+  }
+}
+
 .reviews-widget.theme--neon:not(.reviews-widget--complete) {
   --color-placeholder-pulse-stop-1: color-mix(in srgb, #{$review}, black 10%);
   --color-placeholder-pulse-stop-2: color-mix(in srgb, #{$review}, white 10%);
   --color-count-bubble-background: #{$text};
   --color-count-bubble-border: #{$text};
   --color-count-bubble-text: #{$review};
-  --color-button-secondary-background: #{$review} --color-button-edge: #{$text};
+  --color-button-secondary-background: #{$review};
+  --color-button-edge: #{$text};
   --color-button-hover-edge: #{$text};
   --color-button-active-edge: #{$text};
   --color-button-border: #{$text};
@@ -56,6 +91,21 @@
 
 .extra-study-multi-button-widget__button--disabled:hover {
   outline: none;
+}
+
+.subject-character--vocabulary .subject-character__characters-text {
+  background: $vocab;
+  border-color: $vocab;
+}
+
+.subject-character--kanji .subject-character__characters-text {
+  background: $kanji;
+  border-color: $kanji;
+}
+
+.subject-character--radical .subject-character__characters-text {
+  background: $radical;
+  border-color: $radical;
 }
 
 .footer--illustrated {
