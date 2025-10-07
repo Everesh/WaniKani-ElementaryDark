@@ -400,8 +400,8 @@
   --color-extra-study-button-border: #{$text};
   --color-extra-study-button-icon: #{$text};
   --color-extra-study-button-remaining-text: #{text-grayed};
-  --color-count-bubble-background: #{$text-grayed};
-  --color-count-bubble-border: #{$text-grayed};
+  --color-count-bubble-background: #{$text};
+  --color-count-bubble-border: #{$text};
   --color-count-bubble-text: #{$surface-2};
   --color-extra-study-button-hover-background: #{$surface-2};
   --color-extra-study-button-disabled-background: #{$surface-2};
@@ -419,4 +419,32 @@
   --color-item-spread-row-background: #{$surface-2};
   --color-grouped-navigation-link-current-border: #{$text};
   --color-item-spread-row-border: #{$text-grayed};
+  --color-extra-study-flashcard-placeholder-pulse-stop-1: color-mix(
+    in srgb,
+    #{$surface-2},
+    black 10%
+  );
+  --color-extra-study-flashcard-placeholder-pulse-stop-2: color-mix(
+    in srgb,
+    #{$surface-2},
+    white 10%
+  );
+  --color-extra-study-flashcard-loading-background: #{$surface-2};
+  --color-placeholder-pulse-default-stop-1: color-mix(
+    in srgb,
+    #{$surface-2},
+    black 10%
+  );
+  --color-placeholder-pulse-default-stop-2: color-mix(
+    in srgb,
+    #{$surface-2},
+    white 10%
+  );
+  --color-button-secondary-background: transparent;
+  --color-button-secondary-border: #{$text};
+  --color-button-secondary-text: #{$text};
+  --color-button-secondary-edge: transparent;
+  --color-button-secondary-hover-edge: transparent;
+  --color-button-secondary-active-edge: transparent;
+  --color-button-secondary-active-background: #{$surface-2};
 }

@@ -93,6 +93,16 @@
   outline: none;
 }
 
+.extra-study-flash-card-widget__subject--radical {
+  --subject-color: #{$radical};
+  --subject-blur-color: color-mix(in srgb, #{$text}, #{$radical} 50%);
+}
+
+.wk-button--secondary:hover .wk-button__content {
+  transform: translateY(-4px);
+  outline: 1px solid $text;
+}
+
 .subject-character--vocabulary .subject-character__characters-text,
 .subject-legend-character--vocabulary {
   background: $vocab;
@@ -137,22 +147,30 @@
 .item-spread-table-row__count--vocabulary {
   border-color: $vocab;
   background-color: $vocab;
+  --color-item-spread-loading-count-background: #{$vocab};
+  --color-item-spread-loading-count-border: #{$vocab};
 }
 
 .item-spread-table-row__count--kanji {
   border-color: $kanji;
   background-color: $kanji;
+  --color-item-spread-loading-count-background: #{$kanji};
+  --color-item-spread-loading-count-border: #{$kanji};
 }
 
 .item-spread-table-row__count--radical {
   border-color: $radical;
   background-color: $radical;
+  --color-item-spread-loading-count-background: #{$radical};
+  --color-item-spread-loading-count-border: #{$radical};
 }
 
 .item-spread-table-row__total {
   border-color: $text;
   background-color: $text;
   color: $text-inv;
+  --color-item-spread-loading-count-background: #{$text};
+  --color-item-spread-loading-count-border: #{$text};
 }
 
 .subject-character--locked.subject-character--vocabulary
