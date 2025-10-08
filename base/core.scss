@@ -219,8 +219,27 @@
   }
 }
 
-.wk-button--default:hover {
-  --color-icon: #{$text-grayed};
+.wk-button--primary:hover .wk-button__content,
+.wk-button--primary:focus .wk-button__content,
+.wk-button--secondary:hover .wk-button__content,
+.wk-button--secondary:focus .wk-button__content {
+  transform: translateY(-4px);
+  outline: 1px solid $text;
+}
+
+.wk-button--primary:active .wk-button__content,
+.wk-button--secondary:active .wk-button__content {
+  transform: translateY(-4px);
+  outline: 2px solid $text;
+}
+
+.wk-button--primary:hover .wk-button__shadow,
+.wk-button--primary:focus .wk-button__shadow,
+.wk-button--primary:active .wk-button__shadow,
+.wk-button--secondary:hover .wk-button__shadow,
+.wk-button--secondary:focus .wk-button__shadow,
+.wk-button--secondary:active .wk-button__shadow {
+  background: transparent;
 }
 
 turbo-frame[data-show-loading="true"]:not([complete]):after {

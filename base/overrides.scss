@@ -440,12 +440,19 @@
     #{$surface-2},
     white 10%
   );
+  --color-button-primary-background: transparent;
   --color-button-secondary-background: transparent;
+  --color-button-primary-border: #{$text};
   --color-button-secondary-border: #{$text};
+  --color-button-primary-text: #{$text};
   --color-button-secondary-text: #{$text};
+  --color-button-primary-edge: transparent;
   --color-button-secondary-edge: transparent;
+  --color-button-primary-hover-edge: transparent;
   --color-button-secondary-hover-edge: transparent;
+  --color-button-primary-active-edge: transparent;
   --color-button-secondary-active-edge: transparent;
+  --color-button-primary-active-background: #{$surface-2};
   --color-button-secondary-active-background: #{$surface-2};
   --color-level-progress-completed-bar: #{$progress};
 }
