@@ -2,6 +2,8 @@
 
 @use "../base/variables" as *;
 
+// Lessons
+
 .todays-lessons-widget--complete {
   --color-count-bubble-background: #{$text};
   --color-count-bubble-text: #{$text-inv};
@@ -27,6 +29,8 @@
   --color-button-secondary-active-background: #{$lesson};
 }
 
+// Reviews
+
 .reviews-widget--complete {
   --color-count-bubble-background: #{$text};
   --color-count-bubble-text: #{$text-inv};
@@ -50,6 +54,70 @@
   --color-widget-primary-text: #{$text};
   --color-widget-secondary-text: #{$text};
   --color-button-secondary-active-background: #{$review};
+}
+
+// Extra study
+
+.extra-study-multi-button-widget__button:hover,
+.extra-study-multi-button-widget__button:focus {
+  outline: 1px solid $text;
+}
+
+.extra-study-multi-button-widget__button:active {
+  outline: 1px solid $text;
+}
+
+.extra-study-multi-button-widget__button--disabled,
+.extra-study-multi-button-widget__button--disabled:hover,
+.extra-study-multi-button-widget__button--disabled:focus {
+  outline: none;
+  border-color: $surface-3;
+}
+
+// Level progress - trunked atributes
+
+.subject-legend-character--radical,
+.level-progress-widget__item-type-stat-indicator-bar--radical,
+.subject-character--radical .subject-character__characters-text {
+  background: $radical;
+}
+
+.subject-legend-character--radical,
+.subject-character--radical .subject-character__characters-text {
+  border-color: color-mix(in srgb, #{$radical}, white 25%);
+}
+
+.subject-legend-character--kanji,
+.level-progress-widget__item-type-stat-indicator-bar--kanji,
+.subject-character--kanji .subject-character__characters-text {
+  background: $kanji;
+}
+
+.subject-legend-character--kanji,
+.subject-character--kanji .subject-character__characters-text {
+  border-color: color-mix(in srgb, #{$kanji}, white 25%);
+}
+
+.subject-legend-character--vocabulary,
+.level-progress-widget__item-type-stat-indicator-bar--vocabulary,
+.subject-character--vocabulary .subject-character__characters-text {
+  background: $vocab;
+}
+
+.subject-legend-character--vocabulary,
+.subject-character--vocabulary .subject-character__characters-text {
+  border-color: color-mix(in srgb, #{$vocab}, white 25%);
+}
+
+.subject-character--locked.subject-character--radical
+  .subject-character__characters-text,
+.subject-character--locked.subject-character--kanji
+  .subject-character__characters-text,
+.subject-character--locked.subject-character--vocabulary
+  .subject-character__characters-text {
+  background-image: none;
+  color: $text-grayed;
+  filter: $locked-item-filter;
 }
 
 img[src*="level_up_image.svg"] {

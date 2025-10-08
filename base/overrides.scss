@@ -102,18 +102,18 @@
   //--color-button-default-text-shadow: var(--text-shadow-light);
   //--color-button-default-hover-text-shadow: var(--color-button-default-text-shadow);
   //--color-button-default-active-text-shadow: var(--color-button-default-hover-text-shadow);
-  //--color-button-frameless-background: transparent;
-  //--color-button-frameless-hover-background: var(--color-button-frameless-background);
-  //--color-button-frameless-active-background: var(--color-button-frameless-hover-background);
-  //--color-button-frameless-border: transparent;
-  //--color-button-frameless-hover-border: var(--color-button-frameless-border);
-  //--color-button-frameless-active-border: var(--color-button-frameless-hover-border);
-  --color-button-frameless-text: #{$text-grayed};
+  --color-button-frameless-background: transparent;
+  --color-button-frameless-hover-background: transparent;
+  --color-button-frameless-active-background: transparent;
+  --color-button-frameless-border: transparent;
+  --color-button-frameless-hover-border: #{$surface-4};
+  --color-button-frameless-active-border: #{$text};
+  --color-button-frameless-text: #{$text};
   --color-button-frameless-hover-text: #{$text};
-  //--color-button-frameless-active-text: var(--color-button-frameless-hover-text);
-  //--color-button-frameless-text-shadow: var(--text-shadow-light);
-  //--color-button-frameless-hover-text-shadow: var(--color-button-frameless-text-shadow);
-  //--color-button-frameless-active-text-shadow: var(--color-button-frameless-hover-text-shadow);
+  --color-button-frameless-active-text: #{$text};
+  --color-button-frameless-text-shadow: none;
+  --color-button-frameless-hover-text-shadow: none;
+  --color-button-frameless-active-text-shadow: none;
   //--color-button-icon-only-background: transparent;
   //--color-button-icon-only-hover-background: rgba(136, 136, 136, 0.1254901961);
   //--color-button-icon-only-active-background: rgba(136, 136, 136, 0.2509803922);
@@ -248,6 +248,7 @@
   --color-todays-lessons-text: #{$text};
   --color-placeholder-background-stop-1: #{$surface-3};
   --color-placeholder-background-stop-2: #{$surface-4};
+  --color-level-progress-bar: #{$surface-4};
   --color-level-progress-bar-background: #{$surface-3};
   --color-level-progress-bar-text: #{$text};
   --color-level-progress-bar-progress: #{$progress};
@@ -277,7 +278,7 @@
   --color-srs-progress-guru: #{$guru};
   --color-srs-progress-master: #{$master};
   --color-srs-progress-subject-type-background: rgba(0, 0, 0, 0.1);
-  --color-subject-srs-progress-stage-background: #{$text};
+  --color-subject-srs-progress-stage-background: #{$surface-4};
   --color-subject-srs-progress-stage-complete-background: #{$progress};
   //--color-synonym-blocked: #DD5252;
   --color-wk-panel-background: #{$surface-2};
@@ -360,7 +361,7 @@
   --color-nav-item-highlight-text: #{$text};
   --color-nav-item-highlight-text-shadow: none;
   --color-setting-divider: #{$text};
-  --color-progress-chart-bar-background: #{$surface-3};
+  --color-progress-chart-bar-background: #{$surface-4};
   --color-progress-chart-bar: #{$progress};
   --color-progress-chart-bar-gradient: none;
   --color-progress-chart-label-text: #{$text};
@@ -455,4 +456,19 @@
   --color-button-primary-active-background: #{$surface-2};
   --color-button-secondary-active-background: #{$surface-2};
   --color-level-progress-completed-bar: #{$progress};
+  --color-extra-study-single-button-empty-background: #{$surface-3};
+  --color-subject-srs-progress-text: #{$text-grayed};
+  --color-notification-success-background: #{$correct};
+  --color-notification-success-border: color-mix(
+    in srgb,
+    #{$correct},
+    white 25%
+  );
+  --color-grouped-navigation-link-text: #{$text};
+  --color-grouped-navigation-background: #{$surface-3};
+  --color-grouped-navigation-link-background: #{$surface-4};
+  --color-grouped-navigation-link-hover-background: #{$surface-inv};
+  --color-grouped-navigation-link-hover-text: #{$surface-4};
+  --color-grouped-navigation-link-active-background: #{$surface-4};
+  --color-grouped-navigation-link-active-border: #{$text};
 }
