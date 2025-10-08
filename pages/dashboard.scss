@@ -200,6 +200,23 @@
   --subject-blur-color: color-mix(in srgb, #{$vocab}, #{$text} 50%);
 }
 
+.subject-character--unlocked .subject-character__characters-text {
+  --color-text: #{$text};
+}
+
+// Days Studied
+
+.days-studied-widget__background:not(.days-studied-widget__background--dark) {
+  filter: $days-studied-filter;
+}
+
+.days-studied-widget.theme--pastel,
+.days-studied-widget.theme--candy,
+.days-studied-widget.theme--vintage {
+  --color-days-studied-content-border: #{$brand};
+  --color-days-studied-digit-filled-background: #{$brand};
+}
+
 img[src*="level_up_image.svg"] {
   content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
 }

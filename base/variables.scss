@@ -45,3 +45,4 @@ $loading-filter: var(
   --USER-loading-filter,
   grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68)
 );
+$days-studied-filter: var(--USER-days-studied-filter, invert(0.85));

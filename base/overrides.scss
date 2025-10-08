@@ -517,4 +517,19 @@
   --color-extra-study-split-subjects-border: #{$surface-4};
   --color-extra-study-flashcard-subject: #{$text};
   --color-extra-study-flashcard-seperator: #{$text};
+  --color-widget-gallery-description: #{$text};
+  --color-days-studied-content-border: #{$brand};
+  --color-days-studied-content-background: #{$surface-3};
+  --color-days-studied-digit-border: #{$surface-4};
+  --color-days-studied-digit-background: #{$surface-2};
+  --color-days-studied-digit: #{$text};
+  --color-days-studied-date: #{$text};
+  --color-days-studied-digit-filled-border: color-mix(
+    in srgb,
+    #{$brand},
+    white 25%
+  );
+  --color-days-studied-digit-filled-background: #{$brand};
+  --color-days-studied-digit-filled: #{$text};
+  --color-days-studied-date-label: #{$text};
 }
