@@ -126,6 +126,51 @@
   filter: $locked-item-filter;
 }
 
+// Iteam Spread
+
+.item-spread-table-row__count--radical {
+  background: #{$radical};
+  border-color: color-mix(in srgb, #{$radical}, white 25%);
+  --color-item-spread-loading-count-background: #{$radical};
+  --color-item-spread-loading-count-border: #{$radical};
+}
+
+.item-spread-table-row__count--kanji {
+  background: #{$kanji};
+  border-color: color-mix(in srgb, #{$kanji}, white 25%);
+  --color-item-spread-loading-count-background: #{$kanji};
+  --color-item-spread-loading-count-border: #{$kanji};
+}
+
+.item-spread-table-row__count--vocabulary {
+  background: #{$vocab};
+  border-color: color-mix(in srgb, #{$vocab}, white 25%);
+  --color-item-spread-loading-count-background: #{$vocab};
+  --color-item-spread-loading-count-border: #{$vocab};
+}
+
+.item-spread-table-row__total {
+  color: #{$text-inv};
+  background: #{$surface-inv};
+  border-color: color-mix(in srgb, #{$surface-inv}, white 25%);
+}
+
+.item-spread-table-row__counts {
+  gap: 0;
+}
+
+.item-spread-table-row__count.item-spread-table-row__count--radical {
+  border-radius: 9999px 0 0 9999px;
+}
+
+.item-spread-table-row__count.item-spread-table-row__count--kanji {
+  border-radius: 0;
+}
+
+.item-spread-table-row__count.item-spread-table-row__count--vocabulary {
+  border-radius: 0 9999px 9999px 0;
+}
+
 img[src*="level_up_image.svg"] {
   content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
 }

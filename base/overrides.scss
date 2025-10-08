@@ -507,4 +507,8 @@
   --color-chip-active-text: #{$surface-3};
   --color-chip-text: #{$text};
   --color-dashboard-customization-menu-divider: #{$surface-4};
+  --color-item-spread-row-border: transparent;
+  --color-item-spread-row-hover-background: #{$surface-3};
+  --color-item-spread-row-active-background: #{$surface-3};
+  --color-focus: #{$text};
 }
