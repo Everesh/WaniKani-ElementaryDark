@@ -76,6 +76,12 @@
 
 // Level progress - trunked atributes
 
+.subject-legend-character--review,
+.subject-character--passed .subject-character__characters-text,
+.subject-character--unlocked .subject-character__characters-text {
+  color: $text;
+}
+
 .subject-legend-character--radical,
 .level-progress-widget__item-type-stat-indicator-bar--radical,
 .subject-character--radical .subject-character__characters-text {
