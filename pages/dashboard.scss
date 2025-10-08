@@ -171,6 +171,18 @@
   border-radius: 0 9999px 9999px 0;
 }
 
+.item-spread-graph-widget__graph-bar-part--radical {
+  background-color: $radical;
+}
+
+.item-spread-graph-widget__graph-bar-part--kanji {
+  background-color: $kanji;
+}
+
+.item-spread-graph-widget__graph-bar-part--vocabulary {
+  background-color: $vocab;
+}
+
 img[src*="level_up_image.svg"] {
   content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
 }
