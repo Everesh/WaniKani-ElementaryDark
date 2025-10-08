@@ -183,6 +183,23 @@
   background-color: $vocab;
 }
 
+// Recent Mistakes
+
+.extra-study-flash-card-widget__subject--radical {
+  --subject-color: #{$radical};
+  --subject-blur-color: color-mix(in srgb, #{$radical}, #{$text} 50%);
+}
+
+.extra-study-flash-card-widget__subject--kanji {
+  --subject-color: #{$kanji};
+  --subject-blur-color: color-mix(in srgb, #{$kanji}, #{$text} 50%);
+}
+
+.extra-study-flash-card-widget__subject--vocabulary {
+  --subject-color: #{$vocab};
+  --subject-blur-color: color-mix(in srgb, #{$vocab}, #{$text} 50%);
+}
+
 img[src*="level_up_image.svg"] {
   content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
 }
