@@ -551,4 +551,7 @@
     red 20%
   );
   --color-grouped-navigation-header-text: #{$text};
+  --color-study-streak-today-incomplete-background: #{$surface-3};
+  --color-study-streak-today-complete-background: #{$surface-3};
+  --color-study-streak-today-complete-text: #{$progress};
 }

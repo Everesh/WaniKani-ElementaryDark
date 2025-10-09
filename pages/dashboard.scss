@@ -217,6 +217,14 @@
   --color-days-studied-digit-filled-background: #{$brand};
 }
 
+// Study Streak
+
+.wk-icon.wk-icon--widget_study_streak_complete,
+.study-streak-widget__offering {
+  --color-icon-primary: #{$surface-4};
+  --color-icon-secondary: #{$surface-inv};
+}
+
 img[src*="level_up_image.svg"] {
   content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
 }
