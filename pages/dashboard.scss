@@ -56,6 +56,14 @@
   --color-button-secondary-active-background: #{$review};
 }
 
+// Forcast
+
+.review-forecast-widget--201.review-forecast-widget:not(
+    .review-forecast-widget--loading
+  ) {
+  --color-review-forecast-header-background: #{$brand};
+}
+
 // Extra study
 
 .extra-study-multi-button-widget__button:hover,
