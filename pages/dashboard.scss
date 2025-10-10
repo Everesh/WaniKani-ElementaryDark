@@ -58,9 +58,8 @@
 
 // Forcast
 
-.review-forecast-widget--201.review-forecast-widget:not(
-    .review-forecast-widget--loading
-  ) {
+.review-forecast-widget:not(.review-forecast-widget--loading)
+  .review-forecast-widget__header {
   --color-review-forecast-header-background: #{$brand};
 }
 
