@@ -2,41 +2,17 @@
 
 @use "../base/variables" as *;
 
-.site-content-container .container:has(.page-header__icon--level) {
-  .page-header__icon,
-  .page-header__icon--radical,
-  .page-header__icon--kanji,
-  .page-header__icon--vocabulary {
-    color: $text;
-    background-image: none;
-    box-shadow: none;
-
-    &:hover {
-      box-shadow: none;
-    }
+.site-content-container .container:has(.subject-page-header) {
+  .subject-character--expandable .subject-character__characters:hover::before {
+    background: $surface-3;
   }
 
-  .page-header__title,
-  .subject-section__title {
-    text-shadow: none;
+  .subject-page-header {
+    padding: 0;
   }
 
-  .subject-section__title {
-    border-color: $text;
-  }
-
-  #section-components {
-    .subject-character--burned:not(.subject-character--grid)
-      .subject-character__characters,
-    .subject-character--grid.subject-character--burned {
-      box-shadow: none;
-    }
-
-    .subject-character--radical:not(.subject-character--grid)
-      .subject-character__characters {
-      box-shadow: none;
-      background-image: none;
-    }
+  .subject-page-header__level-and-pagination {
+    margin: 0;
   }
 
   #section-meaning,
@@ -147,88 +123,12 @@
     }
   }
 
-  .page-header__icon--level {
-    background-color: $surface-3;
-  }
-
-  .page-header__icon--radical {
-    background-color: $radical;
-  }
-
-  .page-header__icon--kanji {
-    background-color: $kanji;
-  }
-
-  .page-header__icon--vocabulary {
-    background-color: $vocab;
-  }
-
-  #section-amalgamations {
-    li:has(.subject-character--grid.subject-character--locked) {
-      filter: $locked-item-filter;
-
-      .subject-character--grid.subject-character--locked {
-        background-image: none;
-      }
-
-      &:nth-child(odd) {
-        filter: #{$locked-item-filter} #{$kotoba-odd-row-filter};
-      }
-    }
-
-    .subject-character-grid__item {
-      :nth-child(odd) {
-        filter: $kotoba-odd-row-filter;
-      }
-
-      &:first-child a.subject-character--vocabulary {
-        border-radius: 5px 5px 0 0;
-      }
-
-      &:last-child a.subject-character--vocabulary {
-        border-radius: 0 0 5px 5px;
-      }
-    }
-
-    .subject-character--grid.subject-character--burned {
-      box-shadow: none;
-    }
-  }
-
-  .subject-character__badge {
-    box-shadow: 0 0 1px #{$text};
-  }
-
   .subject-progress {
     text-shadow: none;
-
-    .subject-progress__meta-value {
-      color: $text-grayed;
-    }
-
-    .subject-progress__button {
-      box-shadow: none;
-      background-image: none;
-      border-color: $surface-3;
-      background-color: $surface-3;
-      color: $text;
-
-      &:hover {
-        background-color: $surface-2;
-      }
-    }
   }
 
   background-color: $surface-2;
   border-radius: 5px;
-  padding: 0 1.5em;
-
-  > :first-child,
-  > .subject-pager {
-    padding-top: 1.5em;
-  }
-
-  > :last-child {
-    padding-bottom: 1.5em;
-  }
+  padding: 0 1.5em 0.5em 1.5em;
+  margin-top: 1.5em;
 }
