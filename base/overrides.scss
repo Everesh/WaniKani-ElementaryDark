@@ -561,4 +561,11 @@
   --color-text-highlight-kanji-text: #{$text};
   --color-text-highlight-vocabulary-text: #{$text};
   --color-heat-map-cell-selected-border: #{$surface-inv};
+  --color-subject-character-secondary-info: #{$text-grayed};
+  --color-subject-character-grid-item-background: #{$surface-3};
+  --color-subject-character-grid-item-border: #{$surface-4};
+  --color-subject-character-grid-header-background: #{$surface-3};
+  --color-subject-character-grid-header-subtitle: #{$text-grayed};
+  --color-subject-character-grid-header-title: #{$text};
+  --color-subject-legend-title: #{$text-grayed};
 }

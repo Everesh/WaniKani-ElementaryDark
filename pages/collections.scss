@@ -2,6 +2,11 @@
 
 @use "../base/variables" as *;
 
+.page-header {
+  padding: 1.5em 0;
+  margin: 0;
+}
+
 .page-header__title {
   text-shadow: none;
 }
@@ -10,90 +15,57 @@
   color: $text-grayed;
 }
 
-.subject-legend {
-  color: $text;
-  background-color: $surface-3;
-  text-shadow: none;
-  border-radius: 5px;
-
-  .subject-legend__title {
-    color: $text;
-  }
-
-  .subject-legend__item-badge--recently-unlocked {
-    box-shadow: 0 0 1px #{$text};
-    color: $text;
-    background-color: $progress;
-  }
-
-  .subject-legend__item-badge--all {
-    box-shadow: 0 0 1px #{$text};
-    color: $text;
-    background-color: $brand;
-  }
-
-  .subject-legend__item-badge--radicals {
-    box-shadow: 0 0 1px #{$text};
-    color: $text;
-    background-color: $radical;
-  }
-
-  .subject-legend__item-badge--kanji {
-    box-shadow: 0 0 1px #{$text};
-    color: $text;
-    background-color: $kanji;
-  }
-
-  .subject-legend__item-badge--vocabulary {
-    box-shadow: 0 0 1px #{$text};
-    color: $text;
-    background-color: $vocab;
-  }
-
-  .subject-legend__item-badge--locked {
-    background-image: none;
-    filter: $locked-item-filter;
-  }
-
-  .subject-legend__item-badge--burned {
-    box-shadow: 0 0 1px #{$text};
-    color: $text;
-    background-color: $burned;
-  }
-}
-
-.character-grid__header {
-  border-radius: 5px 5px 0 0;
-}
-
-.subject-character--grid.subject-character--burned {
-  box-shadow: none;
-}
-
-.subject-character--grid.subject-character--locked {
+.subject-legend-character--locked.subject-legend-character--radical {
   background-image: none;
-  filter: brightness(0.7);
+  color: $text;
+  background: $radical;
+  border-color: color-mix(in srgb, #{$radical}, white 25%);
+  filter: $locked-item-filter;
 }
 
-.subject-character-grid__items .subject-character-grid__item:nth-child(odd) {
-  filter: $kotoba-odd-row-filter;
+.subject-legend-character--locked.subject-legend-character--kanji {
+  background-image: none;
+  color: $text;
+  background: $kanji;
+  border-color: color-mix(in srgb, #{$kanji}, white 25%);
+  filter: $locked-item-filter;
+}
+
+.subject-legend-character--locked.subject-legend-character--vocabulary {
+  background-image: none;
+  color: $text;
+  background: $vocab;
+  border-color: color-mix(in srgb, #{$vocab}, white 25%);
+  filter: $locked-item-filter;
+}
+
+.subject-legend-character--lesson.subject-legend-character--radical {
+  color: $text;
+  background: color-mix(in srgb, #{$radical}, transparent 50%);
+  border-color: color-mix(in srgb, #{$radical}, white 25%);
+}
+
+.subject-legend-character--lesson.subject-legend-character--kanji {
+  color: $text;
+  background: color-mix(in srgb, #{$kanji}, transparent 50%);
+  border-color: color-mix(in srgb, #{$kanji}, white 25%);
+}
+
+.subject-legend-character--lesson.subject-legend-character--vocabulary {
+  color: $text;
+  background: color-mix(in srgb, #{$vocab}, transparent 50%);
+  border-color: color-mix(in srgb, #{$vocab}, white 25%);
+}
+
+.subject-legend-character--burned {
+  color: $text;
+  background: $burned;
+  border-color: color-mix(in srgb, #{$burned}, white 25%);
 }
 
 .site-content-container .container:has(.character-grid) {
   background-color: $surface-2;
   border-radius: 5px;
-  padding: 0 1.5em;
-
-  > :first-child,
-  > .page-header {
-    padding-top: 1.5em;
-  }
-
-  > :last-child {
-    padding-bottom: 1.5em;
-  }
-
-  .subject-character-grid--single-column li:last-child a {
-    border-radius: 0 0 5px 5px;
-  }
+  padding: 0 1.5em 0.5em 1.5em;
+  margin-top: 1.5em;
 }
