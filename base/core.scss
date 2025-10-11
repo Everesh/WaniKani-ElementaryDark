@@ -212,12 +212,12 @@
 
   .search__button {
     color: $surface-1;
-    background: $text;
+    background: transparent;
   }
 
   .search__button:hover,
   .search__button:focus {
-    background: $text-grayed;
+    background: transparent;
   }
 }
 
