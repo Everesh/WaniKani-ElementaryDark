@@ -38,19 +38,24 @@
   border-color: color-mix(in srgb, #{$vocab}, white 25%);
   filter: $locked-item-filter;
 }
-
+.subject-character--recent.subject-character--radical
+  .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--radical {
   color: $text;
   background: color-mix(in srgb, #{$radical}, transparent 50%);
   border-color: color-mix(in srgb, #{$radical}, white 25%);
 }
 
+.subject-character--recent.subject-character--kanji
+  .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--kanji {
   color: $text;
   background: color-mix(in srgb, #{$kanji}, transparent 50%);
   border-color: color-mix(in srgb, #{$kanji}, white 25%);
 }
 
+.subject-character--recent.subject-character--vocabulary
+  .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--vocabulary {
   color: $text;
   background: color-mix(in srgb, #{$vocab}, transparent 50%);
