@@ -132,3 +132,34 @@
     background-color: $surface-1;
   }
 }
+
+.wk-button--quiz {
+  &:hover {
+    filter: none;
+  }
+
+  .wk-button__content {
+    background-color: $surface-2;
+    border: solid 1px $text;
+    transform: translateY(0);
+  }
+
+  &:hover .wk-button__content,
+  &:focus .wk-button__content {
+    filter: none;
+    transform: translateY(0);
+    border: solid 1px $text;
+    outline: 1px solid $text;
+  }
+
+  &:active .wk-button__content {
+    filter: none;
+    transform: translateY(0);
+    outline: 2px solid $text;
+    border: solid 1px $text;
+  }
+
+  &:active .wk-button__shadow {
+    background-color: transparent;
+  }
+}
