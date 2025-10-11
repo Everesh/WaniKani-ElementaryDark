@@ -26,9 +26,11 @@
   .lesson-and-review-count {
     :first-child * {
       --color-lesson-and-review-count-background: #{$lesson};
+      --color-lesson-and-review-border-hover: #{$lesson};
     }
     :nth-child(2) * {
       --color-lesson-and-review-count-background: #{$review};
+      --color-lesson-and-review-border-hover: #{$review};
     }
   }
 
