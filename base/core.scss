@@ -257,3 +257,7 @@ turbo-frame[data-show-loading="true"]:not([complete]):after {
   display: inline-block;
   --color-icon: #{$text-grayed};
 }
+
+.subject-character--radical .subject-character__characters-text {
+  --color-text: #{$text};
+}
