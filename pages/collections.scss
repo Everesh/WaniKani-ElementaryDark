@@ -16,28 +16,23 @@
 }
 
 .subject-legend-character--locked.subject-legend-character--radical {
-  background-image: none;
+  --color-blue: #{$radical};
   color: $text;
-  background: $radical;
-  border-color: color-mix(in srgb, #{$radical}, white 25%);
-  filter: $locked-item-filter;
+  border: none;
 }
 
 .subject-legend-character--locked.subject-legend-character--kanji {
-  background-image: none;
+  --color-pink: #{$kanji};
   color: $text;
-  background: $kanji;
-  border-color: color-mix(in srgb, #{$kanji}, white 25%);
-  filter: $locked-item-filter;
+  border: none;
 }
 
 .subject-legend-character--locked.subject-legend-character--vocabulary {
-  background-image: none;
+  --color-purple: #{$vocab};
   color: $text;
-  background: $vocab;
-  border-color: color-mix(in srgb, #{$vocab}, white 25%);
-  filter: $locked-item-filter;
+  border: none;
 }
+
 .subject-character--recent.subject-character--radical
   .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--radical {

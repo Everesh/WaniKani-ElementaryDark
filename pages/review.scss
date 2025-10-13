@@ -211,11 +211,6 @@
     }
   }
 
-  .subject-character--grid.subject-character--locked {
-    background-image: none;
-    filter: $locked-item-filter;
-  }
-
   .last-item {
     box-shadow: none;
     background-color: $surface-3;

@@ -89,48 +89,60 @@
   color: $text;
 }
 
-.subject-legend-character--radical,
+.subject-legend-character--radical:not(.subject-legend-character--locked),
 .level-progress-widget__item-type-stat-indicator-bar--radical,
-.subject-character--radical .subject-character__characters-text {
+.subject-character--radical:not(.subject-character--locked)
+  .subject-character__characters-text {
   background: $radical;
 }
 
 .subject-legend-character--radical,
-.subject-character--radical .subject-character__characters-text {
+.subject-character--radical:not(.subject-character--locked)
+  .subject-character__characters-text {
   border-color: color-mix(in srgb, #{$radical}, white 25%);
 }
 
-.subject-legend-character--kanji,
+.subject-legend-character--kanji:not(.subject-legend-character--locked),
 .level-progress-widget__item-type-stat-indicator-bar--kanji,
-.subject-character--kanji .subject-character__characters-text {
+.subject-character--kanji:not(.subject-character--locked)
+  .subject-character__characters-text {
   background: $kanji;
 }
 
 .subject-legend-character--kanji,
-.subject-character--kanji .subject-character__characters-text {
+.subject-character--kanji:not(.subject-character--locked)
+  .subject-character__characters-text {
   border-color: color-mix(in srgb, #{$kanji}, white 25%);
 }
 
-.subject-legend-character--vocabulary,
+.subject-legend-character--vocabulary:not(.subject-legend-character--locked),
 .level-progress-widget__item-type-stat-indicator-bar--vocabulary,
-.subject-character--vocabulary .subject-character__characters-text {
+.subject-character--vocabulary:not(.subject-character--locked)
+  .subject-character__characters-text {
   background: $vocab;
 }
 
 .subject-legend-character--vocabulary,
-.subject-character--vocabulary .subject-character__characters-text {
+.subject-character--vocabulary:not(.subject-character--locked)
+  .subject-character__characters-text {
   border-color: color-mix(in srgb, #{$vocab}, white 25%);
 }
 
 .subject-character--locked.subject-character--radical
-  .subject-character__characters-text,
+  .subject-character__characters-text {
+  color: $text-grayed;
+  --color-blue: #{$radical};
+}
 .subject-character--locked.subject-character--kanji
-  .subject-character__characters-text,
+  .subject-character__characters-text {
+  color: $text-grayed;
+  --color-pink: #{$kanji};
+}
+
 .subject-character--locked.subject-character--vocabulary
   .subject-character__characters-text {
-  background-image: none;
   color: $text-grayed;
-  filter: $locked-item-filter;
+  --color-purple: #{$vocab};
 }
 
 // Iteam Spread

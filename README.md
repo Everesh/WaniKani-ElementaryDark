@@ -95,7 +95,6 @@ This theme exposes a bunch of CSS variables so other scripts and addons can matc
 
     /* CSS filters */
     --ED-logo-filter: var(--USER-logo-filter, invert(1) saturate(0) brightness(1.6));
-    --ED-locked-item-filter: var(--USER-locked-item-filter, brightness(70%));
     --ED-kotoba-odd-row-filter: var(--USER-kotoba-odd-row-filter, brightness(0.95));
     --ED-footer-filter: var(--USER-footer-filter, invert(1));
     --ED-loading-filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));

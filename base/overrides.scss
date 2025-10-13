@@ -386,8 +386,6 @@
   --color-widget-border: #{$surface-4};
   --color-widget-primary-text: #{$text};
   --color-widget-secondary-text: #{$text};
-  --color-extra-study-flashcard-placeholder-pulse-stop-1: #{$text};
-  --color-extra-study-flashcard-placeholder-pulse-stop-2: #{$text};
   --color-review-forecast-header-background: #{$brand};
   --color-review-forecast-day-hover: #{$surface-3};
   --color-review-forecast-day-active: #{$surface-3};
@@ -419,7 +417,7 @@
   --color-notification-info-icon: #{$alert};
   --color-item-spread-row-background: #{$surface-2};
   --color-grouped-navigation-link-current-border: #{$text};
-  --color-item-spread-row-border: #{$text-grayed};
+  --color-item-spread-row-border: transparent;
   --color-extra-study-flashcard-placeholder-pulse-stop-1: color-mix(
     in srgb,
     #{$surface-2},
@@ -508,7 +506,6 @@
   --color-chip-active-text: #{$surface-3};
   --color-chip-text: #{$text};
   --color-dashboard-customization-menu-divider: #{$surface-4};
-  --color-item-spread-row-border: transparent;
   --color-item-spread-row-hover-background: #{$surface-3};
   --color-item-spread-row-active-background: #{$surface-3};
   --color-focus: #{$text};
