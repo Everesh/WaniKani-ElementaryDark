@@ -37,7 +37,7 @@
   .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--radical {
   color: $text;
-  background: color-mix(in srgb, #{$radical}, transparent 50%);
+  background: color-mix(in srgb, #{$radical}, transparent 75%);
   border-color: color-mix(in srgb, #{$radical}, white 25%);
 }
 
@@ -45,7 +45,7 @@
   .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--kanji {
   color: $text;
-  background: color-mix(in srgb, #{$kanji}, transparent 50%);
+  background: color-mix(in srgb, #{$kanji}, transparent 75%);
   border-color: color-mix(in srgb, #{$kanji}, white 25%);
 }
 
@@ -53,7 +53,7 @@
   .subject-character__characters-text,
 .subject-legend-character--lesson.subject-legend-character--vocabulary {
   color: $text;
-  background: color-mix(in srgb, #{$vocab}, transparent 50%);
+  background: color-mix(in srgb, #{$vocab}, transparent 75%);
   border-color: color-mix(in srgb, #{$vocab}, white 25%);
 }
 
@@ -68,4 +68,18 @@
   border-radius: 5px;
   padding: 0 1.5em 0.5em 1.5em;
   margin-top: 1.5em;
+}
+
+.subject-legend-character--burned.subject-legend-character--radical {
+  background: $burned;
+  border-color: $radical;
+}
+
+.subject-legend-character--burned.subject-legend-character--kanji {
+  background: $burned;
+  border-color: $kanji;
+}
+.subject-legend-character--burned.subject-legend-character--vocabulary {
+  background: $burned;
+  border-color: $vocab;
 }
