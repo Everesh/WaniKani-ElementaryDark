@@ -15,7 +15,7 @@ echo "/* ==UserStyle==
 ==/UserStyle== */
 
 @-moz-document domain("www.wanikani.com") {
-	$(sass "$INPUT" | sed 's/^/  /')
+$(sass "$INPUT" | sed 's/^/  /')
 }" > "$OUTPUT"
 
 xclip -sel clip < "$OUTPUT"
