@@ -390,7 +390,7 @@
   --color-review-forecast-day-hover: #{$surface-3};
   --color-review-forecast-day-active: #{$surface-3};
   --color-review-forecast-bar-positive: #{$progress};
-  --color-review-forecast-bar-positive-border: #{progress};
+  --color-review-forecast-bar-positive-border: #{$progress};
   --color-review-forecast-increase-positive: #{$progress};
   --color-review-forecast-bar-zero-border: #{$surface-inv};
   --color-review-forecast-bar-zero: #{$surface-inv};
@@ -398,7 +398,7 @@
   --color-extra-study-button-text: #{$text};
   --color-extra-study-button-border: #{$text};
   --color-extra-study-button-icon: #{$text};
-  --color-extra-study-button-remaining-text: #{text-grayed};
+  --color-extra-study-button-remaining-text: #{$text-grayed};
   --color-count-bubble-background: #{$text};
   --color-count-bubble-border: #{$text};
   --color-count-bubble-text: #{$surface-2};
