@@ -163,3 +163,12 @@
     background-color: transparent;
   }
 }
+
+.lesson-modal__buttons {
+  --color-button-edge: transparent;
+  --color-button-hover-edge: transparent;
+  --color-button-active-edge: transparent;
+  --color-button-border: #{$text};
+  --color-button-hover-border: #{$text};
+  --color-button-active-border: #{$text};
+}
