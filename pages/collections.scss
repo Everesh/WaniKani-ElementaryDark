@@ -83,3 +83,24 @@
   background: $burned;
   border-color: $vocab;
 }
+
+.subject-character--burned:not(.subject-character--locked) {
+  .subject-character__characters-text {
+    --color-text: #{$text};
+    color: $text;
+    background: $burned;
+    border-color: var(--EDI-burned-carryover);
+  }
+
+  &.subject-character--radical {
+    --EDI-burned-carryover: #{$radical};
+  }
+
+  &.subject-character--kanji {
+    --EDI-burned-carryover: #{$kanji};
+  }
+
+  &.subject-character--vocabulary {
+    --EDI-burned-carryover: #{$vocab};
+  }
+}
