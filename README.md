@@ -12,6 +12,19 @@ Successor to [WKElementaryDark](https://github.com/Sepitus-exe/WKElementaryDark)
 
 *Grab Stylus [here if you're on Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [here if you're on Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)*
 
+## Build from source
+
+1. Raw CSS
+```sh
+sass main.scss
+```
+
+2. Postprocessed, Stylus compatible CSS
+```sh
+make.sh
+```
+> ***!*** For conviniences sake while prototyping, the make script not only exports to a file called "WaniKani-ElementaryDark.css", but also to your clipboard
+
 ## Why the Rewrite?
 
 The original project was a single monolithic CSS file. As WaniKani evolved, large chunks became obsolete, but there was no easy way to identify them, leading to continuous bloat. This new implementation leverages Sass to compartmentalize code sections, making maintenance actually manageable.
