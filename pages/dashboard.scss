@@ -31,6 +31,10 @@
 
 // Reviews
 
+.reviews-widget .count-bubble__priority-count {
+  --color-icon: #{$text-inv};
+}
+
 .reviews-widget--complete {
   --color-count-bubble-background: #{$text};
   --color-count-bubble-text: #{$text-inv};
