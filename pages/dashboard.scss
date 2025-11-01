@@ -58,6 +58,11 @@
   --color-widget-primary-text: #{$text};
   --color-widget-secondary-text: #{$text};
   --color-button-secondary-active-background: #{$review};
+  --color-count-bubble-divider: #{$review};
+
+  .wk-icon {
+    --color-icon: #{$review};
+  }
 }
 
 // Forcast
