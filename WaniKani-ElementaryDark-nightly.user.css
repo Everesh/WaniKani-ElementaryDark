@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.7.202511170403
+@version      3.1.7.202511171457
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -9,6 +9,7 @@
 @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
 @updateURL    https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css
 ==/UserStyle== */
+
 @-moz-document domain("www.wanikani.com") {
   :root {
     --text-shadow-light: none;
