@@ -52,10 +52,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install Sass
-        if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
-        run: npm install -g sass
 
-      - name: Build CSS
+        run: npm install -g sass
+      - name: Build CSS (Stable)
         if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
         run: |
           INPUT="main.scss"
@@ -80,14 +79,95 @@ jobs:
           $(sass "$INPUT" | sed 's/^/  /')
           }" > "dist/$OUTPUT"
 
+      - name: Build CSS (Nightly)
+        run: |
+          INPUT="main.scss"
+          OUTPUT="WaniKani-ElementaryDark-nightly.user.css"
+          VERSION="version"
+          mkdir -p dist
+          echo "/* ==UserStyle==
+          @name         WaniKani Elementary Dark (Nightly)
+          @namespace    github.com/openstyles/stylus
+          @version      $(cat "$VERSION")
+          @license      MIT
+          @description  Dark theme for the WaniKani domain (Nightly/Dev version)
+          @author       Everesh
+          @homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
+          @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
+          @updateURL    https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css
+          ==/UserStyle== */
+          @-moz-document domain(\"www.wanikani.com\") {
+          $(sass "$INPUT" | sed 's/^/  /')
+          }" > "dist/$OUTPUT"
+
+      - name: Create index page
+        run: |
+          cat > index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>WaniKani Elementary Dark</title>
+            <style>
+              body {
+                font-family: system-ui, -apple-system, sans-serif;
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background: #151515;
+                color: #eeeeee;
+              }
+              h1 { color: #c29354; }
+              a {
+                color: #c29354;
+                text-decoration: none;
+                font-weight: bold;
+              }
+              a:hover { color: #bbbbbb; }
+              .version {
+                background: #282828;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 8px;
+                border: 1px solid #535353;
+              }
+              code {
+                background: #303030;
+                padding: 2px 6px;
+                border-radius: 3px;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>WaniKani Elementary Dark</h1>
+            <p>Dark theme for WaniKani</p>
+
+            <div class="version">
+              <h2>Stable Version</h2>
+              <p>Recommended for most users. Updated only on releases.</p>
+              <p><a href="WaniKani-ElementaryDark.user.css">Install Stable</a></p>
+            </div>
+
+            <div class="version">
+              <h2>Nightly Version</h2>
+              <p>Bleeding edge. Updates with every commit.</p>
+              <p><a href="WaniKani-ElementaryDark-nightly.user.css">Install Nightly</a></p>
+            </div>
+
+            <p><a href="https://github.com/Everesh/WaniKani-ElementaryDark">View on GitHub</a></p>
+          </body>
+          </html>
+          EOF
+
       - name: Deploy to GitHub Pages
-        if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: dist
           keep_files: false
+          enable_jekyll: true
 
       - name: Create Release
         if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
