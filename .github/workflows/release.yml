@@ -98,6 +98,7 @@ jobs:
           @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
           @updateURL    https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css
           ==/UserStyle== */
+
           @-moz-document domain(\"www.wanikani.com\") {
           $(sass "$INPUT" | sed 's/^/  /')
           }" > "dist/$OUTPUT"
