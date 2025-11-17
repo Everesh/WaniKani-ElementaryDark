@@ -5,11 +5,13 @@ on:
     branches:
       - main
     paths:
-      - 'version'
+      - "version"
 
 jobs:
   check-and-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
