@@ -18,7 +18,6 @@ echo "/* ==UserStyle==
 $(sass "$INPUT" | sed 's/^/  /')
 }" > "$OUTPUT"
 
-# Copy to clipboard if --clip flag is provided
 if [[ "$1" == "--clip" ]]; then
   xclip -sel clip < "$OUTPUT"
   echo "Output copied to clipboard"

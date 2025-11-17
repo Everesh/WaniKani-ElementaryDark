@@ -81,17 +81,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.version.outputs.version }}
-          name: Release ${{ steps.version.outputs.version }}
-          body: |
-            ## WaniKani Elementary Dark v${{ steps.version.outputs.version }}
-
-            ### Installation
-            1. Install [Stylus](https://add0n.com/stylus.html) browser extension
-            2. Click on the attached `WaniKani-ElementaryDark.css` file
-            3. Import it into Stylus
-
-            ### Changes
-            See commit history for details.
+          name: v${{ steps.version.outputs.version }}
+          generate_release_notes: true
           files: |
             WaniKani-ElementaryDark.css
           draft: false
