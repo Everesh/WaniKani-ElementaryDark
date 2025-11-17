@@ -127,6 +127,16 @@
     text-shadow: none;
   }
 
+  .subject-readings__reading {
+    opacity: 0.7;
+    font-weight: normal;
+  }
+
+  .subject-readings__reading--primary {
+    opacity: 1;
+    font-weight: bold;
+  }
+
   .subject-readings__reading-title {
     color: $text;
   }
