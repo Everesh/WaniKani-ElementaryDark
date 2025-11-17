@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "version"
+  workflow_dispatch:
 
 jobs:
   check-and-release:
@@ -58,8 +59,10 @@ jobs:
         if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
         run: |
           INPUT="main.scss"
-          OUTPUT="WaniKani-ElementaryDark.css"
+          OUTPUT="WaniKani-ElementaryDark.user.css"
           VERSION="version"
+
+          mkdir -p dist
 
           echo "/* ==UserStyle==
           @name         WaniKani Elementary Dark
@@ -70,11 +73,21 @@ jobs:
           @author       Everesh
           @homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
           @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
+          @updateURL    https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark.user.css
           ==/UserStyle== */
 
           @-moz-document domain(\"www.wanikani.com\") {
           $(sass "$INPUT" | sed 's/^/  /')
-          }" > "$OUTPUT"
+          }" > "dist/$OUTPUT"
+
+      - name: Deploy to GitHub Pages
+        if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: dist
+          keep_files: false
 
       - name: Create Release
         if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
@@ -84,7 +97,7 @@ jobs:
           name: v${{ steps.version.outputs.version }}
           generate_release_notes: true
           files: |
-            WaniKani-ElementaryDark.css
+            WaniKani-ElementaryDark.user.css
           draft: false
           prerelease: false
         env:
