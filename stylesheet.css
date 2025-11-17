@@ -1,0 +1,77 @@
+:root {
+    font-family: monospace;
+
+    --surface-1: #202020;
+    --surface-2: #282828;
+    --surface-3: #303030;
+
+    --text: #fbf1c7;
+    --text-hl: #ecbe80;
+    --text-visited: #c6613f;
+}
+
+body {
+    background-color: var(--surface-1);
+    background-image:
+        linear-gradient(
+            180deg,
+            color-mix(in srgb, var(--surface-1) 0%, transparent) 0%,
+            var(--surface-1) 200vh
+        ),
+        radial-gradient(var(--surface-2) 2px, var(--surface-1) 2px);
+    background-size:
+        100% 100%,
+        20px 20px;
+
+    color: var(--text);
+    font-size: 1.2rem;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--text-hl);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--text);
+}
+
+a:visited {
+    color: var(--text-visited);
+}
+
+.commit {
+    background-color: var(--surface-2);
+    border: 1px solid color-mix(in srgb, var(--surface-2), white 25%);
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: start;
+}
+
+.outer {
+    width: clamp(300px, 90%, 80rem);
+}
+
+.outer > p {
+    text-align: center;
+}
+
+.outer > h1 {
+    margin-left: 1em;
+}
