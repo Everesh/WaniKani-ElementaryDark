@@ -92,6 +92,10 @@
     opacity: 1;
   }
 
+  .subject-character--expandable .subject-character__characters:hover::before {
+    background-color: $surface-3;
+  }
+
   .subject-hint {
     --color-icon: #{$text-inv};
     color: $text-inv;
