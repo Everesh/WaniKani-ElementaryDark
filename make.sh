@@ -18,7 +18,7 @@ echo "/* ==UserStyle==
 $(sass "$INPUT" | sed 's/^/  /')
 }" > "$OUTPUT"
 
-if [[ "$1" == "--clip" ]]; then
+if [[ "$1" == "--clip" || "$1" == "-c" ]]; then
   xclip -sel clip < "$OUTPUT"
-  echo "Output copied to clipboard"
+  echo "(ᵕ • ᴗ •) That's a lot of CSS in your clipboard, careful where you paste..."
 fi
