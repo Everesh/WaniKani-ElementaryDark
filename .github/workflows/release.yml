@@ -1,0 +1,98 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'version'
+
+jobs:
+  check-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read version
+        id: version
+        run: |
+          VERSION=$(cat version | tr -d '\n')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+
+          # Check if version ends with -dev
+          if [[ "$VERSION" == *-dev ]]; then
+            echo "is_dev=true" >> $GITHUB_OUTPUT
+            echo "This is a dev version, skipping release"
+          else
+            echo "is_dev=false" >> $GITHUB_OUTPUT
+            echo "This is a release version"
+          fi
+
+      - name: Check if release exists
+        id: check_release
+        if: steps.version.outputs.is_dev == 'false'
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          if gh release view "v$VERSION" &>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "Release v$VERSION already exists"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "Release v$VERSION does not exist"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Sass
+        if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
+        run: npm install -g sass
+
+      - name: Build CSS
+        if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
+        run: |
+          INPUT="main.scss"
+          OUTPUT="WaniKani-ElementaryDark.css"
+          VERSION="version"
+
+          echo "/* ==UserStyle==
+          @name         WaniKani Elementary Dark
+          @namespace    github.com/openstyles/stylus
+          @version      $(cat "$VERSION")
+          @license      MIT
+          @description  Dark theme for the WaniKani domain
+          @author       Everesh
+          @homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
+          @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
+          ==/UserStyle== */
+
+          @-moz-document domain(\"www.wanikani.com\") {
+          $(sass "$INPUT" | sed 's/^/  /')
+          }" > "$OUTPUT"
+
+      - name: Create Release
+        if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Release ${{ steps.version.outputs.version }}
+          body: |
+            ## WaniKani Elementary Dark v${{ steps.version.outputs.version }}
+
+            ### Installation
+            1. Install [Stylus](https://add0n.com/stylus.html) browser extension
+            2. Click on the attached `WaniKani-ElementaryDark.css` file
+            3. Import it into Stylus
+
+            ### Changes
+            See commit history for details.
+          files: |
+            WaniKani-ElementaryDark.css
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
