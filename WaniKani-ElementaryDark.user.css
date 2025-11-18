@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.1.6
+@version      3.1.7
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1010,6 +1010,9 @@
   .additional-content__content .subject-character--grid.subject-character--burned .subject-character__characters,
   .additional-content__content .subject-character--grid.subject-character--burned .subject-character__info {
     opacity: 1;
+  }
+  .additional-content__content .subject-character--expandable .subject-character__characters:hover::before {
+    background-color: var(--USER-surface-3, #303030);
   }
   .additional-content__content .subject-hint {
     --color-icon: var(--USER-text-inv, #151515);
