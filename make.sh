@@ -16,9 +16,9 @@ echo "/* ==UserStyle==
 
 @-moz-document domain("www.wanikani.com") {
 $(sass "$INPUT" | sed 's/^/  /')
-}" > "$OUTPUT"
+}" >"$OUTPUT"
 
 if [[ "$1" == "--clip" || "$1" == "-c" ]]; then
-  xclip -sel clip < "$OUTPUT"
-  echo "(ᵕ • ᴗ •) That's a lot of CSS in your clipboard, careful where you paste..."
+  xclip -sel clip <"$OUTPUT"
+  notify-send "WaniKani Elementary Dark" "Stylesheet copied to the clipboard"
 fi
