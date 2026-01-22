@@ -19,6 +19,12 @@ $(sass "$INPUT" | sed 's/^/  /')
 }" >"$OUTPUT"
 
 if [[ "$1" == "--clip" || "$1" == "-c" ]]; then
-  xclip -sel clip <"$OUTPUT"
+  if command -v wl-copy &> /dev/null; then
+    wl-copy <"$OUTPUT"
+  elif command -v xsel &> /dev/null; then
+    xsel --clipboard <"$OUTPUT"
+  else
+    xclip -selection clipboard <"$OUTPUT"
+  fi
   notify-send "WaniKani Elementary Dark" "Stylesheet copied to the clipboard"
 fi
