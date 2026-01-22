@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.1.7
+@version      3.1.8
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -681,6 +681,18 @@
   .subject-character--locked.subject-character--vocabulary .subject-character__characters-text {
     color: var(--USER-text-grayed, #bbbbbb);
     --color-purple: var(--USER-vocab, #58896f);
+  }
+  
+  .wk-hint {
+    --color-icon: var(--USER-text-inv, #151515);
+    color: var(--USER-text-inv, #151515);
+    background-color: var(--USER-surface-inv, #bababa);
+    text-shadow: none;
+    border-radius: 5px;
+  }
+  .wk-hint .wk-hint__title {
+    text-shadow: none;
+    color: var(--USER-text-inv, #151515);
   }
   
   /*  Invert highlight fg, bg
