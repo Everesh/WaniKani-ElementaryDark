@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.8.202601222032
+@version      3.1.9.202601222043
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -1547,21 +1547,6 @@
   .site-content-container .container:has(.subject-page-header) #section-context .user-note__fields .user-note__button {
     text-shadow: none;
     color: var(--USER-text, #eeeeee);
-  }
-  .site-content-container .container:has(.subject-page-header) #section-meaning .subject-hint,
-  .site-content-container .container:has(.subject-page-header) #section-reading .subject-hint,
-  .site-content-container .container:has(.subject-page-header) #section-context .subject-hint {
-    --color-icon: var(--USER-text-inv, #151515);
-    color: var(--USER-text-inv, #151515);
-    background-color: var(--USER-surface-inv, #bababa);
-    text-shadow: none;
-    border-radius: 5px;
-  }
-  .site-content-container .container:has(.subject-page-header) #section-meaning .subject-hint .subject-hint__title,
-  .site-content-container .container:has(.subject-page-header) #section-reading .subject-hint .subject-hint__title,
-  .site-content-container .container:has(.subject-page-header) #section-context .subject-hint .subject-hint__title {
-    text-shadow: none;
-    color: var(--USER-text-inv, #151515);
   }
   .site-content-container .container:has(.subject-page-header) #section-meaning .subject-readings__reading-title,
   .site-content-container .container:has(.subject-page-header) #section-reading .subject-readings__reading-title,
