@@ -63,19 +63,6 @@
       }
     }
 
-    .subject-hint {
-      --color-icon: #{$text-inv};
-      color: $text-inv;
-      background-color: $surface-inv;
-      text-shadow: none;
-      border-radius: 5px;
-
-      .subject-hint__title {
-        text-shadow: none;
-        color: $text-inv;
-      }
-    }
-
     .subject-readings__reading-title {
       text-shadow: none;
     }
