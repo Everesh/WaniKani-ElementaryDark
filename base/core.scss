@@ -325,3 +325,16 @@ turbo-frame[data-show-loading="true"]:not([complete]):after {
   color: $text-grayed;
   --color-purple: #{$vocab};
 }
+
+.wk-hint {
+  --color-icon: #{$text-inv};
+  color: $text-inv;
+  background-color: $surface-inv;
+  text-shadow: none;
+  border-radius: 5px;
+
+  .wk-hint__title {
+    text-shadow: none;
+    color: $text-inv;
+  }
+}
