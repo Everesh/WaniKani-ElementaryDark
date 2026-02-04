@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.1.8
+@version      3.1.10
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -454,14 +454,15 @@
   }
   .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a {
     color: var(--USER-text, #eeeeee);
-    background-color: var(--USER-surface-4, #535353);
+    background-color: var(--USER-surface-3, #303030);
+    border: 1px solid var(--USER-surface-4, #535353);
   }
   .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a:hover {
     color: var(--USER-surface-3, #303030);
-    background-color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-surface-inv, #bababa);
   }
-  .global-header .sitemap__expandable-chunk--levels .sitemap__page--current-level a {
-    border-color: var(--USER-text, #eeeeee);
+  .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page--current-level a {
+    border: 1px solid var(--USER-text, #eeeeee);
   }
   .global-header .sitemap__expandable-chunk--radicals,
   .global-header .sitemap__expandable-chunk--kanji,
@@ -469,6 +470,7 @@
   .global-header .sitemap__expandable-chunk {
     background-color: var(--USER-surface-3, #303030);
     color: var(--USER-text, #eeeeee);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
   }
   .global-header .sitemap__page--subject a,
   .global-header .sitemap__page-subtitle {
@@ -693,6 +695,33 @@
   .wk-hint .wk-hint__title {
     text-shadow: none;
     color: var(--USER-text-inv, #151515);
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator {
+    --color-key-outline: var(--USER-text-grayed, #bbbbbb);
+    --color-key-letter: var(--USER-text-grayed, #bbbbbb);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator[focused] {
+    --color-key-outline: var(--USER-text, #eeeeee);
+    --color-key-letter: var(--USER-text, #eeeeee);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .wk-notification--info .wk-notification__button {
+    --color-button-hover-background: var(
+      --color-button-frameless-hover-background,
+      transparent
+    );
+    --color-button-active-background: var(
+      --color-button-frameless-active-background,
+      transparent
+    );
+    --color-button-icon: var(--color-text, var(--USER-text, #eeeeee));
+    --color-button-frameless-hover-border: var(--USER-text, #eeeeee);
   }
   
   /*  Invert highlight fg, bg
@@ -1449,6 +1478,13 @@
     padding: 0 1.5em 0.5em 1.5em;
     margin-top: 1.5em;
   }
+  .site-content-container .container:has(.character-grid) .search--open {
+    transform: translateY(-4em);
+    margin-bottom: -4em;
+  }
+  .site-content-container .container:has(.character-grid):has(.search--open) {
+    transform: translateY(4em);
+  }
   
   .subject-legend-character--burned.subject-legend-character--radical {
     background: var(--USER-burned, #303030);
@@ -1547,21 +1583,6 @@
   .site-content-container .container:has(.subject-page-header) #section-context .user-note__fields .user-note__button {
     text-shadow: none;
     color: var(--USER-text, #eeeeee);
-  }
-  .site-content-container .container:has(.subject-page-header) #section-meaning .subject-hint,
-  .site-content-container .container:has(.subject-page-header) #section-reading .subject-hint,
-  .site-content-container .container:has(.subject-page-header) #section-context .subject-hint {
-    --color-icon: var(--USER-text-inv, #151515);
-    color: var(--USER-text-inv, #151515);
-    background-color: var(--USER-surface-inv, #bababa);
-    text-shadow: none;
-    border-radius: 5px;
-  }
-  .site-content-container .container:has(.subject-page-header) #section-meaning .subject-hint .subject-hint__title,
-  .site-content-container .container:has(.subject-page-header) #section-reading .subject-hint .subject-hint__title,
-  .site-content-container .container:has(.subject-page-header) #section-context .subject-hint .subject-hint__title {
-    text-shadow: none;
-    color: var(--USER-text-inv, #151515);
   }
   .site-content-container .container:has(.subject-page-header) #section-meaning .subject-readings__reading-title,
   .site-content-container .container:has(.subject-page-header) #section-reading .subject-readings__reading-title,
