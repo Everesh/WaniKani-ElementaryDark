@@ -78,7 +78,7 @@ jobs:
           }" > "dist/$OUTPUT"
 
       - name: Build CSS (Nightly)
-        if: steps.version.outputs.is_dev == 'true'
+        if: steps.version.outputs.is_dev == 'true' || steps.check_release.outputs.exists == 'false'
         run: |
           INPUT="main.scss"
           OUTPUT="WaniKani-ElementaryDark-nightly.user.css"
