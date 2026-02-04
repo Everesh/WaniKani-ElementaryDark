@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.9.202602042254
+@version      3.1.9.202602042316
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -454,14 +454,15 @@
   }
   .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a {
     color: var(--USER-text, #eeeeee);
-    background-color: var(--USER-surface-4, #535353);
+    background-color: var(--USER-surface-3, #303030);
+    border: 1px solid var(--USER-surface-4, #535353);
   }
   .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page a:hover {
     color: var(--USER-surface-3, #303030);
-    background-color: var(--USER-text, #eeeeee);
+    background-color: var(--USER-surface-inv, #bababa);
   }
-  .global-header .sitemap__expandable-chunk--levels .sitemap__page--current-level a {
-    border-color: var(--USER-text, #eeeeee);
+  .global-header .sitemap__expandable-chunk--levels .sitemap__pages--levels .sitemap__page--current-level a {
+    border: 1px solid var(--USER-text, #eeeeee);
   }
   .global-header .sitemap__expandable-chunk--radicals,
   .global-header .sitemap__expandable-chunk--kanji,
@@ -469,6 +470,7 @@
   .global-header .sitemap__expandable-chunk {
     background-color: var(--USER-surface-3, #303030);
     color: var(--USER-text, #eeeeee);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
   }
   .global-header .sitemap__page--subject a,
   .global-header .sitemap__page-subtitle {
