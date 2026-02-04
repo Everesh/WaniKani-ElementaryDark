@@ -68,6 +68,13 @@
   border-radius: 5px;
   padding: 0 1.5em 0.5em 1.5em;
   margin-top: 1.5em;
+  .search--open {
+    transform: translateY(-4em);
+    margin-bottom: -4em;
+  }
+  &:has(.search--open) {
+    transform: translateY(4em);
+  }
 }
 
 .subject-legend-character--burned.subject-legend-character--radical {
