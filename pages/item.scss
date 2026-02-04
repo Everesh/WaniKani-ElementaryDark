@@ -3,6 +3,14 @@
 @use "../base/variables" as *;
 
 .site-content-container .container:has(.subject-page-header) {
+  .search--open {
+    transform: translateY(-4em);
+    margin-bottom: -4em;
+  }
+  &:has(.search--open) {
+    transform: translateY(4em);
+  }
+
   .subject-character--expandable .subject-character__characters:hover::before {
     background: $surface-3;
   }
