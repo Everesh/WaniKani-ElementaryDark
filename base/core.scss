@@ -338,3 +338,18 @@ turbo-frame[data-show-loading="true"]:not([complete]):after {
     color: $text-inv;
   }
 }
+
+// Key svg'
+.extra-study-flash-card-widget__keyboard-indicator {
+  --color-key-outline: #{$text-grayed};
+  --color-key-letter: #{$text-grayed};
+  --color-key-face: #{$surface-3};
+  --color-key-sides: #{$surface-3};
+}
+
+.extra-study-flash-card-widget__keyboard-indicator[focused] {
+  --color-key-outline: #{$text};
+  --color-key-letter: #{$text};
+  --color-key-face: #{$surface-3};
+  --color-key-sides: #{$surface-3};
+}
