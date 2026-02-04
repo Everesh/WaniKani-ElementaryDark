@@ -45,14 +45,15 @@
     }
     .sitemap__pages--levels .sitemap__page a {
       color: $text;
-      background-color: $surface-4;
+      background-color: $surface-3;
+      border: 1px solid #{$surface-4};
     }
     .sitemap__pages--levels .sitemap__page a:hover {
       color: $surface-3;
-      background-color: $text;
+      background-color: $surface-inv;
     }
-    .sitemap__page--current-level a {
-      border-color: $text;
+    .sitemap__pages--levels .sitemap__page--current-level a {
+      border: 1px solid #{$text};
     }
   }
 
@@ -62,6 +63,7 @@
   .sitemap__expandable-chunk {
     background-color: $surface-3;
     color: $text;
+    border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
   }
 
   .sitemap__page--subject a,
