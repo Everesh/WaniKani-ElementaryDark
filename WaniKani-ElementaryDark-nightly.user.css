@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.9.202602021432
+@version      3.1.9.202602042239
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -693,6 +693,20 @@
   .wk-hint .wk-hint__title {
     text-shadow: none;
     color: var(--USER-text-inv, #151515);
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator {
+    --color-key-outline: var(--USER-text-grayed, #bbbbbb);
+    --color-key-letter: var(--USER-text-grayed, #bbbbbb);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator[focused] {
+    --color-key-outline: var(--USER-text, #eeeeee);
+    --color-key-letter: var(--USER-text, #eeeeee);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
   }
   
   /*  Invert highlight fg, bg
