@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.9.202602042359
+@version      3.1.10.202602051029
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -697,33 +697,6 @@
     color: var(--USER-text-inv, #151515);
   }
   
-  .extra-study-flash-card-widget__keyboard-indicator {
-    --color-key-outline: var(--USER-text-grayed, #bbbbbb);
-    --color-key-letter: var(--USER-text-grayed, #bbbbbb);
-    --color-key-face: var(--USER-surface-3, #303030);
-    --color-key-sides: var(--USER-surface-3, #303030);
-  }
-  
-  .extra-study-flash-card-widget__keyboard-indicator[focused] {
-    --color-key-outline: var(--USER-text, #eeeeee);
-    --color-key-letter: var(--USER-text, #eeeeee);
-    --color-key-face: var(--USER-surface-3, #303030);
-    --color-key-sides: var(--USER-surface-3, #303030);
-  }
-  
-  .wk-notification--info .wk-notification__button {
-    --color-button-hover-background: var(
-      --color-button-frameless-hover-background,
-      transparent
-    );
-    --color-button-active-background: var(
-      --color-button-frameless-active-background,
-      transparent
-    );
-    --color-button-icon: var(--color-text, var(--USER-text, #eeeeee));
-    --color-button-frameless-hover-border: var(--USER-text, #eeeeee);
-  }
-  
   /*  Invert highlight fg, bg
    *    WaniKani uses same --color for text of all highlights
    *    This stylesheets require inverted text color for meaning/reading hl
@@ -936,13 +909,58 @@
   }
   
   .wk-icon.wk-icon--widget_study_streak_complete,
-  .study-streak-widget__offering {
-    --color-icon-primary: var(--USER-surface-4, #535353);
-    --color-icon-secondary: var(--USER-surface-inv, #bababa);
+  .study-streak-widget__offering,
+  .study-streak-widget__day--miss .study-streak-widget__day-icon {
+    --color-icon-primary: var(--USER-text, #eeeeee);
+    --color-icon-secondary: var(--USER-surface-2, #282828);
+  }
+  .wk-icon.wk-icon--widget_study_streak_complete .wk-icon--turtle,
+  .study-streak-widget__offering .wk-icon--turtle,
+  .study-streak-widget__day--miss .study-streak-widget__day-icon .wk-icon--turtle {
+    --color-icon-tertiary: var(--USER-surface-3, #303030);
+  }
+  
+  .study-streak-widget__days {
+    --color-icon: var(--USER-text, #eeeeee);
+  }
+  
+  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__day--complete .study-streak-widget__day-icon {
+    --color-icon-tertiary: var(--USER-surface-2, #282828) !important;
+  }
+  
+  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__offering--available {
+    --color-icon-secondary: var(--USER-surface-2, #282828) !important;
   }
   
   img[src*="level_up_image.svg"] {
     content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator {
+    --color-key-outline: var(--USER-text-grayed, #bbbbbb);
+    --color-key-letter: var(--USER-text-grayed, #bbbbbb);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator[focused] {
+    --color-key-outline: var(--USER-text, #eeeeee);
+    --color-key-letter: var(--USER-text, #eeeeee);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .wk-notification--info .wk-notification__button {
+    --color-button-hover-background: var(
+      --color-button-frameless-hover-background,
+      transparent
+    );
+    --color-button-active-background: var(
+      --color-button-frameless-active-background,
+      transparent
+    );
+    --color-button-icon: var(--color-text, var(--USER-text, #eeeeee));
+    --color-button-frameless-hover-border: var(--USER-text, #eeeeee);
   }
   
   .lesson-picker .page-header__title {
