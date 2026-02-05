@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.10.202602051029
+@version      3.1.10.202602052138
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -390,7 +390,7 @@
     --color-grouped-navigation-header-text: var(--USER-text, #eeeeee);
     --color-study-streak-today-incomplete-background: var(--USER-surface-3, #303030);
     --color-study-streak-today-complete-background: var(--USER-surface-3, #303030);
-    --color-study-streak-today-complete-text: var(--USER-progress, #a97e42);
+    --color-study-streak-today-complete-text: var(--USER-text, #eeeeee);
     --color-item-spread-row-count: var(--USER-text, #eeeeee);
     --color-lesson-and-review-border: var(--USER-surface-3, #303030);
     --color-text-highlight-radical-text: var(--USER-text, #eeeeee);
