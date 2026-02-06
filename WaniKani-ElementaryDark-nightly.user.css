@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.10.202602062228
+@version      3.1.10.202602062249
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -966,6 +966,9 @@
     --color-count-bubble-divider: var(--USER-review, #56638a);
   }
   .reviews-widget.theme--neon:not(.reviews-widget--complete.theme--neon) .wk-icon {
+    --color-icon: var(--USER-text, #eeeeee);
+  }
+  .reviews-widget.theme--neon:not(.reviews-widget--complete.theme--neon) .count-bubble__priority-count-icon .wk-icon {
     --color-icon: var(--USER-review, #56638a);
   }
   
