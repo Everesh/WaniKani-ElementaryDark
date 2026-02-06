@@ -5,20 +5,22 @@
 // Settings dialog
 
 #wkofs_bkgd ~ .wkof_settings_dialog {
-  background: $surface-2;
-  border: 1px solid color-mix(in srgb, #{$surface-2}, white 10%);
+  background: $surface-3;
+  border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
+  box-shadow: 0 -3px 25px #{$surface-1};
 
   padding: 0.5em 0.5em;
 
   .ui-dialog-titlebar {
     color: $text;
     text-shadow: none;
-    background: color-mix(in srgb, #{$surface-2}, black 10%);
-    border: 1px solid color-mix(in srgb, #{$surface-2}, white 10%);
+    background: $surface-2;
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
 
     padding: 0.5em;
-    margin: -0.5em calc(-0.5em - 1px) -2.5em calc(-0.5em - 1px);
-    transform: translateY(-2.5em);
+    margin: -0.5em calc(-0.5em - 1px) -0.5em calc(-0.5em - 1px);
+    transform: translateY(-0.5em);
 
     border-radius: 0.5em 0.5em 0 0;
 
@@ -42,5 +44,9 @@
 
       // .ui-icon this is just filtrable, skip for now
     }
+  }
+
+  .ui-dialog-buttonpane {
+    background-color: $surface-3;
   }
 }
