@@ -11,6 +11,8 @@
 
   padding: 0.5em 0.5em;
 
+  // Heading
+
   .ui-dialog-titlebar {
     color: $text;
     text-shadow: none;
@@ -43,6 +45,32 @@
       margin: 0;
 
       // .ui-icon this is just filtrable, skip for now
+    }
+  }
+
+  // Tabs
+
+  .ui-tabs .ui-tabs-nav {
+    border-bottom: 1px solid #{$surface-4};
+
+    li.ui-tabs-active {
+      background-color: $surface-3;
+      border-color: $surface-4;
+
+      a {
+        color: $text;
+        text-shadow: none;
+      }
+    }
+
+    li.ui-state-default:not(.ui-tabs-active) {
+      background-color: $surface-2;
+      border-color: $surface-4;
+
+      a {
+        color: $text-grayed;
+        text-shadow: none;
+      }
     }
   }
 
