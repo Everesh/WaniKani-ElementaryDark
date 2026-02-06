@@ -61,6 +61,10 @@
   --color-count-bubble-divider: #{$review};
 
   .wk-icon {
+    --color-icon: #{$text};
+  }
+
+  .count-bubble__priority-count-icon .wk-icon {
     --color-icon: #{$review};
   }
 }
