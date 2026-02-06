@@ -7,6 +7,9 @@
 #wkofs_bkgd ~ .wkof_settings_dialog {
   background: $surface-3;
   border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
+  border-top: none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
   box-shadow: 0 -3px 25px #{$surface-1};
 
   padding: 0.5em 0.5em;
@@ -21,8 +24,7 @@
     border-bottom: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
 
     padding: 0.5em;
-    margin: -0.5em calc(-0.5em - 1px) -0.5em calc(-0.5em - 1px);
-    transform: translateY(-0.5em);
+    margin: -0.5em calc(-0.5em - 1px) 0 calc(-0.5em - 1px);
 
     border-radius: 0.5em 0.5em 0 0;
 
@@ -152,6 +154,9 @@
 #wkofs_bkgd ~ .wkof_progbar_dlg {
   background: $surface-3;
   border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
+  border-top: none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
   box-shadow: 0 -3px 25px #{$surface-1};
 
   padding: 0.5em 0.5em;
@@ -166,8 +171,7 @@
     border-bottom: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
 
     padding: 0.5em;
-    margin: -0.5em calc(-0.5em - 1px) -0.5em calc(-0.5em - 1px);
-    transform: translateY(-0.5em);
+    margin: -0.5em calc(-0.5em - 1px) 0 calc(-0.5em - 1px);
 
     border-radius: 0.5em 0.5em 0 0;
 
