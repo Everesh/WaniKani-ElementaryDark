@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.10.202602052138
+@version      3.1.10.202602062228
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -743,6 +743,172 @@
     --ED-footer-filter: var(--USER-footer-filter, invert(1));
     --ED-loading-filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
     --ED-days-studied-filter: var(--USER-days-studied-filter, invert(0.85));
+  }
+  
+  #wkofs_bkgd ~ .wkof_settings_dialog {
+    background: var(--USER-surface-3, #303030);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    border-top: none;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 0 -3px 25px var(--USER-surface-1, #151515);
+    padding: 0.5em 0.5em;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-dialog-titlebar {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+    background: var(--USER-surface-2, #282828);
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    padding: 0.5em;
+    margin: -0.5em calc(-0.5em - 1px) 0 calc(-0.5em - 1px);
+    border-radius: 0.5em 0.5em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-dialog-titlebar > span {
+    padding: 0;
+    width: auto;
+    flex-grow: 1;
+    margin: 0.2em 0 0 0.2em;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-dialog-titlebar .ui-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    margin: 0;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-tabs .ui-tabs-nav {
+    border-bottom: 1px solid var(--USER-surface-4, #535353);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background-color: var(--USER-surface-3, #303030);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-state-default:not(.ui-tabs-active) {
+    background-color: var(--USER-surface-2, #282828);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-state-default:not(.ui-tabs-active) a {
+    color: var(--USER-text-grayed, #bbbbbb);
+    text-shadow: none;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog fieldset {
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog fieldset legend,
+  #wkofs_bkgd ~ .wkof_settings_dialog fieldset section {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog fieldset hr {
+    border-color: var(--USER-surface-4, #535353);
+    border-bottom: none;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-widget-content {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog select,
+  #wkofs_bkgd ~ .wkof_settings_dialog input[type=text],
+  #wkofs_bkgd ~ .wkof_settings_dialog input[type=number],
+  #wkofs_bkgd ~ .wkof_settings_dialog input[type=password] {
+    border-color: color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
+    background-color: var(--USER-surface-4, #535353);
+    color: var(--USER-text, #eeeeee);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog select.invalid,
+  #wkofs_bkgd ~ .wkof_settings_dialog input[type=text].invalid,
+  #wkofs_bkgd ~ .wkof_settings_dialog input[type=number].invalid,
+  #wkofs_bkgd ~ .wkof_settings_dialog input[type=password].invalid {
+    background-color: var(--USER-incorrect, #9c4644);
+    color: var(--USER-text, #eeeeee);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog button {
+    background-color: var(--USER-surface-4, #535353);
+    border-color: color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+    padding: 0.5em 1em;
+    height: 2em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog button:hover {
+    color: var(--USER-surface-4, #535353);
+    background-color: var(--USER-surface-inv, #bababa);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog button:active {
+    background-color: var(--USER-text, #eeeeee);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .note.error {
+    color: var(--USER-incorrect, #9c4644);
+  }
+  #wkofs_bkgd ~ .wkof_settings_dialog .ui-dialog-buttonpane {
+    background-color: var(--USER-surface-3, #303030);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  
+  #wkofs_bkgd ~ .wkof_progbar_dlg {
+    background: var(--USER-surface-3, #303030);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    border-top: none;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 0 -3px 25px var(--USER-surface-1, #151515);
+    padding: 0.5em 0.5em;
+  }
+  #wkofs_bkgd ~ .wkof_progbar_dlg .ui-dialog-titlebar {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+    background: var(--USER-surface-2, #282828);
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    padding: 0.5em;
+    margin: -0.5em calc(-0.5em - 1px) 0 calc(-0.5em - 1px);
+    border-radius: 0.5em 0.5em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #wkofs_bkgd ~ .wkof_progbar_dlg .ui-dialog-titlebar > span {
+    padding: 0;
+    width: auto;
+    flex-grow: 1;
+    margin: 0.2em 0 0 0.2em;
+  }
+  #wkofs_bkgd ~ .wkof_progbar_dlg .ui-dialog-titlebar .ui-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    margin: 0;
+  }
+  #wkofs_bkgd ~ .wkof_progbar_dlg .ui-widget-content {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkofs_bkgd ~ .wkof_progbar_dlg #wkof_progbar_dlg .wkof_progbar {
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkofs_bkgd ~ .wkof_progbar_dlg #wkof_progbar_dlg .wkof_progbar .ui-progressbar-value {
+    margin: 0;
+    background-image: none;
+    background: var(--USER-progress, #a97e42);
+    border-color: var(--USER-progress, #a97e42);
+  }
+  
+  #scripts-menu.menu-type-quiz ul.dropdown-menu {
+    background-color: var(--USER-surface-3, #303030);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #scripts-menu.menu-type-quiz ul.dropdown-menu li,
+  #scripts-menu.menu-type-quiz ul.dropdown-menu li a {
+    color: var(--USER-text, #eeeeee);
   }
   
   .todays-lessons-widget--complete {
