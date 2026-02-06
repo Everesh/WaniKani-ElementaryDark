@@ -212,3 +212,15 @@
     }
   }
 }
+
+// Review scripts menu
+
+#scripts-menu.menu-type-quiz ul.dropdown-menu {
+  background-color: $surface-3;
+  border-color: $surface-4;
+
+  li,
+  li a {
+    color: $text;
+  }
+}
