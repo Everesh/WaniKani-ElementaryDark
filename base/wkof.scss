@@ -74,7 +74,75 @@
     }
   }
 
+  // Groups
+
+  fieldset {
+    border-color: $surface-4;
+
+    legend,
+    section {
+      color: $text;
+      text-shadow: none;
+    }
+
+    hr {
+      border-color: $surface-4;
+      border-bottom: none; // border-top is already set, this just doubled height
+    }
+  }
+
+  // Labels
+
+  .ui-widget-content {
+    color: $text;
+    text-shadow: none;
+  }
+
+  // Dialog opt
+
+  select,
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    border-color: color-mix(in srgb, #{$surface-4}, white 10%);
+    background-color: $surface-4;
+    color: $text;
+
+    &.invalid {
+      background-color: $incorrect;
+      color: $text;
+    }
+  }
+
+  button {
+    background-color: $surface-4;
+    border-color: color-mix(in srgb, #{$surface-4}, white 10%);
+    color: $text;
+    text-shadow: none;
+
+    padding: 0.5em 1em;
+    height: 2em;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: $surface-4;
+      background-color: $surface-inv;
+    }
+
+    &:active {
+      background-color: $text;
+    }
+  }
+
+  .note.error {
+    color: $incorrect;
+  }
+
+  // Button pane
+
   .ui-dialog-buttonpane {
     background-color: $surface-3;
+    border-color: $surface-4;
   }
 }
