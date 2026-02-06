@@ -1,0 +1,46 @@
+// base/wkof.scss
+
+@use "variables" as *;
+
+// Settings dialog
+
+#wkofs_bkgd ~ .wkof_settings_dialog {
+  background: $surface-2;
+  border: 1px solid color-mix(in srgb, #{$surface-2}, white 10%);
+
+  padding: 0.5em 0.5em;
+
+  .ui-dialog-titlebar {
+    color: $text;
+    text-shadow: none;
+    background: color-mix(in srgb, #{$surface-2}, black 10%);
+    border: 1px solid color-mix(in srgb, #{$surface-2}, white 10%);
+
+    padding: 0.5em;
+    margin: -0.5em calc(-0.5em - 1px) -2.5em calc(-0.5em - 1px);
+    transform: translateY(-2.5em);
+
+    border-radius: 0.5em 0.5em 0 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > span {
+      padding: 0;
+      width: auto;
+      flex-grow: 1;
+      margin: 0.2em 0 0 0.2em;
+    }
+
+    .ui-button {
+      background: transparent;
+      border: none;
+
+      position: relative;
+      margin: 0;
+
+      // .ui-icon this is just filtrable, skip for now
+    }
+  }
+}
