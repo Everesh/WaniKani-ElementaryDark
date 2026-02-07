@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.1.9
+@version      3.1.10
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -11,6 +11,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.wanikani.com") {
+  @charset "UTF-8";
   :root {
     --text-shadow-light: none;
     --text-shadow-dark: none;
@@ -390,7 +391,7 @@
     --color-grouped-navigation-header-text: var(--USER-text, #eeeeee);
     --color-study-streak-today-incomplete-background: var(--USER-surface-3, #303030);
     --color-study-streak-today-complete-background: var(--USER-surface-3, #303030);
-    --color-study-streak-today-complete-text: var(--USER-progress, #a97e42);
+    --color-study-streak-today-complete-text: var(--USER-text, #eeeeee);
     --color-item-spread-row-count: var(--USER-text, #eeeeee);
     --color-lesson-and-review-border: var(--USER-surface-3, #303030);
     --color-text-highlight-radical-text: var(--USER-text, #eeeeee);
@@ -697,33 +698,6 @@
     color: var(--USER-text-inv, #151515);
   }
   
-  .extra-study-flash-card-widget__keyboard-indicator {
-    --color-key-outline: var(--USER-text-grayed, #bbbbbb);
-    --color-key-letter: var(--USER-text-grayed, #bbbbbb);
-    --color-key-face: var(--USER-surface-3, #303030);
-    --color-key-sides: var(--USER-surface-3, #303030);
-  }
-  
-  .extra-study-flash-card-widget__keyboard-indicator[focused] {
-    --color-key-outline: var(--USER-text, #eeeeee);
-    --color-key-letter: var(--USER-text, #eeeeee);
-    --color-key-face: var(--USER-surface-3, #303030);
-    --color-key-sides: var(--USER-surface-3, #303030);
-  }
-  
-  .wk-notification--info .wk-notification__button {
-    --color-button-hover-background: var(
-      --color-button-frameless-hover-background,
-      transparent
-    );
-    --color-button-active-background: var(
-      --color-button-frameless-active-background,
-      transparent
-    );
-    --color-button-icon: var(--color-text, var(--USER-text, #eeeeee));
-    --color-button-frameless-hover-border: var(--USER-text, #eeeeee);
-  }
-  
   /*  Invert highlight fg, bg
    *    WaniKani uses same --color for text of all highlights
    *    This stylesheets require inverted text color for meaning/reading hl
@@ -770,6 +744,198 @@
     --ED-footer-filter: var(--USER-footer-filter, invert(1));
     --ED-loading-filter: var(--USER-loading-filter, grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68));
     --ED-days-studied-filter: var(--USER-days-studied-filter, invert(0.85));
+  }
+  
+  #wkof_ds .wkof_settings_dialog {
+    background: var(--USER-surface-3, #303030);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    border-top: none;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 0 0 10px var(--USER-surface-1, #151515);
+    padding: 4px;
+  }
+  #wkof_ds .wkof_settings_dialog .ui-dialog-titlebar {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+    background: var(--USER-surface-2, #282828);
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    padding: 0.5em;
+    margin: -4px -5px 0 -5px;
+    border-radius: 0.5em 0.5em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #wkof_ds .wkof_settings_dialog .ui-dialog-titlebar > span {
+    padding: 0;
+    width: auto;
+    flex-grow: 1;
+    margin: 0.2em 0 0 0.2em;
+  }
+  #wkof_ds .wkof_settings_dialog .ui-dialog-titlebar .ui-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    margin: 0;
+  }
+  #wkof_ds .wkof_settings_dialog .ui-tabs .ui-tabs-nav {
+    border-bottom: 1px solid var(--USER-surface-4, #535353);
+  }
+  #wkof_ds .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background-color: var(--USER-surface-3, #303030);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkof_ds .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkof_ds .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-state-default:not(.ui-tabs-active) {
+    background-color: var(--USER-surface-2, #282828);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkof_ds .wkof_settings_dialog .ui-tabs .ui-tabs-nav li.ui-state-default:not(.ui-tabs-active) a {
+    color: var(--USER-text-grayed, #bbbbbb);
+    text-shadow: none;
+  }
+  #wkof_ds .wkof_settings_dialog fieldset {
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkof_ds .wkof_settings_dialog fieldset legend,
+  #wkof_ds .wkof_settings_dialog fieldset section {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkof_ds .wkof_settings_dialog fieldset hr {
+    border-color: var(--USER-surface-4, #535353);
+    border-bottom: none;
+  }
+  #wkof_ds .wkof_settings_dialog .ui-widget-content {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkof_ds .wkof_settings_dialog select,
+  #wkof_ds .wkof_settings_dialog input[type=text],
+  #wkof_ds .wkof_settings_dialog input[type=number],
+  #wkof_ds .wkof_settings_dialog input[type=password] {
+    border-color: color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
+    background-color: var(--USER-surface-4, #535353);
+    color: var(--USER-text, #eeeeee);
+  }
+  #wkof_ds .wkof_settings_dialog select.invalid,
+  #wkof_ds .wkof_settings_dialog input[type=text].invalid,
+  #wkof_ds .wkof_settings_dialog input[type=number].invalid,
+  #wkof_ds .wkof_settings_dialog input[type=password].invalid {
+    background-color: var(--USER-incorrect, #9c4644);
+    color: var(--USER-text, #eeeeee);
+  }
+  #wkof_ds .wkof_settings_dialog button {
+    background-color: var(--USER-surface-4, #535353);
+    border-color: color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+    padding: 0.5em 1em;
+    height: 2em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #wkof_ds .wkof_settings_dialog button:hover {
+    color: var(--USER-surface-4, #535353);
+    background-color: var(--USER-surface-inv, #bababa);
+  }
+  #wkof_ds .wkof_settings_dialog button:active {
+    background-color: var(--USER-text, #eeeeee);
+  }
+  #wkof_ds .wkof_settings_dialog .note.error {
+    color: var(--USER-incorrect, #9c4644);
+  }
+  #wkof_ds .wkof_settings_dialog .ui-dialog-buttonpane {
+    background-color: var(--USER-surface-3, #303030);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkof_ds .wkof_settings_dialog .setting[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: var(--USER-surface-4, #535353);
+    color: var(--USER-text, #eeeeee);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #wkof_ds .wkof_settings_dialog .setting[type=checkbox][disabled=""] {
+    background-color: var(--USER-surface-2, #282828);
+    color: var(--USER-text-grayed, #bbbbbb);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    cursor: not-allowed;
+  }
+  #wkof_ds .wkof_settings_dialog .setting[type=checkbox]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    font-size: 24px;
+  }
+  
+  #wkof_ds .wkof_progbar_dlg {
+    background: var(--USER-surface-3, #303030);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    border-top: none;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 0 0 10px var(--USER-surface-1, #151515);
+    padding: 4px;
+  }
+  #wkof_ds .wkof_progbar_dlg .ui-dialog-titlebar {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+    background: var(--USER-surface-2, #282828);
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    padding: 0.5em;
+    margin: -4px -5px 0 -5px;
+    border-radius: 0.5em 0.5em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #wkof_ds .wkof_progbar_dlg .ui-dialog-titlebar > span {
+    padding: 0;
+    width: auto;
+    flex-grow: 1;
+    margin: 0.2em 0 0 0.2em;
+  }
+  #wkof_ds .wkof_progbar_dlg .ui-dialog-titlebar .ui-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    margin: 0;
+  }
+  #wkof_ds .wkof_progbar_dlg .ui-widget-content {
+    color: var(--USER-text, #eeeeee);
+    text-shadow: none;
+  }
+  #wkof_ds .wkof_progbar_dlg #wkof_progbar_dlg .wkof_progbar {
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #wkof_ds .wkof_progbar_dlg #wkof_progbar_dlg .wkof_progbar .ui-progressbar-value {
+    margin: 0;
+    background-image: none;
+    background: var(--USER-progress, #a97e42);
+    border-color: var(--USER-progress, #a97e42);
+  }
+  
+  #scripts-menu.menu-type-quiz ul.dropdown-menu {
+    background-color: var(--USER-surface-3, #303030);
+    border-color: var(--USER-surface-4, #535353);
+  }
+  #scripts-menu.menu-type-quiz ul.dropdown-menu li,
+  #scripts-menu.menu-type-quiz ul.dropdown-menu li a {
+    color: var(--USER-text, #eeeeee);
   }
   
   .todays-lessons-widget--complete {
@@ -827,6 +993,9 @@
     --color-count-bubble-divider: var(--USER-review, #56638a);
   }
   .reviews-widget.theme--neon:not(.reviews-widget--complete.theme--neon) .wk-icon {
+    --color-icon: var(--USER-text, #eeeeee);
+  }
+  .reviews-widget.theme--neon:not(.reviews-widget--complete.theme--neon) .count-bubble__priority-count-icon .wk-icon {
     --color-icon: var(--USER-review, #56638a);
   }
   
@@ -936,13 +1105,58 @@
   }
   
   .wk-icon.wk-icon--widget_study_streak_complete,
-  .study-streak-widget__offering {
-    --color-icon-primary: var(--USER-surface-4, #535353);
-    --color-icon-secondary: var(--USER-surface-inv, #bababa);
+  .study-streak-widget__offering,
+  .study-streak-widget__day--miss .study-streak-widget__day-icon {
+    --color-icon-primary: var(--USER-text, #eeeeee);
+    --color-icon-secondary: var(--USER-surface-2, #282828);
+  }
+  .wk-icon.wk-icon--widget_study_streak_complete .wk-icon--turtle,
+  .study-streak-widget__offering .wk-icon--turtle,
+  .study-streak-widget__day--miss .study-streak-widget__day-icon .wk-icon--turtle {
+    --color-icon-tertiary: var(--USER-surface-3, #303030);
+  }
+  
+  .study-streak-widget__days {
+    --color-icon: var(--USER-text, #eeeeee);
+  }
+  
+  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__day--complete .study-streak-widget__day-icon {
+    --color-icon-tertiary: var(--USER-surface-2, #282828) !important;
+  }
+  
+  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__offering--available {
+    --color-icon-secondary: var(--USER-surface-2, #282828) !important;
   }
   
   img[src*="level_up_image.svg"] {
     content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator {
+    --color-key-outline: var(--USER-text-grayed, #bbbbbb);
+    --color-key-letter: var(--USER-text-grayed, #bbbbbb);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .extra-study-flash-card-widget__keyboard-indicator[focused] {
+    --color-key-outline: var(--USER-text, #eeeeee);
+    --color-key-letter: var(--USER-text, #eeeeee);
+    --color-key-face: var(--USER-surface-3, #303030);
+    --color-key-sides: var(--USER-surface-3, #303030);
+  }
+  
+  .wk-notification--info .wk-notification__button {
+    --color-button-hover-background: var(
+      --color-button-frameless-hover-background,
+      transparent
+    );
+    --color-button-active-background: var(
+      --color-button-frameless-active-background,
+      transparent
+    );
+    --color-button-icon: var(--color-text, var(--USER-text, #eeeeee));
+    --color-button-frameless-hover-border: var(--USER-text, #eeeeee);
   }
   
   .lesson-picker .page-header__title {
