@@ -153,19 +153,25 @@
   .setting[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
+
+    display: inline-block;
+    position: relative;
     width: 30px;
     height: 30px;
+
     background: $surface-4;
+    color: $text;
     border: 1px solid color-mix(in srgb, #{$surface-4}, white 10%);
     border-radius: 3px;
+
     cursor: pointer;
-    position: relative;
-    display: inline-block;
 
     &[disabled=""] {
+      background-color: $surface-2;
+      color: $text-grayed;
+      border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
+
       cursor: not-allowed;
-      background-color: $surface-3;
-      color: $surface-4;
     }
   }
 
