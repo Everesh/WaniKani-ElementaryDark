@@ -12,7 +12,7 @@
   border-top-right-radius: 1em;
   box-shadow: 0 0 10px #{$surface-1};
 
-  padding: 0.5em 0.5em;
+  padding: 4px;
 
   // Heading
 
@@ -24,7 +24,7 @@
     border-bottom: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
 
     padding: 0.5em;
-    margin: -0.5em calc(-0.5em - 1px) 0 calc(-0.5em - 1px);
+    margin: -4px -5px 0 -5px;
 
     border-radius: 0.5em 0.5em 0 0;
 
@@ -147,6 +147,29 @@
     background-color: $surface-3;
     border-color: $surface-4;
   }
+
+  // Checkboxes
+
+  .setting[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: $surface-4;
+    border: 1px solid color-mix(in srgb, #{$surface-4}, white 10%);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+
+  .setting[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 20px;
+  }
 }
 
 // Progress dialog
@@ -159,7 +182,7 @@
   border-top-right-radius: 1em;
   box-shadow: 0 0 10px #{$surface-1};
 
-  padding: 0.5em 0.5em;
+  padding: 4px;
 
   // Heading
 
@@ -171,7 +194,7 @@
     border-bottom: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
 
     padding: 0.5em;
-    margin: -0.5em calc(-0.5em - 1px) 0 calc(-0.5em - 1px);
+    margin: -4px -5px 0 -5px;
 
     border-radius: 0.5em 0.5em 0 0;
 
