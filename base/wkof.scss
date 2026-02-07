@@ -4,13 +4,13 @@
 
 // Settings dialog
 
-#wkofs_bkgd ~ .wkof_settings_dialog {
+#wkof_ds .wkof_settings_dialog {
   background: $surface-3;
   border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
   border-top: none;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  box-shadow: 0 -3px 25px #{$surface-1};
+  box-shadow: 0 0 10px #{$surface-1};
 
   padding: 0.5em 0.5em;
 
@@ -151,13 +151,13 @@
 
 // Progress dialog
 
-#wkofs_bkgd ~ .wkof_progbar_dlg {
+#wkof_ds .wkof_progbar_dlg {
   background: $surface-3;
   border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
   border-top: none;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  box-shadow: 0 -3px 25px #{$surface-1};
+  box-shadow: 0 0 10px #{$surface-1};
 
   padding: 0.5em 0.5em;
 
