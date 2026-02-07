@@ -153,22 +153,28 @@
   .setting[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background: $surface-4;
     border: 1px solid color-mix(in srgb, #{$surface-4}, white 10%);
     border-radius: 3px;
     cursor: pointer;
     position: relative;
     display: inline-block;
+
+    &[disabled=""] {
+      cursor: not-allowed;
+      background-color: $surface-3;
+      color: $surface-4;
+    }
   }
 
   .setting[type="checkbox"]:checked::after {
     content: "✔";
     position: absolute;
-    top: 4px;
+    top: 8px;
     left: 4px;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
