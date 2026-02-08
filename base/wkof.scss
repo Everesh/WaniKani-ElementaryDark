@@ -150,14 +150,15 @@
 
   // Checkboxes
 
-  .setting[type="checkbox"] {
+  input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
 
     display: inline-block;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
 
     background: $surface-4;
     color: $text;
@@ -177,8 +178,8 @@
     &:checked::after {
       content: "✔";
       position: absolute;
-      top: 8px;
-      left: 4px;
+      top: 5px;
+      left: 1px;
       font-size: 24px;
     }
   }
@@ -217,7 +218,7 @@
       &:checked::after {
         content: "✔";
         position: absolute;
-        top: 2px;
+        top: 3px;
         left: 1px;
         font-size: 22px;
       }
