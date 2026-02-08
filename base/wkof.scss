@@ -173,14 +173,55 @@
 
       cursor: not-allowed;
     }
+
+    &:checked::after {
+      content: "✔";
+      position: absolute;
+      top: 8px;
+      left: 4px;
+      font-size: 24px;
+    }
   }
 
-  .setting[type="checkbox"]:checked::after {
-    content: "✔";
-    position: absolute;
-    top: 8px;
-    left: 4px;
-    font-size: 24px;
+  // Selection filters
+  .filters .row {
+    &.checked {
+      background-color: $surface-2;
+    }
+
+    .enable input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+
+      display: inline-block;
+      position: relative;
+      width: 22px;
+      height: 22px;
+      margin: 4px 4px 4px 0;
+
+      background: $surface-4;
+      color: $text;
+      border: 1px solid color-mix(in srgb, #{$surface-4}, white 10%);
+      border-radius: 3px;
+
+      cursor: pointer;
+
+      &[disabled=""] {
+        background-color: $surface-2;
+        color: $text-grayed;
+        border: 1px solid color-mix(in srgb, #{$surface-3}, white 10%);
+
+        cursor: not-allowed;
+      }
+
+      &:checked::after {
+        content: "✔";
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        font-size: 22px;
+      }
+    }
   }
 }
 
