@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.10.202602071817
+@version      3.1.11.202602090704
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -854,31 +854,62 @@
     background-color: var(--USER-surface-3, #303030);
     border-color: var(--USER-surface-4, #535353);
   }
-  #wkof_ds .wkof_settings_dialog .setting[type=checkbox] {
+  #wkof_ds .wkof_settings_dialog input[type=checkbox] {
     appearance: none;
     -webkit-appearance: none;
     display: inline-block;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
     background: var(--USER-surface-4, #535353);
     color: var(--USER-text, #eeeeee);
     border: 1px solid color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
     border-radius: 3px;
     cursor: pointer;
   }
-  #wkof_ds .wkof_settings_dialog .setting[type=checkbox][disabled=""] {
+  #wkof_ds .wkof_settings_dialog input[type=checkbox][disabled=""] {
     background-color: var(--USER-surface-2, #282828);
     color: var(--USER-text-grayed, #bbbbbb);
     border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
     cursor: not-allowed;
   }
-  #wkof_ds .wkof_settings_dialog .setting[type=checkbox]:checked::after {
+  #wkof_ds .wkof_settings_dialog input[type=checkbox]:checked::after {
     content: "✔";
     position: absolute;
-    top: 8px;
-    left: 4px;
+    top: 5px;
+    left: 1px;
     font-size: 24px;
+  }
+  #wkof_ds .wkof_settings_dialog .filters .row.checked {
+    background-color: var(--USER-surface-2, #282828);
+  }
+  #wkof_ds .wkof_settings_dialog .filters .row .enable input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 4px 4px 4px 0;
+    background: var(--USER-surface-4, #535353);
+    color: var(--USER-text, #eeeeee);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-4, #535353), white 10%);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #wkof_ds .wkof_settings_dialog .filters .row .enable input[type=checkbox][disabled=""] {
+    background-color: var(--USER-surface-2, #282828);
+    color: var(--USER-text-grayed, #bbbbbb);
+    border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
+    cursor: not-allowed;
+  }
+  #wkof_ds .wkof_settings_dialog .filters .row .enable input[type=checkbox]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    font-size: 22px;
   }
   
   #wkof_ds .wkof_progbar_dlg {
