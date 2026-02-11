@@ -55,54 +55,20 @@ jobs:
       - name: Build CSS (Stable)
         if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'
         run: |
-          INPUT="main.scss"
-          OUTPUT="WaniKani-ElementaryDark.user.css"
-          VERSION="version"
-
           mkdir -p dist
-
-          echo "/* ==UserStyle==
-          @name         WaniKani Elementary Dark
-          @namespace    github.com/openstyles/stylus
-          @version      $(cat "$VERSION")
-          @license      MIT
-          @description  Dark theme for the WaniKani domain
-          @author       Everesh
-          @homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
-          @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
-          @updateURL    https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark.user.css
-          ==/UserStyle== */
-
-          @-moz-document domain(\"www.wanikani.com\") {
-          $(sass "$INPUT" | sed 's/^/  /')
-          }" > "dist/$OUTPUT"
+          WKED_OUTPUT="dist/WaniKani-ElementaryDark.user.css" \
+          bash make.sh
 
       - name: Build CSS (Nightly)
         if: steps.version.outputs.is_dev == 'true' || steps.check_release.outputs.exists == 'false'
         run: |
-          INPUT="main.scss"
-          OUTPUT="WaniKani-ElementaryDark-nightly.user.css"
-          VERSION="version"
           TIMESTAMP=$(date +%Y%m%d%H%M)
-          BASE_VERSION=$(cat "$VERSION" | sed 's/-dev//')
-
+          BASE_VERSION=$(cat version | sed 's/-dev//')
           mkdir -p dist
-
-          echo "/* ==UserStyle==
-          @name         WaniKani Elementary Dark (Nightly)
-          @namespace    github.com/openstyles/stylus
-          @version      ${BASE_VERSION}.${TIMESTAMP}
-          @license      MIT
-          @description  Dark theme for the WaniKani domain (Nightly/Dev version)
-          @author       Everesh
-          @homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
-          @supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
-          @updateURL    https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css
-          ==/UserStyle== */
-
-          @-moz-document domain(\"www.wanikani.com\") {
-          $(sass "$INPUT" | sed 's/^/  /')
-          }" > "dist/$OUTPUT"
+          WKED_OUTPUT="dist/WaniKani-ElementaryDark-nightly.user.css" \
+          WKED_VERSION="${BASE_VERSION}.${TIMESTAMP}" \
+          WKED_UPDATE_URL="https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css" \
+          bash make.sh
 
       - name: Deploy to GitHub Pages
         if: steps.version.outputs.is_dev == 'true' || steps.check_release.outputs.exists == 'false'

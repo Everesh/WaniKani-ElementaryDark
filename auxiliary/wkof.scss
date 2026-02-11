@@ -1,8 +1,6 @@
 // base/wkof.scss
 
-@use "variables" as *;
-
-/*! WKOF_START */
+@use "../base/variables" as *;
 
 // Settings dialog
 
@@ -303,5 +301,3 @@
     color: $text;
   }
 }
-
-/*! WKOF_END */
