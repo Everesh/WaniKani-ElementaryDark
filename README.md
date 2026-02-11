@@ -14,16 +14,12 @@ Successor to [WKElementaryDark](https://github.com/Sepitus-exe/WKElementaryDark)
 
 ## Build from source
 
-1. Raw CSS
 ```sh
-sass main.scss
+./make.sh
 ```
 
-2. Postprocessed, Stylus compatible CSS
-```sh
-make.sh
-```
-> ***!*** For conviniences sake while prototyping, the make script not only exports to a file called "WaniKani-ElementaryDark.css", but also to your clipboard
+> [!TIP]
+Adding a `-c` flag to the command clips the processed stylesheet
 
 ## Why the Rewrite?
 
