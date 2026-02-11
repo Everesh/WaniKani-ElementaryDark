@@ -65,7 +65,7 @@ jobs:
           TIMESTAMP=$(date +%Y%m%d%H%M)
           BASE_VERSION=$(cat version | sed 's/-dev//')
           mkdir -p dist
-          WKED_APP_NAME="WaniKani Elementary Dark Nightly"
+          WKED_APP_NAME="WaniKani Elementary Dark (Nightly)" \
           WKED_OUTPUT="dist/WaniKani-ElementaryDark-nightly.user.css" \
           WKED_VERSION="${BASE_VERSION}.${TIMESTAMP}" \
           WKED_UPDATE_URL="https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css" \
