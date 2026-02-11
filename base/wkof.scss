@@ -2,6 +2,8 @@
 
 @use "variables" as *;
 
+/*! WKOF_START */
+
 // Settings dialog
 
 #wkof_ds .wkof_settings_dialog {
@@ -301,3 +303,5 @@
     color: $text;
   }
 }
+
+/*! WKOF_END */
