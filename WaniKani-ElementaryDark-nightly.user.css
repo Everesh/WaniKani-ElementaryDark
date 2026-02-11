@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.11.202602090704
+@version      3.1.11.202602112050
 @license      MIT
 @description  Dark theme for the WaniKani domain (Nightly/Dev version)
 @author       Everesh
@@ -746,6 +746,7 @@
     --ED-days-studied-filter: var(--USER-days-studied-filter, invert(0.85));
   }
   
+  /*! WKOF_START */
   #wkof_ds .wkof_settings_dialog {
     background: var(--USER-surface-3, #303030);
     border: 1px solid color-mix(in srgb, var(--USER-surface-3, #303030), white 10%);
@@ -969,6 +970,7 @@
     color: var(--USER-text, #eeeeee);
   }
   
+  /*! WKOF_END */
   .todays-lessons-widget--complete {
     --color-count-bubble-background: var(--USER-text, #eeeeee);
     --color-count-bubble-text: var(--USER-text-inv, #151515);
