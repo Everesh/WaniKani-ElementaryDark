@@ -8,6 +8,7 @@ WKOF_FILE="${WKED_WKOF:-auxiliary/wkof.scss}"
 OUTPUT_FILE="${WKED_OUTPUT:-WaniKani-ElementaryDark.css}"
 UPDATE_URL="${WKED_UPDATE_URL:-https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark.user.css}"
 VERSION="${WKED_VERSION:-}" # will try to recover on "" via $(cat version)
+APP_NAME="${WKED_APP_NAME:-WaniKani Elementary Dark}"
 
 # Guard clauses
 
@@ -45,7 +46,7 @@ WKOF_FORCE=$(echo "$WKOF_ADAPTIVE" | sed 's/\([^!]\);$/\1 !important;/')
 
 cat <<EOF >"$OUTPUT_FILE"
 /* ==UserStyle==
-@name         WaniKani Elementary Dark
+@name         ${APP_NAME}
 @namespace    github.com/openstyles/stylus
 @version      ${VERSION}
 @license      MIT
