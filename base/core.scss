@@ -329,14 +329,15 @@ turbo-frame[data-show-loading="true"]:not([complete]):after {
 }
 
 .wk-hint {
-  --color-icon: #{$text-inv};
-  color: $text-inv;
-  background-color: $surface-inv;
+  --color-icon: #{$text};
+  color: $text;
+  background: $surface-3;
   text-shadow: none;
-  border-radius: 5px;
+  border-radius: 0;
+  border-left: 5px solid #{$text};
 
   .wk-hint__title {
     text-shadow: none;
-    color: $text-inv;
+    color: $text;
   }
 }
