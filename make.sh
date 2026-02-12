@@ -38,9 +38,9 @@ fi
 
 # Compile
 
-MAIN_CSS=$(sass "$ROOT_FILE")
+MAIN_CSS=$(sass "$ROOT_FILE" | sed 's/^/  /')
 
-WKOF_ADAPTIVE=$(sass "$WKOF_FILE" | sed 's/^/  /')
+WKOF_ADAPTIVE=$(sass "$WKOF_FILE" | tail -n +2 | sed 's/^/  /')
 
 WKOF_FORCE=$(echo "$WKOF_ADAPTIVE" | sed 's/\([^!]\);$/\1 !important;/')
 
@@ -57,20 +57,20 @@ cat <<EOF >"$OUTPUT_FILE"
 @updateURL    ${UPDATE_URL}
 
 @advanced     dropdown wkof_mode "Open Framework integration" {
-    wkof_adaptive "Adaptive" <<<EOT
+  wkof_adaptive "Adaptive" <<<EOT
 ${WKOF_ADAPTIVE}
-    EOT;
-    wkof_force "Force" <<<EOT
+  EOT;
+  wkof_force "Force" <<<EOT
 ${WKOF_FORCE}
-    EOT;
-    wkof_none "None" <<<EOT
-    EOT;
+  EOT;
+  wkof_none "None" <<<EOT
+  EOT;
 }
 ==/UserStyle== */
 
 @-moz-document domain("www.wanikani.com") {
 ${MAIN_CSS}
-/*[[wkof_mode]]*/
+  /*[[wkof_mode]]*/
 }
 EOF
 
