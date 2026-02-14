@@ -367,8 +367,8 @@
   --color-progress-chart-label-text: #{$text};
   --color-progress-chart-label-text-shadow: none;
   --color-progress-chart-metric-text: #{$text};
-  --color-progress-chart-metric-count: #{$surface-1};
-  --color-progress-chart-metric-count-background: #{$text};
+  --color-progress-chart-metric-count: #{$text-inv};
+  --color-progress-chart-metric-count-background: #{$surface-inv};
   --color-progress-chart-metric-count-shadow: none;
   --color-public-profile-avatar-border: #{$surface-2};
   --color-public-profile-info-background: #{$surface-2};
