@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.12.202602141557
+@version      3.1.12.202602141602
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1958,7 +1958,7 @@
   }
   .site-content-container .container:has(.character-grid) .search--open {
     transform: translateY(-6em);
-    margin-bottom: -4em;
+    margin-bottom: calc(-5em - 8px);
   }
   .site-content-container .container:has(.character-grid) .search--open .search__button {
     transform: translateY(4px);
@@ -2008,7 +2008,7 @@
   
   .site-content-container .container:has(.subject-page-header) .search--open {
     transform: translateY(-6em);
-    margin-bottom: -4em;
+    margin-bottom: calc(-5em - 8px);
   }
   .site-content-container .container:has(.subject-page-header) .search--open .search__button {
     transform: translateY(4px);
