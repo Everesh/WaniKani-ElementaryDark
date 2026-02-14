@@ -84,7 +84,15 @@
   }
 
   .character-grid__header {
-    border: 1px solid #{$surface-4};
+    .character-grid__header-content {
+      border-radius: inherit;
+      border: 1px solid #{$surface-4};
+      border-bottom: none;
+    }
+
+    .progress-chart__progress-bar-container {
+      box-shadow: none;
+    }
   }
 }
 
