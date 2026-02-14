@@ -72,7 +72,7 @@
 
   .search--open {
     transform: translateY(-6em);
-    margin-bottom: -4em;
+    margin-bottom: calc(-5em - 8px);
 
     .search__button {
       transform: translateY(4px);
