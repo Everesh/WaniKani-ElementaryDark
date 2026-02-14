@@ -10,9 +10,12 @@
   //--color-gray-light: #EEE;
   //--color-white: #FFF;
   //--color-red: #F03;
-  //--color-blue: #00AAFF;
-  //--color-pink: #FF00AA;
-  //--color-purple: #AA00FF;
+  --color-blue: var(--color-radical);
+  --color-blue-dark: var(--color-radical-dark);
+  --color-pink: var(--color-kanji);
+  --color-pink-dark: var(--color-kanji-dark);
+  --color-purple: var(--color-vocabulary);
+  --color-purple-dark: var(--color-vocabulary-dark);
   --color-text: #{$text};
   --color-character-text: #{$text};
   --color-title-underline: #{$text};
@@ -20,29 +23,45 @@
   --color-link-active: #{$text};
   --color-link-hover: #{$text};
   --color-radical: #{$radical};
-  //--color-radical-dark: #0093DD;
-  //--color-radical-highlight: #88D7FF;
-  //--color-radical-lowlight: #069;
+  --color-radical-dark: color-mix(in srgb, var(--color-radical), black 10%);
+  --color-radical-highlight: color-mix(
+    in srgb,
+    var(--color-radical),
+    white 10%
+  );
+  --color-radical-lowlight: color-mix(in srgb, var(--color-radical), black 20%);
   --color-radical-gradient: none;
   --color-kanji: #{$kanji};
-  //--color-kanji-dark: #DD0093;
-  //--color-kanji-highlight: #F6C;
-  //--color-kanji-lowlight: #CC0088;
+  --color-kanji-dark: color-mix(in srgb, var(--color-kanji), black 10%);
+  --color-kanji-highlight: color-mix(in srgb, var(--color-kanji), white 10%);
+  --color-kanji-lowlight: color-mix(in srgb, var(--color-kanji), black 20%);
   --color-kanji-gradient: none;
   --color-vocabulary: #{$vocab};
-  //--color-vocabulary-dark: #9300DD;
-  //--color-vocabulary-highlight: #C655FF;
-  //--color-vocabulary-lowlight: #8800CC;
+  --color-vocabulary-dark: color-mix(
+    in srgb,
+    var(--color-vocabulary),
+    black 10%
+  );
+  --color-vocabulary-highlight: color-mix(
+    in srgb,
+    var(--color-vocabulary),
+    white 10%
+  );
+  --color-vocabulary-lowlight: color-mix(
+    in srgb,
+    var(--color-vocabulary),
+    black 20%
+  );
   --color-vocabulary-gradient: none;
   --color-burned: #{$burned};
-  //--color-burned-dark: #484848;
-  //--color-burned-highlight: #555;
-  //--color-burned-lowlight: #333;
+  --color-burned-dark: color-mix(in srgb, var(--color-burned), black 10%);
+  --color-burned-highlight: color-mix(in srgb, var(--color-burned), white 10%);
+  --color-burned-lowlight: color-mix(in srgb, var(--color-burned), black 20%);
   --color-burned-gradient: none;
   --color-locked: #{$surface-4};
-  //--color-locked-dark: #BFBFBF;
-  //--color-locked-highlight: #DDD;
-  //--color-locked-lowlight: #999;
+  --color-locked-dark: color-mix(in srgb, var(--color-locked), black 10%);
+  --color-locked-highlight: color-mix(in srgb, var(--color-locked), white 10%);
+  --color-locked-lowlight: color-mix(in srgb, var(--color-locked), black 20%);
   --color-locked-gradient: none;
   --color-new-badge-background: #{$progress};
   --color-new-badge-text: #{$text};
@@ -577,4 +596,6 @@
   --color-review-forecast-priority-count-inside: #{$text};
   --color-subject-page-header-border: #{$surface-4};
   --color-section-header-border: #{$surface-4};
+  --color-item-spread-total-border: #{$surface-4};
+  --color-item-spread-total-background: #{$surface-3};
 }
