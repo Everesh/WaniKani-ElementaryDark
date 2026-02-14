@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.12.202602141728
+@version      3.1.12.202602141740
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -111,6 +111,13 @@
   }
   #wkof_ds .wkof_settings_dialog button:active {
     background-color: var(--USER-text, #eeeeee);
+  }
+  #wkof_ds .wkof_settings_dialog button.ui-dialog-titlebar-close {
+    height: 20px;
+    padding: 1px;
+  }
+  #wkof_ds .wkof_settings_dialog .pre_list_btn_grp button {
+    padding: 2px 0;
   }
   #wkof_ds .wkof_settings_dialog .note.error {
     color: var(--USER-incorrect, #9c4644);
@@ -335,6 +342,13 @@
   }
   #wkof_ds .wkof_settings_dialog button:active {
     background-color: var(--USER-text, #eeeeee) !important;
+  }
+  #wkof_ds .wkof_settings_dialog button.ui-dialog-titlebar-close {
+    height: 20px !important;
+    padding: 1px !important;
+  }
+  #wkof_ds .wkof_settings_dialog .pre_list_btn_grp button {
+    padding: 2px 0 !important;
   }
   #wkof_ds .wkof_settings_dialog .note.error {
     color: var(--USER-incorrect, #9c4644) !important;
