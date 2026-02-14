@@ -2,6 +2,17 @@
 
 @use "../base/variables" as *;
 
-.subject-character--small-with-meaning .subject-character__characters {
-  box-shadow: none;
+.public-profile {
+  .subject-character--small-with-meaning .subject-character__characters {
+    box-shadow: none;
+  }
+
+  .progress-chart__progress-bar-container,
+  .progress-chart__progress-bar {
+    border-radius: 8px;
+  }
+
+  .wk-panel {
+    border: 1px solid #{$surface-4};
+  }
 }
