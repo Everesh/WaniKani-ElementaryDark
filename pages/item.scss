@@ -129,6 +129,24 @@
     .subject-progress__meta-value {
       color: $text-grayed;
     }
+
+    .subject-progress__button {
+      color: $text;
+      background: $alert;
+      border-color: color-mix(in srgb, #{$alert}, white 10%);
+      box-shadow: none;
+      font-weight: bold;
+
+      &:hover {
+        border-color: color-mix(in srgb, #{$alert}, white 20%);
+        background-color: color-mix(in srgb, #{$alert}, white 10%);
+      }
+
+      &:active {
+        color: $alert;
+        background: $text;
+      }
+    }
   }
 
   background-color: $surface-2;
