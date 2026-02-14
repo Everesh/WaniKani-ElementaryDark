@@ -65,15 +65,26 @@
 
 .site-content-container .container:has(.character-grid) {
   background-color: $surface-2;
+  border: 1px solid #{$surface-4};
   border-radius: 8px;
   padding: 0 1.5em 0.5em 1.5em;
   margin-top: 1.5em;
+
   .search--open {
-    transform: translateY(-4em);
+    transform: translateY(-6em);
     margin-bottom: -4em;
+
+    .search__button {
+      transform: translateY(4px);
+    }
   }
+
   &:has(.search--open) {
-    transform: translateY(4em);
+    transform: translateY(calc(4em + 4px));
+  }
+
+  .character-grid__header {
+    border: 1px solid #{$surface-4};
   }
 }
 

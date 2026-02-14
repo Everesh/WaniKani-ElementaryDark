@@ -4,11 +4,15 @@
 
 .site-content-container .container:has(.subject-page-header) {
   .search--open {
-    transform: translateY(-4em);
+    transform: translateY(-6em);
     margin-bottom: -4em;
+
+    .search__button {
+      transform: translateY(4px);
+    }
   }
   &:has(.search--open) {
-    transform: translateY(4em);
+    transform: translateY(calc(4em + 4px));
   }
 
   .subject-character--expandable .subject-character__characters:hover::before {
@@ -151,6 +155,7 @@
 
   background-color: $surface-2;
   border-radius: 8px;
+  border: 1px solid #{$surface-4};
   padding: 0 1.5em 0.5em 1.5em;
   margin-top: 1.5em;
 }
