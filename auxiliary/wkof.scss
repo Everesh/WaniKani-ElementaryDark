@@ -135,6 +135,15 @@
     &:active {
       background-color: $text;
     }
+
+    &.ui-dialog-titlebar-close {
+      height: 20px;
+      padding: 1px;
+    }
+  }
+
+  .pre_list_btn_grp button {
+    padding: 2px 0;
   }
 
   .note.error {
