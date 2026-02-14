@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.12.202602141602
+@version      3.1.12.202602141728
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -468,6 +468,12 @@
     --text-shadow-light: none;
     --text-shadow-dark: none;
     --color-icon: var(--USER-text, #eeeeee);
+    --color-blue: var(--color-radical);
+    --color-blue-dark: var(--color-radical-dark);
+    --color-pink: var(--color-kanji);
+    --color-pink-dark: var(--color-kanji-dark);
+    --color-purple: var(--color-vocabulary);
+    --color-purple-dark: var(--color-vocabulary-dark);
     --color-text: var(--USER-text, #eeeeee);
     --color-character-text: var(--USER-text, #eeeeee);
     --color-title-underline: var(--USER-text, #eeeeee);
@@ -475,14 +481,45 @@
     --color-link-active: var(--USER-text, #eeeeee);
     --color-link-hover: var(--USER-text, #eeeeee);
     --color-radical: var(--USER-radical, #56638a);
+    --color-radical-dark: color-mix(in srgb, var(--color-radical), black 10%);
+    --color-radical-highlight: color-mix(
+      in srgb,
+      var(--color-radical),
+      white 10%
+    );
+    --color-radical-lowlight: color-mix(in srgb, var(--color-radical), black 20%);
     --color-radical-gradient: none;
     --color-kanji: var(--USER-kanji, #9c4644);
+    --color-kanji-dark: color-mix(in srgb, var(--color-kanji), black 10%);
+    --color-kanji-highlight: color-mix(in srgb, var(--color-kanji), white 10%);
+    --color-kanji-lowlight: color-mix(in srgb, var(--color-kanji), black 20%);
     --color-kanji-gradient: none;
     --color-vocabulary: var(--USER-vocab, #58896f);
+    --color-vocabulary-dark: color-mix(
+      in srgb,
+      var(--color-vocabulary),
+      black 10%
+    );
+    --color-vocabulary-highlight: color-mix(
+      in srgb,
+      var(--color-vocabulary),
+      white 10%
+    );
+    --color-vocabulary-lowlight: color-mix(
+      in srgb,
+      var(--color-vocabulary),
+      black 20%
+    );
     --color-vocabulary-gradient: none;
     --color-burned: var(--USER-burned, #303030);
+    --color-burned-dark: color-mix(in srgb, var(--color-burned), black 10%);
+    --color-burned-highlight: color-mix(in srgb, var(--color-burned), white 10%);
+    --color-burned-lowlight: color-mix(in srgb, var(--color-burned), black 20%);
     --color-burned-gradient: none;
     --color-locked: var(--USER-surface-4, #535353);
+    --color-locked-dark: color-mix(in srgb, var(--color-locked), black 10%);
+    --color-locked-highlight: color-mix(in srgb, var(--color-locked), white 10%);
+    --color-locked-lowlight: color-mix(in srgb, var(--color-locked), black 20%);
     --color-locked-gradient: none;
     --color-new-badge-background: var(--USER-progress, #a97e42);
     --color-new-badge-text: var(--USER-text, #eeeeee);
@@ -869,6 +906,8 @@
     --color-review-forecast-priority-count-inside: var(--USER-text, #eeeeee);
     --color-subject-page-header-border: var(--USER-surface-4, #535353);
     --color-section-header-border: var(--USER-surface-4, #535353);
+    --color-item-spread-total-border: var(--USER-surface-4, #535353);
+    --color-item-spread-total-background: var(--USER-surface-3, #303030);
   }
   
   #turbo-body,
