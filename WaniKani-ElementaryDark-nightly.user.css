@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.12.202602121138
+@version      3.1.12.202602141557
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -663,8 +663,8 @@
     --color-progress-chart-label-text: var(--USER-text, #eeeeee);
     --color-progress-chart-label-text-shadow: none;
     --color-progress-chart-metric-text: var(--USER-text, #eeeeee);
-    --color-progress-chart-metric-count: var(--USER-surface-1, #151515);
-    --color-progress-chart-metric-count-background: var(--USER-text, #eeeeee);
+    --color-progress-chart-metric-count: var(--USER-text-inv, #151515);
+    --color-progress-chart-metric-count-background: var(--USER-surface-inv, #bababa);
     --color-progress-chart-metric-count-shadow: none;
     --color-public-profile-avatar-border: var(--USER-surface-2, #282828);
     --color-public-profile-info-background: var(--USER-surface-2, #282828);
@@ -867,6 +867,8 @@
     --color-count-bubble-divider: var(--USER-text-inv, #151515);
     --color-review-forecast-priority-count: var(--USER-text, #eeeeee);
     --color-review-forecast-priority-count-inside: var(--USER-text, #eeeeee);
+    --color-subject-page-header-border: var(--USER-surface-4, #535353);
+    --color-section-header-border: var(--USER-surface-4, #535353);
   }
   
   #turbo-body,
@@ -1949,16 +1951,28 @@
   
   .site-content-container .container:has(.character-grid) {
     background-color: var(--USER-surface-2, #282828);
-    border-radius: 5px;
+    border: 1px solid var(--USER-surface-4, #535353);
+    border-radius: 8px;
     padding: 0 1.5em 0.5em 1.5em;
     margin-top: 1.5em;
   }
   .site-content-container .container:has(.character-grid) .search--open {
-    transform: translateY(-4em);
+    transform: translateY(-6em);
     margin-bottom: -4em;
   }
+  .site-content-container .container:has(.character-grid) .search--open .search__button {
+    transform: translateY(4px);
+  }
   .site-content-container .container:has(.character-grid):has(.search--open) {
-    transform: translateY(4em);
+    transform: translateY(calc(4em + 4px));
+  }
+  .site-content-container .container:has(.character-grid) .character-grid__header .character-grid__header-content {
+    border-radius: inherit;
+    border: 1px solid var(--USER-surface-4, #535353);
+    border-bottom: none;
+  }
+  .site-content-container .container:has(.character-grid) .character-grid__header .progress-chart__progress-bar-container {
+    box-shadow: none;
   }
   
   .subject-legend-character--burned.subject-legend-character--radical {
@@ -1993,11 +2007,14 @@
   }
   
   .site-content-container .container:has(.subject-page-header) .search--open {
-    transform: translateY(-4em);
+    transform: translateY(-6em);
     margin-bottom: -4em;
   }
+  .site-content-container .container:has(.subject-page-header) .search--open .search__button {
+    transform: translateY(4px);
+  }
   .site-content-container .container:has(.subject-page-header):has(.search--open) {
-    transform: translateY(4em);
+    transform: translateY(calc(4em + 4px));
   }
   .site-content-container .container:has(.subject-page-header) .subject-character--expandable .subject-character__characters:hover::before {
     background: var(--USER-surface-3, #303030);
@@ -2126,15 +2143,45 @@
   .site-content-container .container:has(.subject-page-header) .subject-progress {
     text-shadow: none;
   }
+  .site-content-container .container:has(.subject-page-header) .subject-progress .progress-chart__progress-bar-container,
+  .site-content-container .container:has(.subject-page-header) .subject-progress .progress-chart__progress-bar {
+    border-radius: 8px;
+  }
+  .site-content-container .container:has(.subject-page-header) .subject-progress .subject-progress__meta-value {
+    color: var(--USER-text-grayed, #bbbbbb);
+  }
+  .site-content-container .container:has(.subject-page-header) .subject-progress .subject-progress__button {
+    color: var(--USER-text, #eeeeee);
+    background: var(--USER-alert, #9c4644);
+    border-color: color-mix(in srgb, var(--USER-alert, #9c4644), white 10%);
+    box-shadow: none;
+    font-weight: bold;
+  }
+  .site-content-container .container:has(.subject-page-header) .subject-progress .subject-progress__button:hover {
+    border-color: color-mix(in srgb, var(--USER-alert, #9c4644), white 20%);
+    background-color: color-mix(in srgb, var(--USER-alert, #9c4644), white 10%);
+  }
+  .site-content-container .container:has(.subject-page-header) .subject-progress .subject-progress__button:active {
+    color: var(--USER-alert, #9c4644);
+    background: var(--USER-text, #eeeeee);
+  }
   .site-content-container .container:has(.subject-page-header) {
     background-color: var(--USER-surface-2, #282828);
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--USER-surface-4, #535353);
     padding: 0 1.5em 0.5em 1.5em;
     margin-top: 1.5em;
   }
   
-  .subject-character--small-with-meaning .subject-character__characters {
+  .public-profile .subject-character--small-with-meaning .subject-character__characters {
     box-shadow: none;
+  }
+  .public-profile .progress-chart__progress-bar-container,
+  .public-profile .progress-chart__progress-bar {
+    border-radius: 8px;
+  }
+  .public-profile .wk-panel {
+    border: 1px solid var(--USER-surface-4, #535353);
   }
   
   #preference_lessons_batch_size,
