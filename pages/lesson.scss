@@ -84,19 +84,6 @@
     box-shadow: none;
   }
 
-  .wk-hint {
-    --color-icon: #{$text-inv};
-    color: $text-inv;
-    background-color: $surface-inv;
-    text-shadow: none;
-    border-radius: 5px;
-
-    .wk-hint__title {
-      text-shadow: none;
-      color: $text-inv;
-    }
-  }
-
   .reading-with-audio__reading,
   .subject-slide__aside .subject-section:first-of-type p {
     color: $text-hl;
