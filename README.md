@@ -8,37 +8,70 @@ Successor to [WKElementaryDark](https://github.com/Sepitus-exe/WKElementaryDark)
 
 ## Installation
 
-### Install directly to Stylus [here](https://userstyles.world/api/style/22026.user.css)
+You'll need a userCSS manager like Stylus, grab it [here if you're on Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [here if you're on Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en).
 
-*Grab Stylus [here if you're on Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [here if you're on Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)*
+Once you have Stylus installed, click one of these links to install the theme:
+
+| Stable (updates on release) | Nightly (updates on commit) |
+|-|-|
+|[GitHub Pages](https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark.user.css) | [GitHub Pages](https://everesh.github.io/WaniKani-ElementaryDark/WaniKani-ElementaryDark-nightly.user.css) |
+| [UserStyles.world (mirror)](https://userstyles.world/api/style/22026.user.css) | 
+
+## Custom Colors
+
+> [!WARNING]
+> These are **complementary** to the main stylesheet. They don't work independently!
+
+### Make your own
+
+Use the interactive themer at https://wked.rexs.tools/ by @Rrwrex, or grab the bare template [here](https://github.com/Everesh/WaniKani-ElementaryDark/blob/main/themes/template.css).
+
+Sample presets: [Gruvbox](https://github.com/Everesh/WaniKani-ElementaryDark/raw/refs/heads/main/themes/gruvbox.user.css), [Catppuccin](https://github.com/Everesh/WaniKani-ElementaryDark/raw/refs/heads/main/themes/catppuccin.user.css)
 
 ## Build from source
+
+### Prerequisites
+
+- [Sass](https://sass-lang.com) preprocessor
+
+### Automated
+
+Run the make script:
 
 ```sh
 ./make.sh
 ```
 
 > [!TIP]
-Adding a `-c` flag to the command clips the processed stylesheet
+> Adding a `-c` flag clips the processed stylesheet to your clipboard
 
-## Why the Rewrite?
+You can customize the build with environment variables:
 
-The original project was a single monolithic CSS file. As WaniKani evolved, large chunks became obsolete, but there was no easy way to identify them, leading to continuous bloat. This new implementation leverages Sass to compartmentalize code sections, making maintenance actually manageable.
+| Variable | Effect | Default |
+|-|-|-|
+| WKED_ROOT | Main source file | main.scss |
+| WKED_WKOF | WKOF source file | auxiliary/wkof.scss |
+| WKED_OUTPUT | Output file path | WaniKani-ElementaryDark.css |
+| WKED_UPDATE_URL | Upstream URL | https://everesh.github.io/... |
+| WKED_VERSION | Version string | $(cat version) |
+| WKED_APP_NAME | Stylesheet name | WaniKani Elementary Dark |
 
-## Custom Colors
-> ___!___ *These are **complementary** to the main stylesheet, they do not work independently!*
+### Manual assembly
 
-### Make your own
+1. Compile the main stylesheet:
+   ```sh
+   sass main.scss compiled-main.css
+   ```
 
-Use the interactive themer at https://wked.rexs.tools/ by @Rrwrex
+2. Compile the WKOF module (optional):
+   ```sh
+   sass auxiliary/wkof.scss compiled-wkof.css
+   ```
 
-Or grab the bare template [here](https://github.com/Everesh/WaniKani-ElementaryDark/blob/main/themes/template.css)
-
-### Grab a preset
-
-#### [Gruvbox](https://github.com/Everesh/WaniKani-ElementaryDark/raw/refs/heads/main/themes/gruvbox.user.css)
-
-#### [Catppuccin](https://github.com/Everesh/WaniKani-ElementaryDark/raw/refs/heads/main/themes/catppuccin.user.css)
+3. Wrap the output in the UserCSS header format (see `make.sh` for the template structure), replacing:
+   - `#{MAIN_CSS}` with the main compiled stylesheet
+   - `/*[[wkof_mode]]*/` with the WKOF module (or recreate the `@advanced` logic)
+   - Metadata inside `==UserStyle==`
 
 ## Project Structure
 
@@ -49,6 +82,8 @@ root/
  │   ├─ legacy.scss       <- exposes legacy css vars for 3rd party userscripts
  │   ├─ overrides.scss    <- hijacks native css vars
  │   ╰─ variables.scss    <- defines stylesheet vars
+ ├─ auxiliary/
+ │   ╰─ wkof.scss         <- styling for WaniKani Open Framework
  ├─ img/                  <- custom images for src redirects
  ├─ pages/
  │   ├─ collections.scss  <- shared style for indexes
@@ -58,7 +93,7 @@ root/
  │   ╰─ *.user.css        <- alternative color palettes
  ├─ main.scss             <- unifying file
  ├─ version               <- metadata about current version
- ├─ make.sh               <- bash script for sass post-processing
+ ├─ make.sh               <- bash script for post-processing
  ├─ .gitignore
  ├─ LICENSE               <- MIT
  ╰─ README.md             <- you are here
@@ -66,7 +101,10 @@ root/
 
 ## Dev Hooks
 
-This theme exposes a bunch of CSS variables so other scripts and addons can match the look:
+This theme works by redefining WaniKani's native CSS variables, so you can use those directly in your scripts. Additionally, it exposes its own `--ED-*` variables for tighter integration.
+
+> [!TIP]
+> Use `color-mix()` with these variables to generate additional colors while respecting user palettes
 
 ```css
 /* Comprehensive list with default values */
