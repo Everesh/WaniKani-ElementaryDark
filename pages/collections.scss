@@ -85,7 +85,7 @@
 
   .character-grid__header {
     .character-grid__header-content {
-      border-radius: inherit;
+      border-radius: var(--border-radius-tight) var(--border-radius-tight) 0 0;
       border: 1px solid #{$surface-4};
       border-bottom: none;
     }
