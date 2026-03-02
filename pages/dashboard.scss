@@ -189,7 +189,7 @@
 
 .study-streak-widget__offering {
   --color-icon-primary: #{$surface-4};
-  --color-icon-secondary: #{$surface-3};
+  --color-icon-secondary: #{$surface-3} !important;
   --color-icon-tertiary: #{$surface-2};
 
   &.study-streak-widget__offering--available {
