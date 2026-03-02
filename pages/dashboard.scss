@@ -187,30 +187,17 @@
 
 // Study Streak
 
-.wk-icon.wk-icon--widget_study_streak_complete,
-.study-streak-widget__offering,
-.study-streak-widget__day--miss .study-streak-widget__day-icon {
-  --color-icon-primary: #{$text};
-  --color-icon-secondary: #{$surface-2};
-  .wk-icon--turtle {
-    --color-icon-tertiary: #{$surface-3};
+.study-streak-widget__offering {
+  --color-icon-primary: #{$surface-4};
+  --color-icon-secondary: #{$surface-3};
+  --color-icon-tertiary: #{$surface-2};
+
+  &.study-streak-widget__offering--available {
+    --color-icon-primary: #{$text};
   }
 }
 
-.study-streak-widget__days {
-  --color-icon: #{$text};
-}
-
-.study-streak-widget:not(.study-streak-widget--loading)
-  .study-streak-widget__day--complete
-  .study-streak-widget__day-icon {
-  --color-icon-tertiary: #{$surface-2} !important;
-}
-
-.study-streak-widget:not(.study-streak-widget--loading)
-  .study-streak-widget__offering--available {
-  --color-icon-secondary: #{$surface-2} !important;
-}
+// Level up svg
 
 img[src*="level_up_image.svg"] {
   content: url("https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/refs/heads/main/img/level_up_image.svg") !important;
