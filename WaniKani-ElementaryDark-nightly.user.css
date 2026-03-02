@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.14.202603021817
+@version      3.1.14.202603021820
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1423,7 +1423,7 @@
   
   .study-streak-widget__offering {
     --color-icon-primary: var(--USER-surface-4, #535353);
-    --color-icon-secondary: var(--USER-surface-3, #303030);
+    --color-icon-secondary: var(--USER-surface-3, #303030) !important;
     --color-icon-tertiary: var(--USER-surface-2, #282828);
   }
   .study-streak-widget__offering.study-streak-widget__offering--available {
