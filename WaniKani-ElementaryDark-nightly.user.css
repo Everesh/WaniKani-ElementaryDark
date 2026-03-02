@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.14.202602182313
+@version      3.1.14.202603021817
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1421,28 +1421,13 @@
     --color-days-studied-digit-filled-background: var(--USER-brand, #9c4644);
   }
   
-  .wk-icon.wk-icon--widget_study_streak_complete,
-  .study-streak-widget__offering,
-  .study-streak-widget__day--miss .study-streak-widget__day-icon {
+  .study-streak-widget__offering {
+    --color-icon-primary: var(--USER-surface-4, #535353);
+    --color-icon-secondary: var(--USER-surface-3, #303030);
+    --color-icon-tertiary: var(--USER-surface-2, #282828);
+  }
+  .study-streak-widget__offering.study-streak-widget__offering--available {
     --color-icon-primary: var(--USER-text, #eeeeee);
-    --color-icon-secondary: var(--USER-surface-2, #282828);
-  }
-  .wk-icon.wk-icon--widget_study_streak_complete .wk-icon--turtle,
-  .study-streak-widget__offering .wk-icon--turtle,
-  .study-streak-widget__day--miss .study-streak-widget__day-icon .wk-icon--turtle {
-    --color-icon-tertiary: var(--USER-surface-3, #303030);
-  }
-  
-  .study-streak-widget__days {
-    --color-icon: var(--USER-text, #eeeeee);
-  }
-  
-  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__day--complete .study-streak-widget__day-icon {
-    --color-icon-tertiary: var(--USER-surface-2, #282828) !important;
-  }
-  
-  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__offering--available {
-    --color-icon-secondary: var(--USER-surface-2, #282828) !important;
   }
   
   img[src*="level_up_image.svg"] {
