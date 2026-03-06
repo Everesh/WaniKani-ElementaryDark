@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.1.13
+@version      3.1.14
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -479,6 +479,7 @@
 
 @-moz-document domain("www.wanikani.com") {
   :root {
+    --color-app-background: var(--USER-surface-1, #151515);
     --text-shadow-light: none;
     --text-shadow-dark: none;
     --color-icon: var(--USER-text, #eeeeee);
@@ -1420,28 +1421,24 @@
     --color-days-studied-digit-filled-background: var(--USER-brand, #9c4644);
   }
   
-  .wk-icon.wk-icon--widget_study_streak_complete,
-  .study-streak-widget__offering,
-  .study-streak-widget__day--miss .study-streak-widget__day-icon {
+  .study-streak-widget {
+    --color-durtle-body: var(--USER-surface-3, #303030) !important;
+    --color-turtle-shell: var(--USER-surface-2, #282828) !important;
+    --color-turtle-legs: var(--USER-surface-2, #282828) !important;
+    --color-durtle-head: var(--USER-surface-4, #535353) !important;
+    --color-outline: var(--USER-text, #eeeeee);
+  }
+  .study-streak-widget .study-streak-widget__offering {
+    --color-icon-primary: var(--USER-surface-4, #535353);
+    --color-icon-secondary: var(--USER-surface-3, #303030) !important;
+    --color-icon-tertiary: var(--USER-surface-2, #282828);
+  }
+  .study-streak-widget .study-streak-widget__offering.study-streak-widget__offering--available {
     --color-icon-primary: var(--USER-text, #eeeeee);
-    --color-icon-secondary: var(--USER-surface-2, #282828);
-  }
-  .wk-icon.wk-icon--widget_study_streak_complete .wk-icon--turtle,
-  .study-streak-widget__offering .wk-icon--turtle,
-  .study-streak-widget__day--miss .study-streak-widget__day-icon .wk-icon--turtle {
-    --color-icon-tertiary: var(--USER-surface-3, #303030);
   }
   
-  .study-streak-widget__days {
-    --color-icon: var(--USER-text, #eeeeee);
-  }
-  
-  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__day--complete .study-streak-widget__day-icon {
-    --color-icon-tertiary: var(--USER-surface-2, #282828) !important;
-  }
-  
-  .study-streak-widget:not(.study-streak-widget--loading) .study-streak-widget__offering--available {
-    --color-icon-secondary: var(--USER-surface-2, #282828) !important;
+  wk-svg-image[src*="missed-streak-432e8344.svg"] {
+    filter: invert(1) opacity(0.3);
   }
   
   img[src*="level_up_image.svg"] {
@@ -2009,7 +2006,7 @@
     transform: translateY(calc(4em + 4px));
   }
   .site-content-container .container:has(.character-grid) .character-grid__header .character-grid__header-content {
-    border-radius: inherit;
+    border-radius: var(--border-radius-tight) var(--border-radius-tight) 0 0;
     border: 1px solid var(--USER-surface-4, #535353);
     border-bottom: none;
   }

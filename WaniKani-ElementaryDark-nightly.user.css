@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.14.202603021820
+@version      3.1.14.202603061047
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1421,13 +1421,24 @@
     --color-days-studied-digit-filled-background: var(--USER-brand, #9c4644);
   }
   
-  .study-streak-widget__offering {
+  .study-streak-widget {
+    --color-durtle-body: var(--USER-surface-3, #303030) !important;
+    --color-turtle-shell: var(--USER-surface-2, #282828) !important;
+    --color-turtle-legs: var(--USER-surface-2, #282828) !important;
+    --color-durtle-head: var(--USER-surface-4, #535353) !important;
+    --color-outline: var(--USER-text, #eeeeee);
+  }
+  .study-streak-widget .study-streak-widget__offering {
     --color-icon-primary: var(--USER-surface-4, #535353);
     --color-icon-secondary: var(--USER-surface-3, #303030) !important;
     --color-icon-tertiary: var(--USER-surface-2, #282828);
   }
-  .study-streak-widget__offering.study-streak-widget__offering--available {
+  .study-streak-widget .study-streak-widget__offering.study-streak-widget__offering--available {
     --color-icon-primary: var(--USER-text, #eeeeee);
+  }
+  
+  wk-svg-image[src*="missed-streak-432e8344.svg"] {
+    filter: invert(1) opacity(0.3);
   }
   
   img[src*="level_up_image.svg"] {
