@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name         WKED Abyss
+@namespace    github.com/openstyles/stylus
+@version      1.0.0
+@license      MIT
+@description  Theme for WaniKani Elementary dark stylesheet
+@author       Everesh
+@homepageURL  https://github.com/Everesh/WaniKani-ElementaryDark
+@supportURL   https://github.com/Everesh/WaniKani-ElementaryDark/issues
+==/UserStyle== */
+
+@-moz-document domain("www.wanikani.com") {
+    :root {
+        /* surface */
+        --USER-surface-1: #112335;
+        --USER-surface-2: #182c3e;
+        --USER-surface-3: #233a4c;
+        --USER-surface-4: #5eb885;
+        --USER-surface-inv: #5eb885;
+        /*  text */
+        --USER-text: #d4f0e2;
+        --USER-text-inv: #112335;
+        --USER-text-hl: #ae8aeb;
+        --USER-text-grayed: #8266b4;
+        /*  item_type */
+        --USER-radical: #2a7aad;
+        --USER-kanji: #7048c4;
+        --USER-vocab: #2e8a57;
+        /*  srs_stage */
+        --USER-apprentice: #1a3a52;
+        --USER-guru: #2e4f6e;
+        --USER-master: #8266b4;
+        --USER-enlightened: #8e63d9;
+        --USER-burned: #112335;
+        /*  assignment */
+        --USER-lesson: #8e63d9;
+        --USER-review: #1e5f8a;
+        --USER-correct: #49a36c;
+        --USER-incorrect: #7a3060;
+        /*  misc */
+        --USER-brand: #8e63d9;
+        --USER-progress: #ae8aeb;
+        --USER-alert: #7a3060;
+        /*  filter */
+        --USER-logo-filter: invert(1) saturate(0) brightness(1.6) invert(0.11)
+            sepia(0.17) saturate(1.88) hue-rotate(98deg) brightness(1.01)
+            contrast(0.96);
+        /* --USER-kotoba-odd-row-filter: brightness(1.1); */
+        /* --USER-footer-filter: invert(1); */
+        --USER-loading-filter: grayscale(100%) invert(1) hue-rotate(180deg)
+            contrast(0.68) invert(0.11) sepia(0.17) saturate(1.88)
+            hue-rotate(98deg) brightness(1.01) contrast(0.96);
+        /* --USER-days-studied-filter: invert(85%); */
+    }
+}
