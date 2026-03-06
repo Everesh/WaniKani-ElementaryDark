@@ -187,14 +187,29 @@
 
 // Study Streak
 
-.study-streak-widget__offering {
-  --color-icon-primary: #{$surface-4};
-  --color-icon-secondary: #{$surface-3} !important;
-  --color-icon-tertiary: #{$surface-2};
+// lots of !important' since I do not feel like fighting individual presets
+.study-streak-widget {
+  --color-durtle-body: #{$surface-3} !important;
+  --color-turtle-shell: #{$surface-2} !important;
+  --color-turtle-legs: #{$surface-2} !important;
+  --color-durtle-head: #{$surface-4} !important;
+  --color-outline: #{$text};
 
-  &.study-streak-widget__offering--available {
-    --color-icon-primary: #{$text};
+  .study-streak-widget__offering {
+    --color-icon-primary: #{$surface-4};
+    --color-icon-secondary: #{$surface-3} !important;
+    --color-icon-tertiary: #{$surface-2};
+
+    &.study-streak-widget__offering--available {
+      --color-icon-primary: #{$text};
+    }
   }
+}
+
+// This svg uses 0 external atributtes. Only way to style it is either fitler or src hijack.
+// As of now, its just 30% white color mix in, which works *fine*, but it should be revisited.
+wk-svg-image[src*="missed-streak-432e8344.svg"] {
+  filter: invert(1) opacity(0.3);
 }
 
 // Level up svg
