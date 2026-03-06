@@ -1,77 +1,208 @@
 :root {
-    font-family: monospace;
+    --surface-1: var(--USER-surface-1, #151515);
+    --surface-2: var(--USER-surface-2, #282828);
+    --surface-3: var(--USER-surface-3, #303030);
+    --surface-4: var(--USER-surface-4, #535353);
+    --surface-inv: var(--USER-surface-inv, #bababa);
 
-    --surface-1: #202020;
-    --surface-2: #282828;
-    --surface-3: #303030;
+    --text: var(--USER-text, #eeeeee);
+    --text-inv: var(--USER-text-inv, #151515);
+    --text-hl: var(--USER-text-hl, #c29354);
+    --text-grayed: var(--USER-text-grayed, #bbbbbb);
 
-    --text: #fbf1c7;
-    --text-hl: #ecbe80;
-    --text-visited: #c6613f;
+    --radical: var(--USER-radical, #56638a);
+    --kanji: var(--USER-kanji, #9c4644);
+    --vocab: var(--USER-vocab, #58896f);
+
+    --apprentice: var(--USER-apprentice, #47454e);
+    --guru: var(--USER-guru, #605c74);
+    --master: var(--USER-master, #9a815d);
+    --enlightened: var(--USER-enlightened, #934c3f);
+    --burned: var(--USER-burned, #303030);
+
+    --lesson: var(--USER-lesson, #9c4644);
+    --review: var(--USER-review, #56638a);
+    --correct: var(--USER-correct, #58896f);
+    --incorrect: var(--USER-incorrect, #9c4644);
+
+    --brand: var(--USER-brand, #9c4644);
+    --progress: var(--USER-progress, #a97e42);
+    --alert: var(--USER-alert, #9c4644);
+
+    --logo-filter: var(
+        --USER-logo-filter,
+        invert(1) saturate(0) brightness(1.6)
+    );
+    --kotoba-odd-row-filter: var(
+        --USER-kotoba-odd-row-filter,
+        brightness(0.95)
+    );
+    --footer-filter: var(--USER-footer-filter, invert(1));
+    --loading-filter: var(
+        --USER-loading-filter,
+        grayscale(100%) invert(1) hue-rotate(180deg) contrast(0.68)
+    );
+    --days-studied-filter: var(--USER-days-studied-filter, invert(0.85));
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: var(--surface-1);
-    background-image:
-        linear-gradient(
-            180deg,
-            color-mix(in srgb, var(--surface-1) 0%, transparent) 0%,
-            var(--surface-1) 200vh
-        ),
-        radial-gradient(var(--surface-2) 2px, var(--surface-1) 2px);
-    background-size:
-        100% 100%,
-        20px 20px;
-
-    color: var(--text);
-    font-size: 1.2rem;
-
-    padding: 0;
+    height: 100%;
+    line-height: 1;
     margin: 0;
+    padding: 0;
+    border: 0;
 
+    background-color: var(--surface-1);
+    color: var(--text);
+    font-family: "Noto Sans";
+}
+
+header {
+    height: 4em;
+    width: 100%;
+    background-color: var(--surface-2);
+    border-bottom: 1px solid var(--surface-4);
+}
+
+#logo {
+    margin: 0;
+    color: transparent;
+}
+
+#logo::after {
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    margin-top: -34px;
+    height: 34px;
+    width: 100%;
+    filter: var(--logo-filter);
+    background: top left/contain no-repeat
+        url("https://www.wanikani.com/assets/logo--retro-colors-9b88dd59.png");
+}
+
+.width-restrain {
+    max-width: 1170px;
+    margin: 0 24px;
+}
+
+.flex-center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    overflow-x: hidden;
 }
 
-a {
-    color: var(--text-hl);
-    text-decoration: none;
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a:hover,
-a:focus {
-    text-decoration: underline;
+header > div {
+    width: 100%;
 }
 
-a:active {
-    color: var(--text);
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 24px !important;
 }
 
-a:visited {
-    color: var(--text-visited);
+main > * {
+    height: 255px;
 }
 
-.commit {
+.gap {
+    gap: 24px;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+.row > div {
+    height: 100%;
+    flex: 1 1;
+    border-radius: 16px;
     background-color: var(--surface-2);
-    border: 1px solid color-mix(in srgb, var(--surface-2), white 25%);
-    margin: 1.5rem 0;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: start;
+    border: 1px solid var(--surface-4);
+
+    padding: 24px;
+    min-width: 370px;
 }
 
-.outer {
-    width: clamp(300px, 90%, 80rem);
+#first-row > div {
+    max-width: 380px;
 }
 
-.outer > p {
-    text-align: center;
+#stable,
+#nightly {
+    background-color: var(--lesson);
+    border-color: color-mix(in srgb, var(--lesson), white 25%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.outer > h1 {
-    margin-left: 1em;
+#stable > img,
+#nightly > img {
+    max-width: 150px;
+    flex: 1 1;
+}
+
+#nightly {
+    background-color: var(--review);
+    border-color: color-mix(in srgb, var(--review), white 25%);
+}
+
+.side {
+    width: 50%;
+    height: 100%;
+
+    gap: 16px;
+}
+
+.side h2 {
+    margin: 0.2em 0;
+}
+
+.flex-column-start {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 12px 16px;
+    border: 1px solid var(--text);
+    width: 100%;
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:hover {
+    outline: 1px solid var(--text);
+}
+
+.subtext-adjust {
+    margin: -0.5em 0 0.5em 0;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
