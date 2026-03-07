@@ -116,10 +116,6 @@ main {
     margin-top: 24px !important;
 }
 
-main > * {
-    height: 255px;
-}
-
 .gap {
     gap: 24px;
 }
@@ -129,18 +125,14 @@ main > * {
 }
 
 .row > div {
-    height: 100%;
-    flex: 1 1;
+    height: 255px;
+    flex: 1 1 374px;
     border-radius: 16px;
     background-color: var(--surface-2);
     border: 1px solid var(--surface-4);
 
     padding: 24px;
     min-width: 370px;
-}
-
-#first-row > div {
-    max-width: 380px;
 }
 
 #stable,
