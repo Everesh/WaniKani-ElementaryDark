@@ -99,14 +99,18 @@
   //--color-button-alert-hover-text-shadow: var(--color-button-alert-text-shadow);
   //--color-button-alert-active-text-shadow: var(--color-button-alert-hover-text-shadow);
   --color-button-danger-background: #{$alert};
-  --color-button-danger-hover-background: #{$text};
-  --color-button-danger-active-background: #{$text};
-  --color-button-danger-border: #{$alert};
-  --color-button-danger-hover-border: #{$alert};
-  --color-button-danger-active-border: #{$alert};
+  --color-button-danger-hover-background: #{$alert};
+  --color-button-danger-active-background: #{$alert};
+  --color-button-danger-border: color-mix(
+    in srgb,
+    #{$alert},
+    #{$surface-2} 50%
+  );
+  --color-button-danger-hover-border: var(--color-button-danger-border);
+  --color-button-danger-active-border: var(--color-button-danger-border);
   --color-button-danger-text: #{$text};
-  --color-button-danger-hover-text: #{$alert};
-  --color-button-danger-active-text: #{$alert};
+  --color-button-danger-hover-text: #{$text};
+  --color-button-danger-active-text: #{$text};
   --color-button-danger-text-shadow: none;
   --color-button-danger-hover-text-shadow: none;
   --color-button-danger-active-text-shadow: none;

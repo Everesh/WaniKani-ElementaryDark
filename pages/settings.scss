@@ -16,6 +16,7 @@
 #current_password,
 #email,
 #new_email_password,
+#preference_time_format,
 #preference_timezone,
 #preference_gravatar_profile_pic,
 #preference_opt_mail,
@@ -39,4 +40,13 @@
   border-radius: 5px;
   padding: 0.3em;
   font-weight: bold;
+}
+
+.wk-button--danger {
+  border-radius: 4px;
+  box-shadow:
+    1px 0 0 #{$surface-4},
+    -1px 0 0 #{$surface-4},
+    0 1px 0 #{$surface-4},
+    0 -1px 0 #{$surface-4};
 }
