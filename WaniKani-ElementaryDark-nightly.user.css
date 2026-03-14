@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.15.202603131847
+@version      3.1.15.202603141654
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -550,14 +550,18 @@
     --color-alert-system-background: var(--USER-alert, #9c4644);
     --color-alert-system-text: var(--USER-text, #eeeeee);
     --color-button-danger-background: var(--USER-alert, #9c4644);
-    --color-button-danger-hover-background: var(--USER-text, #eeeeee);
-    --color-button-danger-active-background: var(--USER-text, #eeeeee);
-    --color-button-danger-border: var(--USER-alert, #9c4644);
-    --color-button-danger-hover-border: var(--USER-alert, #9c4644);
-    --color-button-danger-active-border: var(--USER-alert, #9c4644);
+    --color-button-danger-hover-background: var(--USER-alert, #9c4644);
+    --color-button-danger-active-background: var(--USER-alert, #9c4644);
+    --color-button-danger-border: color-mix(
+      in srgb,
+      var(--USER-alert, #9c4644),
+      var(--USER-surface-2, #282828) 50%
+    );
+    --color-button-danger-hover-border: var(--color-button-danger-border);
+    --color-button-danger-active-border: var(--color-button-danger-border);
     --color-button-danger-text: var(--USER-text, #eeeeee);
-    --color-button-danger-hover-text: var(--USER-alert, #9c4644);
-    --color-button-danger-active-text: var(--USER-alert, #9c4644);
+    --color-button-danger-hover-text: var(--USER-text, #eeeeee);
+    --color-button-danger-active-text: var(--USER-text, #eeeeee);
     --color-button-danger-text-shadow: none;
     --color-button-danger-hover-text-shadow: none;
     --color-button-danger-active-text-shadow: none;
@@ -2233,6 +2237,7 @@
   #current_password,
   #email,
   #new_email_password,
+  #preference_time_format,
   #preference_timezone,
   #preference_gravatar_profile_pic,
   #preference_opt_mail,
@@ -2257,6 +2262,11 @@
     border-radius: 5px;
     padding: 0.3em;
     font-weight: bold;
+  }
+  
+  .wk-button--danger {
+    border-radius: 4px;
+    box-shadow: 1px 0 0 var(--USER-surface-4, #535353), -1px 0 0 var(--USER-surface-4, #535353), 0 1px 0 var(--USER-surface-4, #535353), 0 -1px 0 var(--USER-surface-4, #535353);
   }
   
   .billing-receipts__receipt-link,
