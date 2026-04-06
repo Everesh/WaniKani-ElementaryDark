@@ -78,13 +78,18 @@
 
 // Extra study
 
-.extra-study-multi-button-widget__button:hover,
-.extra-study-multi-button-widget__button:focus {
-  outline: 1px solid $text;
-}
-
-.extra-study-multi-button-widget__button:active {
-  outline: 1px solid $text;
+.extra-study-multi-button-widget__button {
+  &:hover,
+  &:focus {
+    outline: 1px solid $text;
+  }
+  &:active {
+    outline: 1px solid $text;
+  }
+  .wk-icon--turtle {
+    --color-icon-tertiary: #{$surface-2};
+    --color-icon-secondary: #{$surface-2};
+  }
 }
 
 .extra-study-multi-button-widget__button--disabled,
