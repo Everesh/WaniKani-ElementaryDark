@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.15.202603141808
+@version      3.1.16.202604061951
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1324,13 +1324,15 @@
     --color-review-forecast-header-background: var(--USER-brand, #9c4644);
   }
   
-  .extra-study-multi-button-widget__button:hover,
-  .extra-study-multi-button-widget__button:focus {
+  .extra-study-multi-button-widget__button:hover, .extra-study-multi-button-widget__button:focus {
     outline: 1px solid var(--USER-text, #eeeeee);
   }
-  
   .extra-study-multi-button-widget__button:active {
     outline: 1px solid var(--USER-text, #eeeeee);
+  }
+  .extra-study-multi-button-widget__button .wk-icon--turtle {
+    --color-icon-tertiary: var(--USER-surface-2, #282828);
+    --color-icon-secondary: var(--USER-surface-2, #282828);
   }
   
   .extra-study-multi-button-widget__button--disabled,
