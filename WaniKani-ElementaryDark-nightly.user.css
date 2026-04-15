@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.16.202604061951
+@version      3.1.16.202604151438
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1136,7 +1136,6 @@
   }
   
   .reading-with-audio__audio-item[playing=true] .wk-icon--sound_off {
-    display: inline-block;
     --color-icon: var(--USER-text-grayed, #bbbbbb);
   }
   
