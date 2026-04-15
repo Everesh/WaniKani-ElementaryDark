@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark (Nightly)
 @namespace    github.com/openstyles/stylus
-@version      3.1.16.202604151438
+@version      3.1.16.202604151441
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1133,10 +1133,6 @@
   .footer__item--copyright {
     filter: invert(1);
     background-color: var(--USER-kanji, #9c4644);
-  }
-  
-  .reading-with-audio__audio-item[playing=true] .wk-icon--sound_off {
-    --color-icon: var(--USER-text-grayed, #bbbbbb);
   }
   
   .subject-character--radical .subject-character__characters-text {
