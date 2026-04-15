@@ -255,10 +255,6 @@ turbo-frame[data-show-loading="true"]:not([complete]):after {
   background-color: $kanji;
 }
 
-.reading-with-audio__audio-item[playing="true"] .wk-icon--sound_off {
-  --color-icon: #{$text-grayed};
-}
-
 .subject-character--radical .subject-character__characters-text {
   --color-text: #{$text};
 }
