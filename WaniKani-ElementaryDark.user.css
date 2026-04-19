@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         WaniKani Elementary Dark
 @namespace    github.com/openstyles/stylus
-@version      3.1.16
+@version      3.1.17
 @license      MIT
 @description  Dark theme for the WaniKani domain
 @author       Everesh
@@ -1794,6 +1794,10 @@
     color: var(--USER-text-hl, #c29354);
     font-weight: bold;
     font-size: 1.5em;
+  }
+  
+  .reading-with-audio__audio-item[playing=true] .wk-icon--sound_on {
+    display: inline-block;
   }
   
   .character-header--radical .character-header__meaning,
