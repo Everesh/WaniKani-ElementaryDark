@@ -346,3 +346,9 @@
     font-size: 1.5em;
   }
 }
+
+// Temporary fix for WaniKani sound svg on reviews
+
+.reading-with-audio__audio-item[playing="true"] .wk-icon--sound_on {
+  display: inline-block;
+}
