@@ -1,5 +1,7 @@
 # WaniKani-ElementaryDark
 
+![stable](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/stable.json) ![nightly](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/nightly.json) ![installs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/badge.json)
+
 Yet another dark theme for WaniKani.
 
 Successor to [WKElementaryDark](https://github.com/Sepitus-exe/WKElementaryDark), rewritten to leverage native CSS variable hijacking for improved maintainability and resilience.
