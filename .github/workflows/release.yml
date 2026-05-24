@@ -110,7 +110,7 @@ jobs:
           cd /tmp/meta
           git add -A
           git diff --staged --quiet || git commit -m "chore: update version badges"
-          git push origin meta
+          git push origin HEAD:meta
 
       - name: Create Release
         if: steps.version.outputs.is_dev == 'false' && steps.check_release.outputs.exists == 'false'

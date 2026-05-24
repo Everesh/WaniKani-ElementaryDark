@@ -43,4 +43,4 @@ jobs:
           cd /tmp/meta
           git add badge.json
           git diff --staged --quiet || git commit -m "chore: update install badge"
-          git push origin meta
+          git push origin HEAD:meta
