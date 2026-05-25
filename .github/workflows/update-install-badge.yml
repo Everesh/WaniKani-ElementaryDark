@@ -2,7 +2,7 @@ name: Update Install Badge
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
             git worktree add --orphan -b meta /tmp/meta
           fi
 
-          echo '{"schemaVersion":1,"label":"installs","message":"${{ steps.scrape.outputs.count }}","color":"#679cd0"}' \
+          echo '{"schemaVersion":1,"label":"installs","message":"${{ steps.scrape.outputs.count }}","color":"#58896f"}' \
             > /tmp/meta/badge.json
 
           cd /tmp/meta

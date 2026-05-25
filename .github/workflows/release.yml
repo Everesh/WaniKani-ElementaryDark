@@ -98,12 +98,12 @@ jobs:
 
           NIGHTLY_VERSION="${{ steps.build_nightly.outputs.version }}"
           if [[ -n "$NIGHTLY_VERSION" ]]; then
-            echo '{"schemaVersion":1,"label":"nightly","message":"v'"$NIGHTLY_VERSION"'","color":"#aaaaaa"}' \
+            echo '{"schemaVersion":1,"label":"nightly","message":"v'"$NIGHTLY_VERSION"'","color":"#56638a"}' \
               > /tmp/meta/nightly.json
           fi
 
           if [[ "${{ steps.version.outputs.is_dev }}" == "false" && "${{ steps.check_release.outputs.exists }}" == "false" ]]; then
-            echo '{"schemaVersion":1,"label":"stable","message":"v${{ steps.version.outputs.version }}","color":"#679cd0"}' \
+            echo '{"schemaVersion":1,"label":"stable","message":"v${{ steps.version.outputs.version }}","color":"#9c4644"}' \
               > /tmp/meta/stable.json
           fi
 
