@@ -26,6 +26,7 @@ jobs:
           echo "count=$COUNT" >> $GITHUB_OUTPUT
 
       - name: Push badge.json to meta branch
+        if: steps.scrape.outputs.count != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
