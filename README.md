@@ -4,7 +4,8 @@
 
 Yet another dark theme for WaniKani.
 
-Successor to [WKElementaryDark](https://github.com/Sepitus-exe/WKElementaryDark), rewritten to leverage native CSS variable hijacking for improved maintainability and resilience.
+- [Associated forum thread](https://community.wanikani.com/t/userstyle-elementary-dark/60137)
+- [Old pre-3.0.0 repo](https://github.com/Sepitus-exe/WKElementaryDark)
 
 ![Image](https://github.com/user-attachments/assets/4892bc85-4e6b-4d77-8d09-67b7652b7248)
 
