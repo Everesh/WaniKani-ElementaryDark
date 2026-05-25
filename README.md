@@ -1,6 +1,6 @@
 # WaniKani-ElementaryDark
 
-![stable](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/stable.json) ![nightly](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/nightly.json) ![installs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/badge.json)
+[![stable](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/stable.json)](https://everesh.github.io/WaniKani-ElementaryDark/) [![nightly](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/nightly.json)](https://everesh.github.io/WaniKani-ElementaryDark/) [![installs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Everesh/WaniKani-ElementaryDark/meta/badge.json)](https://userstyles.world/style/22026/wanikani-elementary-dark)
 
 Yet another dark theme for WaniKani.
 
